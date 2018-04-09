@@ -4,13 +4,14 @@ import Budget from "./pages/Budget";
 import Dashboard from "./pages/Dashboard";
 import EditBudget from "./pages/EditBudget";
 import Home from "./pages/Home";
-// import Nav from "./components/Nav";
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 import Signup from "./pages/Signup"
 
 const App = () => (
   <Router>
     <div>
-      {/* <Nav /> */}
+      <Nav />
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/home" component={Home} />
@@ -19,6 +20,7 @@ const App = () => (
         <Route exact path="/signup" component={Signup} />
         <Route exact path="/budget" component={Budget} />
       </Switch>
+      <Footer />
     </div>
   </Router>
 );
