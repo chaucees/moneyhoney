@@ -5,6 +5,7 @@ import Dashboard from "./pages/Dashboard";
 import EditBudget from "./pages/EditBudget";
 import Home from "./pages/Home";
 // import Nav from "./components/Nav";
+// import Footer from "./components/Footer";
 import Signup from "./pages/Signup"
 
 const App = () => (
@@ -20,6 +21,7 @@ const App = () => (
         <Route exact path="/budget" component={Budget} />
       </Switch>
     </div>
+    {/* <Footer /> */}
   </Router>
 );
 
