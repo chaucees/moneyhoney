@@ -11,9 +11,29 @@ font-family: 'Anton', sans-serif; */
 
 .logo {
     width: 20%;
+    margin-top: 15px;
 }
 
 nav {
     height: 150px;
     background-color: #084c61;
+}
+
+.nav-item-text {
+    color: #084c61;
+}
+
+.hamburger {
+    width: 200px !important;
+}
+
+.menu {
+    padding-top: 40px;
+    padding-left: 20px;
+    width: 30px !important;
+    height: 100px !important;
+}
+
+.material-icons.md-48 {
+    font-size: 48px !important;
 }
