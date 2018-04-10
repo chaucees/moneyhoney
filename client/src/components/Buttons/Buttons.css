@@ -3,7 +3,11 @@ black: #323031
 dark blue: #084c61
 yellow: #fcca46
 light blue: #30c5ff
-White: #fdffff; */
+white: #fdffff;
+
+TYPEFACES:
+font-family: 'Quicksand', sans-serif; 
+font-family: 'Anton', sans-serif; */
 
 .buttons {
     background-color: #fcca46;
