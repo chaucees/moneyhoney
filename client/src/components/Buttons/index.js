@@ -6,3 +6,4 @@ export * from "./SubmitBtn";
 export * from "./ViewBtn";
 export * from "./DeleteBtn";
 export * from "./AddBtnAlt";
+export * from "./LoginBtn";
