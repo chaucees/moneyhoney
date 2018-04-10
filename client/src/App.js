@@ -6,7 +6,7 @@ import EditBudget from "./pages/EditBudget";
 import Home from "./pages/Home";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
-import Signup from "./pages/Signup"
+import Signup from "./pages/Signup";
 
 const App = () => (
   <Router>

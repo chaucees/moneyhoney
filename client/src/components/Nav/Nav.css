@@ -8,3 +8,12 @@ white: #fdffff;
 TYPEFACES:
 font-family: 'Quicksand', sans-serif; 
 font-family: 'Anton', sans-serif; */
+
+.logo {
+    width: 20%;
+}
+
+nav {
+    height: 150px;
+    background-color: #084c61;
+}
