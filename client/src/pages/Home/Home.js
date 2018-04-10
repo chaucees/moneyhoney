@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import "./Home.css";
 // ADDED BUTTONS FOR TESTING
-import { AddBtn, BackBtn, EditBtn, SaveBtn, SubmitBtn, ViewBtn, DeleteBtn } from "../../components/Buttons";
+import { AddBtn, BackBtn, EditBtn, SaveBtn, SubmitBtn, ViewBtn, DeleteBtn, AddBtnAlt } from "../../components/Buttons";
 
 class Home extends Component {
 
@@ -16,6 +16,7 @@ class Home extends Component {
            <SubmitBtn />
            <ViewBtn />
            <DeleteBtn />
+           <AddBtnAlt />
            </div> 
         );
     }

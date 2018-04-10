@@ -31,3 +31,20 @@ White: #fdffff; */
     font-size: 20px;
     letter-spacing: 2px;
 }
+
+.add-button {
+    background-color: #30c5ff;
+}
+
+.add-new-button {
+    background-color: #084c61;
+    width: 100%;
+    margin: 10px;
+    height: 75px;
+    padding-top: 20px;
+}
+
+.add-new-typeface {
+    font-family: 'Anton', sans-serif;
+    font-size: 40px;
+}
