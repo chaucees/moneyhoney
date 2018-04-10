@@ -17,6 +17,7 @@ White: #fdffff; */
     padding-right: 60px;
 }
 
+/* Add hover & focus to remove default teal colors from appearing */
 .buttons:hover {
     background-color: #fcca46;
 }
@@ -32,7 +33,17 @@ White: #fdffff; */
     letter-spacing: 2px;
 }
 
+
 .add-button {
+    background-color: #30c5ff;
+}
+
+/* Add hover & focus to remove default teal colors from appearing */
+.add-button:hover {
+    background-color: #30c5ff;
+}
+
+.add-button:focus {
     background-color: #30c5ff;
 }
 
@@ -47,4 +58,13 @@ White: #fdffff; */
 .add-new-typeface {
     font-family: 'Anton', sans-serif;
     font-size: 40px;
+}
+
+/* Add hover & focus to remove default teal colors from appearing */
+.add-new-button:hover {
+    background-color: #084c61;
+}
+
+.add-new-button:focus {
+    background-color: #084c61;
 }
