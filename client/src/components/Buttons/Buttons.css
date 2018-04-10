@@ -1,0 +1,74 @@
+/* COLORS: 
+black: #323031
+dark blue: #084c61
+yellow: #fcca46
+light blue: #30c5ff
+white: #fdffff;
+
+TYPEFACES:
+font-family: 'Quicksand', sans-serif; 
+font-family: 'Anton', sans-serif; */
+
+.buttons {
+    background-color: #fcca46;
+    margin: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.submit-button {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+/* Add hover & focus to remove default teal colors from appearing */
+.buttons:hover {
+    background-color: #fcca46;
+}
+
+.buttons:focus {
+    background-color: #fcca46;
+}
+
+.buttons-typeface {
+    font-family: 'Quicksand', sans-serif; 
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+
+.add-button {
+    background-color: #30c5ff;
+}
+
+/* Add hover & focus to remove default teal colors from appearing */
+.add-button:hover {
+    background-color: #30c5ff;
+}
+
+.add-button:focus {
+    background-color: #30c5ff;
+}
+
+.add-new-button {
+    background-color: #084c61;
+    width: 100%;
+    margin: 10px;
+    height: 75px;
+    padding-top: 20px;
+}
+
+.add-new-typeface {
+    font-family: 'Anton', sans-serif;
+    font-size: 40px;
+}
+
+/* Add hover & focus to remove default teal colors from appearing */
+.add-new-button:hover {
+    background-color: #084c61;
+}
+
+.add-new-button:focus {
+    background-color: #084c61;
+}

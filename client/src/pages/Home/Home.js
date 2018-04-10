@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import "./Home.css";
 // ADDED BUTTONS FOR TESTING
-import { AddBtn, BackBtn, EditBtn, SaveBtn, SubmitBtn, ViewBtn, DeleteBtn } from "../../components/Buttons";
+// import { LoginBtn, AddBtn, BackBtn, EditBtn, SaveBtn, SubmitBtn, ViewBtn, DeleteBtn, AddBtnAlt } from "../../components/Buttons";
+//ADDED FORMS FOR TESTING ALSO
+// import { LoginForm, SignupNameForm, SignupPasswordForm } from "../../components/Forms";
 
 class Home extends Component {
 
@@ -9,6 +11,7 @@ class Home extends Component {
         return (
             <div>
            <p>Home and Login Page</p>
+           {/* BUTTONS
            <AddBtn />
            <BackBtn />
            <EditBtn />
@@ -16,6 +19,13 @@ class Home extends Component {
            <SubmitBtn />
            <ViewBtn />
            <DeleteBtn />
+           <AddBtnAlt />
+           <LoginBtn /> */}
+
+           {/* FORMS
+           <LoginForm />
+           <SignupNameForm />
+           <SignupPasswordForm /> */}
            </div> 
         );
     }

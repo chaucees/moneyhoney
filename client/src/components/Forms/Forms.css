@@ -1,0 +1,22 @@
+/* COLORS: 
+black: #323031
+dark blue: #084c61
+yellow: #fcca46
+light blue: #30c5ff
+white: #fdffff;
+
+TYPEFACES:
+font-family: 'Quicksand', sans-serif; 
+font-family: 'Anton', sans-serif; */ 
+
+ 
+ /* CODE FOR REMOVING DEFAULT TEAL COLORS ON FORMS */
+ /* label focus color */
+ .input-field input[type=text]:focus + label {
+    color: #30c5ff!important;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #30c5ff !important;
+    box-shadow: 0 1px 0 0 #30c5ff !important;
+}
