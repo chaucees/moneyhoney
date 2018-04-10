@@ -1,6 +1,6 @@
 import React from "react";
 import "./Nav.css";
-import Logo from "./images/logo-transp.png";
+import Logo from "./images/logo-transp-01.png";
 import { Navbar, NavItem, Dropdown, Col } from "react-materialize";
 
 const Nav = props => (
