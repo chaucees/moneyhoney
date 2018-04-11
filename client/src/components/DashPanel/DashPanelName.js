@@ -2,9 +2,8 @@ import React from "react";
 import "./DashPanel.css";
 
 export const DashPanelName = props => (
-    <div className="row">
-        <div className="col s12 row-item">
-            Student Loans
-        </div>
+    <div className="dash-panel-name">
+        { props. children }
+        <p>test</p>
     </div>
 );
