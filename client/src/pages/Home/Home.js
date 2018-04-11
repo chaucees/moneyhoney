@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import "./Home.css";
+import Woman from "./images/woman.png";
+import Man from "./images/man.png";
+import OldMan from "./images/oldman.png";
+
 
 
 // ADDED BUTTONS FOR TESTING
@@ -19,7 +23,7 @@ class Home extends Component {
             <p className="sub-header-text">Money Management Made Easy</p>
         </div>
     </div>
-    <div className="section">
+    <div className="container section2">
         <div className="row">
             <div className="col s6" align="center">
                 <i className="material-icons light-blue-text accent-2-text medium">account_balance</i>
@@ -36,8 +40,28 @@ class Home extends Component {
             </div>
         </div>
     </div>
-    <div className="section">
+    <div className="container-fluid section3">
         <div className="row">
+            <h2>What Our Clients Are Saying</h2>
+        </div>
+        <div className="row">
+            <div className="col s4">
+                <img src={Woman}></img>
+                <p>"MoneyHoney helped automate my savings so I could pay down my student loans in half the time!"</p>
+                <p>Mia - <i>Photographer</i></p>
+            </div>
+            <div className="col s4">
+                <img src={Man}></img>
+                <p>"MoneyHoney helped automate my savings so I could pay down my student loans in half the time!"</p>
+                <p>Mia - <i>Photographer</i></p>
+            </div>
+            <div className="col s4">
+                <img src={OldMan}></img>
+                <p>"MoneyHoney helped automate my savings so I could pay down my student loans in half the time!"</p>
+                <p>Mia - <i>Photographer</i></p>
+        
+            </div>
+
         </div>
     </div>
 </div>
