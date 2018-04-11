@@ -3,13 +3,6 @@ import "./Footer.css";
 import { Footer } from "react-materialize";
 import Icons from "./images/socialicons.png";
 
-// COLUMNS NEEDED:
-// FOLLOW - with Icons (fb, youtube, twitter)
-//ICONS FOR FOLLOW: * youtube: personal_video * 
-// Contact - honey@money.com
-// Support - Faq, help desk, status
-// Account - Login, Profile, Logout
-
 const FooterBar = props => (
     <Footer copyrights="Designed by The Final Four"
         moreLinks={

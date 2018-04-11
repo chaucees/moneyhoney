@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import "./Dashboard.css";
 import Ben from "./images/ben.jpg";
 import { LoginBtn, AddBtn, BackBtn, EditBtn, SaveBtn, SubmitBtn, ViewBtn, DeleteBtn, AddBtnAlt } from "../../components/Buttons";
-
+import DashPanel from "../../components/DashPanel";
 
 
 class Dashboard extends Component {
@@ -52,11 +52,7 @@ class Dashboard extends Component {
                             Student Loans
                         </div>
                     </div>
-                    <div className="row">
-                        <div className="col s12 row-item">
-                            Student Loans
-                        </div>
-                    </div>
+                    <DashPanel />
                 </div>
             </div>        
         );
