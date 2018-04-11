@@ -1,36 +1,31 @@
 import React, { Component } from 'react';
 import "./Dashboard.css";
-import Ben from "./images/ben.jpg";
 import { LoginBtn, AddBtn, BackBtn, EditBtn, SaveBtn, SubmitBtn, ViewBtn, DeleteBtn, AddBtnAlt } from "../../components/Buttons";
 import { DashPanel, DashPanelName } from "../../components/DashPanel";
-
+import { ProfilePhoto, ProfileName, ProfileEmail } from "../../components/Profile";
 
 class Dashboard extends Component {
 
     render() {
         return (
             <div className="container-fluid">
-                <div className="section homeheader">
+                {/* <div className="section homeheader">
                     <div className="col s12 m8 l8">
                         <p className="header-text">Prepare For The Future</p>
                         <p className="header-text">You Deserve</p>
                         <p className="sub-header-text">Money Management Made Easy</p>
                     </div>
-                </div>
+                </div> */}
                 <div className="container section2">
                     <div className="row">
                         <div className="col s7 push-s5">
                             <span class="flow-text">
-                                <h1>Ben Wyatt</h1>
-                                <p>benjiwyatt@icetown.com</p>
+                                <ProfileName />
+                                <ProfileEmail />
                                 <EditBtn />
                             </span>
                         </div>
-                        <div className="col s5 pull-s7">
-                            <span class="flow-text">                            
-                                <img src={Ben} className="img-circle"></img>
-                            </span>
-                        </div>
+                        <ProfilePhoto />
                     </div>
                 </div>
                 <div className="container section2">
