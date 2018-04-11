@@ -7,11 +7,16 @@ import Home from "./pages/Home";
 import Nav from "./components/Nav";
 import FooterBar from "./components/Footer";
 import Signup from "./pages/Signup";
+import { LoginBtn } from "./components/Buttons";
+
 
 const App = () => (
   <Router>
     <div>
       <Nav />
+      {/* <div className ="right">
+        <LoginBtn />
+      </div> */}
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/home" component={Home} />
