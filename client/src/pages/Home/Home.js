@@ -3,6 +3,8 @@ import "./Home.css";
 import Woman from "./images/woman.png";
 import Man from "./images/man.png";
 import OldMan from "./images/oldman.png";
+import Banks from "./images/banks.png";
+// import SignupNameForm from "./SignupNameForm";
 
 
 
@@ -62,6 +64,36 @@ class Home extends Component {
         
             </div>
 
+        </div>
+    </div>
+    <div className="container section2">
+        <div className="row">
+            <center><h1>Getting Started</h1></center>
+            <center><i>It's As Easy As 1, 2, 3...</i></center>
+        </div>
+        <div className="row">
+            <div className="col s4" align="center">
+                <p className="large-num">1.</p>
+                <h1>Sign Up</h1>
+                <p>{SignupNameForm}</p>
+            </div>
+            <div className="col s4" align="center">
+            <p className="large-num">2.</p>
+                <h1>Link Accounts</h1>
+                <p>Over 30 national banks supported!</p>
+                <p><img src={Banks}></img></p>
+            </div>
+            <div className="col s4" align="center">
+            <p className="large-num">3.</p>
+                <h1>Start Saving</h1>
+                <p align="left">
+                    <ul>
+                        <li>1. Set Your Goals.</li>
+                        <li>2. Select Your Savings Plan.</li>
+                        <li>3. Start Saving!</li>
+                    </ul>
+                </p>
+            </div>
         </div>
     </div>
 </div>

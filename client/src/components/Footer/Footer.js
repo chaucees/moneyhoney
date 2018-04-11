@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import { Footer } from "react-materialize";
+import Icons from "./images/socialicons.png";
 
 // COLUMNS NEEDED:
 // FOLLOW - with Icons (fb, youtube, twitter)
@@ -10,22 +11,46 @@ import { Footer } from "react-materialize";
 // Account - Login, Profile, Logout
 
 const FooterBar = props => (
-    <Footer copyrights="&copy 2015 Copyright Text"
+    <Footer copyrights="Designed by The Final Four"
         moreLinks={
-            <a className="grey-text text-lighten-4 right" href="#!">More Links</a>
+            <a className="grey-text text-lighten-4 right" href="#!">&copy; 2018</a>
         }
         links={
             <ul>
-                <li><a className="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                <li><a className="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                <li><a className="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                <li><a className="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                <li><a className="grey-text text-lighten-3" href="#!">Login</a></li>
+                <li><a className="grey-text text-lighten-3" href="#!">Profile</a></li>
+                <li><a className="grey-text text-lighten-3" href="#!">FAQ</a></li>
+                <li><a className="grey-text text-lighten-3" href="#!">Help</a></li>
             </ul>
         }
         className='example'
     >
-        <h5 className="white-text">Footer Content</h5>
-        <p className="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+        <div className="col s4">
+            <h5 className="white-text">Follow</h5>
+            <p className="grey-text text-lighten-4"><img src={Icons}></img></p>
+        </div>
+        <div className="col s4">
+            <h5 className="white-text">Account</h5>
+            <ul>
+                <li><a className="grey-text text-lighten-3" href="#!">Login</a></li>
+                <li><a className="grey-text text-lighten-3" href="#!">Profile</a></li>
+                <li><a className="grey-text text-lighten-3" href="#!">FAQ</a></li>
+                <li><a className="grey-text text-lighten-3" href="#!">Help</a></li>
+            </ul>
+        </div>
+        <div className="col s4">
+            <h5 className="white-text">Support</h5>
+            <ul>
+                <li><a className="grey-text text-lighten-3" href="#!">Login</a></li>
+                <li><a className="grey-text text-lighten-3" href="#!">Profile</a></li>
+                <li><a className="grey-text text-lighten-3" href="#!">FAQ</a></li>
+                <li><a className="grey-text text-lighten-3" href="#!">Help</a></li>
+            </ul>        
+        </div>
+       
+
+    
+
     </Footer>
 );
 

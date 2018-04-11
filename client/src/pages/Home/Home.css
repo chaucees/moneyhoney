@@ -43,7 +43,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
+    height: 800px;
+    padding-top:12%;
     
 }
 
@@ -75,3 +76,9 @@ h2 {
     color: #fcca46;
 }
 
+.large-num {
+    font-size: 48pt;
+    text-align: center;
+    color: #30c5ff;
+    font-family: 'Anton', sans-serif;
+}
