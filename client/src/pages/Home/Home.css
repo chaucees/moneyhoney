@@ -45,7 +45,6 @@ body {
     background-size: cover;
     height: 800px;
     padding-top:12%;
-    
 }
 
 .section2 {
@@ -81,4 +80,48 @@ h2 {
     text-align: center;
     color: #30c5ff;
     font-family: 'Anton', sans-serif;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .homeheader {
+        height: 500px !important;
+    }
+
+    .header-text {
+        text-transform: uppercase;
+        letter-spacing: 5pt;
+        font-size: 30pt !important;
+        text-shadow: 2px 2px 10px #666666;
+        line-height: 30pt;
+        text-align: center;
+        font-family: 'Anton', sans-serif;
+        color: #fdffff;
+    }
+    
+    .sub-header-text {
+        text-transform: capitalize;
+        letter-spacing: 2pt;
+        text-align: center;
+        font-size: 18pt !important;
+        font-family: 'Quicksand', sans-serif;
+        color: #fdffff;
+    }
+    h1 {
+        text-transform: uppercase;
+        font-family: 'Anton', sans-serif;
+        letter-spacing: 5pt;
+        font-size: 20pt !important;
+        line-height: 1.5;
+    }
+    h2 {
+        text-transform: uppercase;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 3pt;
+        font-size: 22pt !important;
+        color: #fcca46;
+    }
+    .img {
+        width: 75px;
+    }
 }

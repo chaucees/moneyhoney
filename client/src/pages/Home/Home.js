@@ -36,9 +36,7 @@ class Home extends Component {
             <div className="col s6" align="center">
                 <i className="material-icons light-blue-text accent-2-text medium">people_outline</i>
                 <h1>Who Is It For?</h1>
-                MoneyHoney is for those who cringe when thinking about spreadsheets, account balances, and budgets. If you don’t consider
-                yourself a “numbers person” but want to stop living paycheck to paycheck, save for a trip or a down payment,
-                then sign up today to save without the stress!
+                <p>MoneyHoney is for those who cringe when thinking about spreadsheets, account balances, and budgets. If you want to stop living paycheck to paycheck, save for a trip or a down payment, then sign up today to save without the stress!</p>
             </div>
         </div>
     </div>
@@ -47,17 +45,17 @@ class Home extends Component {
             <h2>What Our Clients Are Saying</h2>
         </div>
         <div className="row">
-            <div className="col s4">
+            <div className="col s12 m4">
                 <img src={Woman}></img>
                 <p>"MoneyHoney helped automate my savings so I could pay down my student loans in half the time!"</p>
                 <p>Mia - <i>Photographer</i></p>
             </div>
-            <div className="col s4">
+            <div className="col s12 m4 hide-on-small-only">
                 <img src={Man}></img>
                 <p>"MoneyHoney helped automate my savings so I could pay down my student loans in half the time!"</p>
                 <p>Mia - <i>Photographer</i></p>
             </div>
-            <div className="col s4">
+            <div className="col s12 m4 hide-on-small-only">
                 <img src={OldMan}></img>
                 <p>"MoneyHoney helped automate my savings so I could pay down my student loans in half the time!"</p>
                 <p>Mia - <i>Photographer</i></p>
@@ -72,18 +70,18 @@ class Home extends Component {
             <center><i>It's As Easy As 1, 2, 3...</i></center>
         </div>
         <div className="row">
-            <div className="col s4" align="center">
+            <div className="col s12 m4" align="center">
                 <p className="large-num">1.</p>
                 <h1>Sign Up</h1>
                 <SignupNameForm />
             </div>
-            <div className="col s4" align="center">
+            <div className="col s4 hide-on-small-only" align="center">
             <p className="large-num">2.</p>
                 <h1>Link Accounts</h1>
                 <p>Over 30 national banks supported!</p>
-                <p><img src={Banks}></img></p>
+                <p><img src={Banks} className="img"></img></p>
             </div>
-            <div className="col s4" align="center">
+            <div className="col s4 hide-on-small-only" align="center">
             <p className="large-num">3.</p>
                 <h1>Start Saving</h1>
                 <p align="left">
