@@ -12,6 +12,9 @@ import { LoginBtn, AddBtn, BackBtn, EditBtn, SaveBtn, SubmitBtn, ViewBtn, Delete
 import { LoginForm, SignupNameForm, SignupPasswordForm } from "../../components/Forms";
 
 class Home extends Component {
+	goTo(route) {
+		this.props.history.replace(`/${route}`)
+	}
 
     render() {
         return (
