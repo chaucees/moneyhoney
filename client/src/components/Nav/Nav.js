@@ -2,11 +2,14 @@ import React from "react";
 import "./Nav.css";
 import Logo from "./images/logo-transp-01.png";
 import { LoginBtn, LogoutBtn } from "../../components/Buttons";
-import { Navbar, NavItem, Dropdown, SideNav, Button, SideNavItem } from "react-materialize";
+import { Navbar, NavItem, Dropdown, SideNav, Button, SideNavItem, Modal } from "react-materialize";
 
 const Nav = props => (
     <Navbar>
         <div className="right">
+            {/* <Modal header="Login"
+            trigger={<LoginBtn />}>
+            </Modal> */}
             <LoginBtn />
             {/* <LogoutBtn /> */}
         </div>
