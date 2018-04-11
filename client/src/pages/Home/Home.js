@@ -75,7 +75,7 @@ class Home extends Component {
             <div className="col s4" align="center">
                 <p className="large-num">1.</p>
                 <h1>Sign Up</h1>
-                <p>{SignupNameForm}</p>
+                <SignupNameForm />
             </div>
             <div className="col s4" align="center">
             <p className="large-num">2.</p>

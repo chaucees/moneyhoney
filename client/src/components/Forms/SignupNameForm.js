@@ -1,5 +1,7 @@
 import React from "react";
 import "./Forms.css";
+// Buttons
+import { LoginBtn, AddBtn, BackBtn, EditBtn, SaveBtn, SubmitBtn, ViewBtn, DeleteBtn, AddBtnAlt } from "../../components/Buttons";
 
 export const SignupNameForm = props => (
     <div className="row">
@@ -26,6 +28,9 @@ export const SignupNameForm = props => (
                 {...props}
             />
             <label htmlFor="email">Email</label>
+        </div>
+        <div className="col s12 center">
+            <SubmitBtn />
         </div>
     </div>
 );
