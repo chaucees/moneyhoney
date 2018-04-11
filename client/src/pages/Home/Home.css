@@ -1,0 +1,43 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    line-height: 20pt;
+    font-size: 14pt;
+    letter-spacing: 2pt;
+}
+
+.header-text {
+    text-transform: uppercase;
+    letter-spacing: 5pt;
+    font-size: 52pt;
+    line-height: 50pt;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    color: #fdffff;
+}
+
+.sub-header-text {
+    text-transform: capitalize;
+    letter-spacing: 2pt;
+    text-align: center;
+    font-size: 24pt;
+    font-family: 'Quicksand', sans-serif;
+    color: #fdffff;
+
+}
+
+.homeheader {
+    background: url("./images/header.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 8pt;
+    font-size: 24pt;
+}

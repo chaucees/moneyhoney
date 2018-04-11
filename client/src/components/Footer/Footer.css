@@ -8,3 +8,18 @@ white: #fdffff;
 TYPEFACES:
 font-family: 'Quicksand', sans-serif; 
 font-family: 'Anton', sans-serif; */
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+footer {
+    /* height: 150px; */
+    background-color: #084c61 !important;
+  }

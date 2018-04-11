@@ -5,7 +5,7 @@ import Dashboard from "./pages/Dashboard";
 import EditBudget from "./pages/EditBudget";
 import Home from "./pages/Home";
 import Nav from "./components/Nav";
-import Footer from "./components/Footer";
+import FooterBar from "./components/Footer";
 import Signup from "./pages/Signup";
 
 const App = () => (
@@ -20,7 +20,7 @@ const App = () => (
         <Route exact path="/signup" component={Signup} />
         <Route exact path="/budget" component={Budget} />
       </Switch>
-      <Footer />
+      <FooterBar />
     </div>
   </Router>
 );
