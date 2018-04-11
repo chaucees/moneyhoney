@@ -1,0 +1,61 @@
+.section2 {
+    margin-top: 5%;
+}
+
+.section3 {
+    background-color: #084c61;
+    text-align:center;
+    color: #fdffff;
+    padding: 5%;
+    margin-top: 5%;
+
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 5pt;
+    font-size: 24pt;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 3pt;
+    font-size: 36pt;
+    color: #fcca46;
+}
+
+.large-num {
+    font-size: 48pt;
+    text-align: center;
+    color: #30c5ff;
+    font-family: 'Anton', sans-serif;
+}
+
+input {
+    background-color: #30c5ff;
+    padding: 5px;
+}
+
+.img-circle {
+    border-radius: 50%;
+    width: 75%;
+}
+
+.row-item {
+    background-color: #084c61;
+    text-transform: capitalize;
+    color: white;
+    height: auto;
+}
+
+.row .col {
+    width: 100%;
+    padding: 20px;
+}
+
+.dash-panel-name {
+    font-size: 30px;
+    padding-left: 45px;
+}
