@@ -40,21 +40,25 @@ class Dashboard extends Component {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col s10 row-item">
-                            Student Loans
-                        </div>
-                        <div className="col s2 row-item right">
-                            <AddBtn />
+                        <div className="col s12 row-item">
+                            Rent / Utilities
                         </div>
                     </div>
                     <div className="row">
                         <div className="col s12 row-item">
-                            Student Loans
+                            Misc
                         </div>
                     </div>
+                </div>
+                <div className="container">
                     <div className="row">
-                        <div className="col s12 row-item">
-                            Student Loans
+                        <div className="col s6 section4">
+                            <h1 align="center">Income</h1>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque eius rem non mollitia nostrum aperiam velit magni nisi numquam optio aliquam officiis veniam, explicabo obcaecati, nobis consequuntur voluptatem beatae. Est.
+                        </div>
+                        <div className="col s6 section4">
+                            <h1 align="center">Expenses</h1>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque eius rem non mollitia nostrum aperiam velit magni nisi numquam optio aliquam officiis veniam, explicabo obcaecati, nobis consequuntur voluptatem beatae. Est.
                         </div>
                     </div>
                 </div>
