@@ -1,24 +1,10 @@
 import React, { Component } from 'react';
 import "./Home.css";
-<<<<<<< HEAD
-=======
-
-
-// ADDED BUTTONS FOR TESTING
-import { LoginBtn, AddBtn, BackBtn, EditBtn, SaveBtn, SubmitBtn, ViewBtn, DeleteBtn, AddBtnAlt } from "../../components/Buttons";
-//ADDED FORMS FOR TESTING ALSO
-import { LoginForm, SignupNameForm, SignupPasswordForm } from "../../components/Forms";
->>>>>>> 36026a7e862f97e946f9cb2a2c0ed6170bf33e2d
 
 class Home extends Component {
 
     render() {
         return (
-<<<<<<< HEAD
-            <div>
-           <p>Home and Login Page</p>
-           </div> 
-=======
 <div className="container-fluid">
     <div className="section homeheader">
         <div className="col s12 m8 l8">
@@ -51,7 +37,6 @@ class Home extends Component {
 </div>
             
           
->>>>>>> 36026a7e862f97e946f9cb2a2c0ed6170bf33e2d
         );
     }
 }

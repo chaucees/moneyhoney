@@ -2,6 +2,12 @@ import React from "react";
 import "./Footer.css";
 import { Footer } from "react-materialize";
 
+// COLUMNS NEEDED:
+// FOLLOW - with Icons (fb, youtube, twitter)
+// Contact - honey@money.com
+// Support - Faq, help desk, status
+// Account - Login, Profile, Logout
+
 const FooterBar = props => (
     <Footer copyrights="&copy 2015 Copyright Text"
         moreLinks={
