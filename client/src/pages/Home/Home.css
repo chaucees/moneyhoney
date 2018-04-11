@@ -1,3 +1,15 @@
+/* COLORS: 
+black: #323031
+dark blue: #084c61
+yellow: #fcca46
+light blue: #30c5ff
+white: #fdffff;
+
+TYPEFACES:
+font-family: 'Quicksand', sans-serif; 
+font-family: 'Anton', sans-serif; */
+
+
 body {
     font-family: 'Quicksand', sans-serif;
     line-height: 20pt;
@@ -35,9 +47,31 @@ body {
     
 }
 
+.section2 {
+    margin-top: 5%;
+}
+
+.section3 {
+    background-color: #084c61;
+    text-align:center;
+    color: #fdffff;
+    padding: 5%;
+    margin-top: 5%;
+
+}
+
 h1 {
     text-transform: uppercase;
     font-family: 'Anton', sans-serif;
-    letter-spacing: 8pt;
+    letter-spacing: 5pt;
     font-size: 24pt;
 }
+
+h2 {
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 3pt;
+    font-size: 36pt;
+    color: #fcca46;
+}
+
