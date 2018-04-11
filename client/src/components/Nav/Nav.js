@@ -24,9 +24,12 @@ const Nav = props => (
             trigger={<i className="material-icons sm-48 menu">menu</i>}
             options={{ closeOnClick: true }}
         >
-            <SideNavItem className="nav-item"><span className="nav-item-text">Dashboard</span></SideNavItem>
-            <SideNavItem className="nav-item"><span className="nav-item-text">Add Budget</span></SideNavItem>
-            <SideNavItem className="nav-item"><span className="nav-item-text">Logout</span></SideNavItem>
+            <SideNavItem className="nav-item" href="#"><span className="nav-item-text">Home</span></SideNavItem>
+            <SideNavItem className="nav-item" href="signup"><span className="nav-item-text">Sign Up</span></SideNavItem>
+            <SideNavItem className="nav-item" href="dashboard"><span className="nav-item-text">Dashboard</span></SideNavItem>
+            <SideNavItem className="nav-item" href="edit"><span className="nav-item-text">Add Budget</span></SideNavItem>
+            <SideNavItem className="nav-item" href="login"><span className="nav-item-text">Login</span></SideNavItem>
+            <SideNavItem className="nav-item" href="logout"><span className="nav-item-text">Logout</span></SideNavItem>
         </SideNav>
     </Navbar>
 );

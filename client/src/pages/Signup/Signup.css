@@ -82,3 +82,8 @@ h2 {
     color: #30c5ff;
     font-family: 'Anton', sans-serif;
 }
+
+input {
+    background-color: #30c5ff;
+    padding: 5px;
+}
