@@ -54,3 +54,8 @@ input {
     width: 100%;
     padding: 20px;
 }
+
+.dash-panel-name {
+    font-size: 30px;
+    padding-left: 45px;
+}

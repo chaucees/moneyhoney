@@ -35,15 +35,23 @@ class Dashboard extends Component {
                 </div>
                 <div className="container section2">
                     <div className="row">
-                    <DashPanel>
-                        <DashPanelName />
-                    </ DashPanel>
-                        {/* <div className="col s12 row-item">
-                            Rent / Utilities
-                        </div> */}
+                        <DashPanel>
+                            <div className="right">
+                                <ViewBtn/>
+                            </div>
+                            <DashPanelName />
+                        </ DashPanel>
                     </div>
                     <div className="row">
-                    <AddBtnAlt />
+                        <DashPanel>
+                            <div className="right">
+                                <ViewBtn/>
+                            </div>
+                            <DashPanelName />
+                        </ DashPanel>
+                    </div>
+                    <div className="row">
+                        <AddBtnAlt />
                     </div>
                 </div>
                 <div className="container">

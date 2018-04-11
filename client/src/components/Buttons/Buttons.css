@@ -11,7 +11,7 @@ font-family: 'Anton', sans-serif; */
 
 .buttons {
     background-color: #fcca46;
-    margin: 10px;
+    /* margin: 10px; */
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -53,8 +53,12 @@ font-family: 'Anton', sans-serif; */
 .add-new-button {
     background-color: #084c61;
     width: 100%;
-    height: 60px;
-    padding-top: 12px;
+    height: 85px;
+    padding-top: 25px;
+}
+
+.view-button {
+    margin-top: 25px;
 }
 
 .add-new-typeface {
