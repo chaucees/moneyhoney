@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import "./Signup.css";
+import { LoginForm, SignupNameForm, SignupPasswordForm } from "../../components/Forms";
+
 
 class Signup extends Component {
 
@@ -16,8 +18,10 @@ class Signup extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col s12">
-                            <h1>Form Goes HEre</h1>
+                            <h1 align="center">Sign Up</h1>
+                            <p align="center"><i>And Start Saving Today!</i></p>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae molestiae similique error sit quo dicta vitae eos, ad doloribus alias. Natus accusamus rerum aut eaque excepturi quibusdam quidem, laborum, nisi neque iste numquam dolorem quae distinctio. Est, quis at, doloribus obcaecati autem adipisci vero a fuga recusandae, sunt laboriosam beatae?</p>
+                            <p>{SignupNameForm}</p>
                         </div>
                     </div>
                 </div>
