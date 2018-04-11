@@ -1,1 +1,2 @@
-export { default } from "./DashPanel";
+export * from "./DashPanel";
+export * from "./DashPanelName";
