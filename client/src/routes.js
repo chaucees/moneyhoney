@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Router } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import App from './App';
 import Callback from './Callback/Callback';
 import Auth from './Auth/Auth';
@@ -11,6 +11,7 @@ import Home from "./pages/Home";
 import Nav from "./components/Nav";
 import FooterBar from "./components/Footer";
 import Signup from "./pages/Signup";
+import { Footer } from 'react-materialize';
 
 const auth = new Auth();
 
@@ -24,27 +25,34 @@ export const makeMainRoutes = () => {
   return (
       <Router history={history}>
         <div>
-          <Route path="/" 
-                 render={(props) => <Home auth={auth} {...props} />} 
-          />
-          <Route path="/callback" 
-                 render={(props) => {
-                  handleAuthentication(props);
-                  return <Callback {...props} /> 
-                 }}
-          />
-          <Route path="/dashboard" 
-                 render={(props) => <Dashboard auth={auth} {...props} />}
-          />
-          <Route path="/editbudget" 
-                 render={(props) => <EditBudget auth={auth} {...props} />}
-          />
-          <Route path="/signup" 
-                 render={(props) => <Signup auth={auth} {...props} />} 
-          />
-          <Route path="/budget" 
-                 render={(props) => <Budget auth={auth} {...props} />}
-          />
+          <Nav />
+          <Switch>
+            <Route path="/" 
+                    render={(props) => <Home auth={auth} {...props} />} 
+              />
+              {/* <Route path="/home" 
+                    render={(props) => <Home auth={auth} {...props} />} 
+              /> */}
+              <Route path="/callback" 
+                    render={(props) => {
+                      handleAuthentication(props);
+                      return <Callback {...props} /> 
+                    }}
+              />
+              <Route path="/dashboard" 
+                    render={(props) => <Dashboard auth={auth} {...props} />}
+              />
+              <Route path="/editbudget" 
+                    render={(props) => <EditBudget auth={auth} {...props} />}
+              />
+              <Route path="/signup" 
+                    render={(props) => <Signup auth={auth} {...props} />} 
+              />
+              <Route path="/budget" 
+                    render={(props) => <Budget auth={auth} {...props} />}
+              />
+          </Switch>
+          <FooterBar />
         </div>
       </Router>
   );
