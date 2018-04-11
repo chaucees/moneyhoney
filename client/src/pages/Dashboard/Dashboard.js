@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import "./Dashboard.css";
 import { LoginBtn, AddBtn, BackBtn, EditBtn, SaveBtn, SubmitBtn, ViewBtn, DeleteBtn, AddBtnAlt } from "../../components/Buttons";
-import { DashPanel, DashPanelName } from "../../components/DashPanel";
+import { DashPanel, DashPanelName, DashIncome, DashExpenses } from "../../components/DashPanel";
 import { ProfilePhoto, ProfileName, ProfileEmail } from "../../components/Profile";
 
 class Dashboard extends Component {
@@ -53,11 +53,11 @@ class Dashboard extends Component {
                     <div className="row">
                         <div className="col s6 section4">
                             <h1 align="center">Income</h1>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque eius rem non mollitia nostrum aperiam velit magni nisi numquam optio aliquam officiis veniam, explicabo obcaecati, nobis consequuntur voluptatem beatae. Est.
+                            <DashIncome />
                         </div>
                         <div className="col s6 section4">
                             <h1 align="center">Expenses</h1>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque eius rem non mollitia nostrum aperiam velit magni nisi numquam optio aliquam officiis veniam, explicabo obcaecati, nobis consequuntur voluptatem beatae. Est.
+                            <DashExpenses />
                         </div>
                     </div>
                 </div>
