@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Redirect, Router, Route, Switch } from "react-router-dom";
 import App from './App';
 import Callback from './Callback/Callback';
 import Auth from './Auth/Auth';
@@ -25,32 +25,47 @@ export const makeMainRoutes = () => {
   return (
       <Router history={history}>
         <div>
-          <Nav />
+          <Nav auth={auth}/>
           <Switch>
-            <Route path="/" 
+            <Route exact path="/" 
                     render={(props) => <Home auth={auth} {...props} />} 
               />
               {/* <Route path="/home" 
                     render={(props) => <Home auth={auth} {...props} />} 
               /> */}
-              <Route path="/callback" 
+              <Route exact path="/callback" 
                     render={(props) => {
                       handleAuthentication(props);
                       return <Callback {...props} /> 
                     }}
               />
-              <Route path="/dashboard" 
-                    render={(props) => <Dashboard auth={auth} {...props} />}
-              />
-              <Route path="/editbudget" 
-                    render={(props) => <EditBudget auth={auth} {...props} />}
-              />
-              <Route path="/signup" 
+              <Route exact path="/dashboard" 
+                    render={(props) => (
+                !auth.isAuthenticated() ? (
+                  <Redirect to="/signup" />
+                ) : (
+                  <Dashboard auth={auth} {...props} />
+                )
+              )} />
+              <Route exact path="/editbudget" 
+                    render={(props) => (
+                !auth.isAuthenticated() ? (
+                  <Redirect to="/" />
+                ) : (
+                  <EditBudget auth={auth} {...props} />
+                )
+              )} />
+              <Route exact path="/signup" 
                     render={(props) => <Signup auth={auth} {...props} />} 
               />
-              <Route path="/budget" 
-                    render={(props) => <Budget auth={auth} {...props} />}
-              />
+              <Route exact path="/budget" 
+                    render={(props) => (
+                !auth.isAuthenticated() ? (
+                  <Redirect to="/" />
+                ) : (
+                  <Budget auth={auth} {...props} />
+                )
+              )} />
           </Switch>
           <FooterBar />
         </div>

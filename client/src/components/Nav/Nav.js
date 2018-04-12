@@ -1,34 +1,55 @@
-import React from "react";
+import React, { Component } from "react";
 import "./Nav.css";
 import Logo from "./images/logo-transp-01.png";
 import { LoginBtn, LogoutBtn } from "../../components/Buttons";
 import { Navbar, NavItem, Dropdown, SideNav, Button, SideNavItem } from "react-materialize";
 
-const Nav = props => (
-    <Navbar>
+class Nav extends Component {
+  goTo(route) {
+    this.props.history.replace(`/${route}`)
+  }
+
+  login() {
+    this.props.auth.login();
+  }
+
+  logout() {
+    this.props.auth.logout();
+  }
+
+  render() {
+    const { isAuthenticated, userHasScopes } = this.props.auth;
+
+    return(
+      <Navbar>
         <div className="right">
-            <LoginBtn />
-            {/* <LogoutBtn /> */}
+        {
+          !isAuthenticated() && (
+            <LoginBtn 
+              onClick={this.login.bind(this)}
+            />
+          )
+        }
+        {
+          isAuthenticated() && (
+            <div>Welcome!</div>
+          )
+        }
+          
+          {/* <LogoutBtn /> */}
         </div>
         <img src={Logo} className="logo brand-logo center"></img>
-        {/* <Dropdown 
-        className="hamburger"
-        trigger={
-            <i className="material-icons sm-48 menu">menu</i>
-        }>
-            <NavItem className="nav-item"><span className="nav-item-text">Dashboard</span></NavItem>
-            <NavItem className="nav-item"><span className="nav-item-text">Add Budget</span></NavItem>
-            <NavItem className="nav-item"><span className="nav-item-text">Logout</span></NavItem>
-        </Dropdown> */}
         <SideNav
-            trigger={<i className="material-icons sm-48 menu">menu</i>}
-            options={{ closeOnClick: true }}
+          trigger={<i className="material-icons sm-48 menu">menu</i>}
+          options={{ closeOnClick: true }}
         >
-            <SideNavItem className="nav-item"><span className="nav-item-text">Dashboard</span></SideNavItem>
-            <SideNavItem className="nav-item"><span className="nav-item-text">Add Budget</span></SideNavItem>
-            <SideNavItem className="nav-item"><span className="nav-item-text">Logout</span></SideNavItem>
+        <SideNavItem className="nav-item"><span className="nav-item-text">Dashboard</span></SideNavItem>
+        <SideNavItem className="nav-item"><span className="nav-item-text">Add Budget</span></SideNavItem>
+        <SideNavItem className="nav-item"><span className="nav-item-text">Logout</span></SideNavItem>
         </SideNav>
     </Navbar>
-);
+    )
+  }
+}
 
 export default Nav;
