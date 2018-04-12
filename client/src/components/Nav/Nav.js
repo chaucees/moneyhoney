@@ -26,13 +26,8 @@ class Nav extends Component {
         {
           !isAuthenticated() && (
             <LoginBtn 
-              onClick={this.login.bind(this)}
+              auth={this.props.auth}
             />
-          )
-        }
-        {
-          isAuthenticated() && (
-            <div>Welcome!</div>
           )
         }
           

@@ -19,7 +19,7 @@ class Dashboard extends Component {
                 <div className="container section2">
                     <div className="row">
                         <div className="col s7 push-s5">
-                            <span class="flow-text">
+                            <span className="flow-text">
                                 <ProfileName />
                                 <ProfileEmail />
                                 <EditBtn />
