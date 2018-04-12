@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import "./Budget.css";
 import { DashPanel, DashPanelName } from "../../components/DashPanel";
 import { BudgetDetailName, BudgetIncome, BudgetExpenses, BudgetIncomeChildren } from "../../components/BudgetDetail";
+import { LoginBtn, AddBtn, BackBtn, EditBtn, SaveBtn, SubmitBtn, ViewBtn, DeleteBtn, AddBtnAlt } from "../../components/Buttons";
 
 
 class Budget extends Component {
@@ -35,6 +36,9 @@ class Budget extends Component {
                     <div className="row">
                     <div className="col s10 offset-s1">
                         <BudgetIncome>
+                        <div className="right">
+                                <EditBtn/>
+                            </div>
                             <BudgetIncomeChildren />
                             <BudgetIncomeChildren />
                             <BudgetIncomeChildren />

@@ -3,7 +3,7 @@ import "./BudgetDetail.css";
 import { Collection } from "react-materialize";
 
 export const BudgetIncome = ({ children }) => (
-    <Collection header="Income" >
+    <Collection header="Income" className="collection-header">
         { children }
     </Collection>    
 );
