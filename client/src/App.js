@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Nav from "./components/Nav";
 import FooterBar from "./components/Footer";
 import Signup from "./pages/Signup";
+import { LoginBtn } from "./components/Buttons";
 
 class App extends Component {
   // NOTE: App.js does nothing now, everything has been moved to .routes.js so I can pass props more easily

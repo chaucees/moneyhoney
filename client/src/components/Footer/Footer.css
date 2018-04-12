@@ -22,4 +22,15 @@ body {
 footer {
     /* height: 150px; */
     background-color: #084c61 !important;
+    margin-top: 5%;
+  }
+
+  h5 {
+    font-family: 'Quicksand', sans-serif; 
+    color: white;
+    font-weight: 400;
+    font-size: 18pt;
+    letter-spacing: 5pt;
+    text-align: left;
+    text-transform: uppercase;
   }

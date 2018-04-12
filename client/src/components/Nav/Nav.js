@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./Nav.css";
 import Logo from "./images/logo-transp-01.png";
 import { LoginBtn, LogoutBtn } from "../../components/Buttons";
-import { Navbar, NavItem, Dropdown, SideNav, Button, SideNavItem } from "react-materialize";
+import { Navbar, NavItem, Dropdown, SideNav, Button, SideNavItem, Modal } from "react-materialize";
 
 class Nav extends Component {
   goTo(route) {
@@ -43,9 +43,12 @@ class Nav extends Component {
           trigger={<i className="material-icons sm-48 menu">menu</i>}
           options={{ closeOnClick: true }}
         >
-        <SideNavItem className="nav-item"><span className="nav-item-text">Dashboard</span></SideNavItem>
-        <SideNavItem className="nav-item"><span className="nav-item-text">Add Budget</span></SideNavItem>
-        <SideNavItem className="nav-item"><span className="nav-item-text">Logout</span></SideNavItem>
+            <SideNavItem className="nav-item" href="#"><span className="nav-item-text">Home</span></SideNavItem>
+            <SideNavItem className="nav-item" href="signup"><span className="nav-item-text">Sign Up</span></SideNavItem>
+            <SideNavItem className="nav-item" href="dashboard"><span className="nav-item-text">Dashboard</span></SideNavItem>
+            <SideNavItem className="nav-item" href="edit"><span className="nav-item-text">Add Budget</span></SideNavItem>
+            <SideNavItem className="nav-item" href="login"><span className="nav-item-text">Login</span></SideNavItem>
+            <SideNavItem className="nav-item" href="logout"><span className="nav-item-text">Logout</span></SideNavItem>
         </SideNav>
     </Navbar>
     )
