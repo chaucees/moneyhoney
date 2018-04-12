@@ -58,7 +58,7 @@ font-family: 'Anton', sans-serif; */
 }
 
 .view-button {
-    margin-top: 25px;
+    margin-top: 40px;
 }
 
 .add-new-typeface {
@@ -79,4 +79,9 @@ font-family: 'Anton', sans-serif; */
     width: 200px;
     margin-top: 10%;
     margin-bottom: 0;
+}
+
+.edit-button {
+    margin-top: -110px;
+    margin-right: 10px;
 }
