@@ -30,13 +30,12 @@ class Home extends Component {
             <div className="col s6" align="center">
                 <i className="material-icons light-blue-text accent-2-text medium">account_balance</i>
                 <h1>What Is MoneyHoney?</h1>
-                <p>MoneyHoney is a cloud-based budgeting app that allows users to track input and expenses in order to save
-                    for the life they deserve.</p>
+                <p>MoneyHoney is a cloud-based budgeting app that allows you to track income and every day expenses and automate bill payments to save for the life you deserve.</p>
             </div>
             <div className="col s6" align="center">
                 <i className="material-icons light-blue-text accent-2-text medium">people_outline</i>
                 <h1>Who Is It For?</h1>
-                <p className="test">MoneyHoney is for those who cringe when thinking about spreadsheets, account balances, and budgets. If you want to stop living paycheck to paycheck, save for a trip or a down payment, then sign up today to save without the stress!</p>
+                <p>MoneyHoney is for those who cringe when thinking about spreedsheets, budgets, and expenses. If you're looking for an easy way to save for the future you want, sign up today! </p>
             </div>
         </div>
     </div>
