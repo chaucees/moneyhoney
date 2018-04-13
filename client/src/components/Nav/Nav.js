@@ -30,8 +30,14 @@ class Nav extends Component {
             />
           )
         }
+        {
+          isAuthenticated() && (
+            <LogoutBtn 
+              auth={this.props.auth}
+            />
+          )
+        }
           
-          {/* <LogoutBtn /> */}
         </div>
         <img src={Logo} className="logo brand-logo center"></img>
         <SideNav

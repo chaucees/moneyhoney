@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import "./Budget.css";
 import { DashPanel, DashPanelName } from "../../components/DashPanel";
-import { BudgetDetailName, BudgetIncome, BudgetExpenses, BudgetIncomeChildren } from "../../components/BudgetDetail";
+import { BudgetDetailName, BudgetIncome, BudgetExpenses, BudgetIncomeChildren, BudgetExpensesChildren } from "../../components/BudgetDetail";
 import { LoginBtn, AddBtn, BackBtn, EditBtn, SaveBtn, SubmitBtn, ViewBtn, DeleteBtn, AddBtnAlt } from "../../components/Buttons";
 
 
@@ -19,25 +19,43 @@ class Budget extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="container section2">
-                    <div className="row">
-                        <DashPanel>
-                            <DashPanelName />
-                        </ DashPanel>
-                    </div>
-                </div>
-                    <div className="row">
+                <div className="row">
                     <div className="col s10 offset-s1">
                         <BudgetIncome>
-                        <div className="right">
-                                <EditBtn/>
+                            <div className="right">
+                                <EditBtn />
                             </div>
                             <BudgetIncomeChildren />
                             <BudgetIncomeChildren />
                             <BudgetIncomeChildren />
                         </BudgetIncome>
                     </div>
+                    {/* <div className="col s2">
+                        <BudgetIncome>
+                            <div className="right">
+                                <EditBtn />
+                            </div>
+                            <BudgetIncomeChildren />
+                            <BudgetIncomeChildren />
+                            <BudgetIncomeChildren />
+                        </BudgetIncome>
+                    </div> */}
+                </div>
+                <div className="row">
+                    <div className="col s10 offset-s1">
+                        <BudgetExpenses>
+                            <div className="right">
+                                <EditBtn />
+                            </div>
+                            <BudgetExpensesChildren />
+                            <BudgetExpensesChildren />
+                            <BudgetExpensesChildren />
+                        </BudgetExpenses>
                     </div>
+                </div>
+                <div className="row">
+                <h1 className="center-align">Graphs here?</h1>
+                </div>
             </div>
         );
     }

@@ -10,7 +10,6 @@ import { LoginBtn, AddBtn, BackBtn, EditBtn, SaveBtn, SubmitBtn, ViewBtn, Delete
 //ADDED FORMS FOR TESTING ALSO
 import { LoginForm, SignupNameForm, SignupPasswordForm } from "../../components/Forms";
 
-
 class Home extends Component {
   render() {
 		const { isAuthenticated } = this.props.auth;
