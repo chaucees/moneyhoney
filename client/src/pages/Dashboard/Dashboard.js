@@ -5,16 +5,12 @@ import { DashPanel, DashPanelName, DashIncome, DashExpenses } from "../../compon
 import { ProfilePhoto, ProfileName, ProfileEmail } from "../../components/Profile";
 
 class Dashboard extends Component {
-	state = {
-		profile: {}
-	}
-
 	componentWillMount() {
 		this.setState({ profile: {} });
 		const { userProfile, getProfile } = this.props.auth;
 		if (!userProfile) {
 			getProfile((err, profile) => {
-				this.setState({ profile });
+				this.setState({ profile: profile });
 			});
 		} else {
 			this.setState({ profile: userProfile });
@@ -22,7 +18,7 @@ class Dashboard extends Component {
 	}
 
 	render() {
-		const { profile } = this.state;
+		const { profile, email} = this.state;
 
 		return (
 			<div className="container-fluid">
@@ -31,9 +27,8 @@ class Dashboard extends Component {
 						<div className="col s7 push-s5">
 							<span className="flow-text">
 								<ProfileName profile={profile} />
-								{/* <h1>{profile.name}</h1> */}
 								<ProfileEmail profile={profile} />
-								<EditBtn />
+								{/* <EditBtn /> */}
 							</span>
 						</div>
 						<ProfilePhoto profile={profile} />
