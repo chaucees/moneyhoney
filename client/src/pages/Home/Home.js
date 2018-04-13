@@ -4,28 +4,28 @@ import Woman from "./images/woman.png";
 import Man from "./images/man.png";
 import OldMan from "./images/oldman.png";
 import Banks from "./images/banks.png";
-// import SignupNameForm from "./SignupNameForm";
 
 // ADDED BUTTONS FOR TESTING
 import { LoginBtn, AddBtn, BackBtn, EditBtn, SaveBtn, SubmitBtn, ViewBtn, DeleteBtn, AddBtnAlt } from "../../components/Buttons";
 //ADDED FORMS FOR TESTING ALSO
 import { LoginForm, SignupNameForm, SignupPasswordForm } from "../../components/Forms";
-=======
-import { SignupNameForm  } from "../../components/Forms";
+
 
 class Home extends Component {
   render() {
 		const { isAuthenticated } = this.props.auth;
     
     return (
-<div className="container-fluid">
-    <div className="section homeheader valign">
-        <div className="col s12 m8 l8">
-            <p className="header-text">Prepare For The Future</p>
-            <p className="header-text">You Deserve</p>
-            <p className="sub-header-text">Money Management Made Easy</p>
+        <div className="container-fluid">
+        <div className="row">
+            <div className="section homeheader valign-wrapper center-align">
+                <div className=" col s12">
+                    <p className="header-text">Prepare For The Future</p>
+                    <p className="header-text">You Deserve</p>
+                    <p className="sub-header-text">Money Management Made Easy</p>
+                </div>
+            </div>
         </div>
-    </div>
     <div className="container section2">
         <div className="row">
             <div className="col s6" align="center">
