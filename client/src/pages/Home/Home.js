@@ -7,9 +7,22 @@ import Banks from "./images/banks.png";
 import { SignupNameForm  } from "../../components/Forms";
 
 class Home extends Component {
+  goTo(route) {
+    this.props.history.replace(`/${route}`)
+  }
+    
+  login() {
+    this.props.auth.login();
+  }
+  
+  logout() {
+    this.props.auth.logout();
+  }
 
-    render() {
-        return (
+  render() {
+    const { isAuthenticated } = this.props.auth;
+    
+    return (
 <div className="container-fluid">
     <div className="section homeheader">
         <div className="col s12 m8 l8">
@@ -88,10 +101,10 @@ class Home extends Component {
         </div>
     </div>
 </div>
-            
           
-        );
-    }
+        
+    );
+  }
 }
 
 export default Home;
