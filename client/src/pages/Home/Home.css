@@ -59,14 +59,14 @@ p {
 h1 {
     text-transform: uppercase;
     font-family: 'Anton', sans-serif;
-    letter-spacing: 4pt !important;
+    letter-spacing: 2pt;
     font-size: 24pt;
 }
 
 h2 {
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
-    letter-spacing: 3pt;
+    letter-spacing: 2pt;
     font-size: 36pt;
     color: #fcca46;
 }
@@ -78,61 +78,71 @@ h2 {
     font-family: 'Anton', sans-serif;
 }
 
-
-@media only screen and (max-width: 600px) {
-    p {
-        font-family: 'Quicksand', sans-serif;
-        line-height: 22pt;
-        font-size: 12pt;
-      }
-    
-    .homeheader {
-        height: auto !important;
-    }
-
+@media only screen and (max-width: 1024px) {
     .header-text {
-        text-transform: uppercase;
-        letter-spacing: 5pt;
         font-size: 30pt !important;
-        text-shadow: 2px 2px 50px #666666;
-        text-align: center;
-        line-height: 2.25 !important;
-        font-family: 'Anton', sans-serif;
-        color: #fdffff;
-        padding: 0px;
-        margin: 0 auto;
+        text-shadow: 2px 2px 50px black;
+        line-height: 1 !important;
     }
-    
-    .sub-header-text {
-        text-transform: capitalize;
-        letter-spacing: 2pt;
-        text-align: center;
-        font-weight: 400;
-        font-size: 15pt !important;
-        font-family: 'Quicksand', sans-serif;
-        color: #fdffff;
-        padding: 0px;
-        margin: 0 auto;
-        line-height: 4!important;
 
+    .sub-header-text {
+        text-shadow: 2px 2px 50px black;
+        font-size: 16pt !important;
+    }
+
+    h1 {
+        font-size: 20pt !important;
+    }
+
+    h2 {
+        font-size: 20pt !important;
+    }
+
+    .logo {
+        width: 20% !important;
+    }
+}
+
+@media only screen and (max-width: 768) {
+    /* For some reason this size isn't working */
+    p {
+        font-size: 12pt !important;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .header-text {
+        font-size: 15pt !important;
+        line-height: 1.5 !important;
+        text-shadow: 2px 2px 50px black;
+    }
+    .sub-header-text {
+        font-size: 10pt !important;
+        text-shadow: 2px 2px 50px black;
     }
     h1 {
-        text-transform: uppercase;
-        font-family: 'Anton', sans-serif;
-        letter-spacing: 3pt !important;
-        font-size: 20pt !important;
-        line-height: 1.5;
+        font-size: 14pt !important;
+        line-height: 2; 
+        letter-spacing: 0 !important;
+        text-align: center;
     }
     h2 {
-        text-transform: uppercase;
-        font-family: 'Poppins', sans-serif;
-        letter-spacing: 3pt;
+        font-size: 12pt !important;
         line-height: 2;
-        font-size: 20pt !important;
-        color: #fcca46;
+        letter-spacing: 2;
     }
-    .img {
-        width: auto;
+    p {
+        font-size: 11pt !important;
+        line-height: 1.5 !important;
     }
+    .large-num {
+        font-size: 30pt !important;
+    }
+    h5 {
+        font-size: 12pt !important;
+    }
+}
+
+@media only screen and (max-width: 320) {
 }
 
