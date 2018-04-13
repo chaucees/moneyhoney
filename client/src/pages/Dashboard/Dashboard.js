@@ -33,7 +33,6 @@ class Dashboard extends Component {
 								<ProfileName profile={profile} />
 								{/* <h1>{profile.name}</h1> */}
 								<ProfileEmail profile={profile} />
-								<EditBtn />
 							</span>
 						</div>
 						<ProfilePhoto profile={profile} />
