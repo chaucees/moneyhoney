@@ -1,6 +1,9 @@
 import React from "react";
 import "./BudgetDetail.css";
+import { Collection } from "react-materialize";
 
-export const BudgetExpenses = props => (
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque eius rem non mollitia nostrum aperiam velit magni nisi numquam optio aliquam officiis veniam, explicabo obcaecati, nobis consequuntur voluptatem beatae. Est.</p>
+export const BudgetExpenses = ({ children }) => (
+    <Collection header="Expenses" className="collection-header">
+        { children }
+    </Collection>    
 );
