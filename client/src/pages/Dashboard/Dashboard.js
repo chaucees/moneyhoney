@@ -9,30 +9,29 @@ class Dashboard extends Component {
     render() {
         return (
             <div className="container-fluid">
-                {/* <div className="section homeheader">
-                    <div className="col s12 m8 l8">
-                        <p className="header-text">Prepare For The Future</p>
-                        <p className="header-text">You Deserve</p>
-                        <p className="sub-header-text">Money Management Made Easy</p>
-                    </div>
-                </div> */}
                 <div className="container section2">
                     <div className="row">
                         <div className="col s7 push-s5">
                             <span className="flow-text">
                                 <ProfileName />
                                 <ProfileEmail />
-                                <EditBtn />
+
                             </span>
+
                         </div>
                         <ProfilePhoto />
+                        <div className="row">
+                            <div className="col sm-4 offset-s5">
+                                <EditBtn />
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className="container section2">
                     <div className="row">
                         <DashPanel>
                             <div className="right">
-                                <ViewBtn/>
+                                <ViewBtn />
                             </div>
                             <DashPanelName />
                         </ DashPanel>
@@ -40,7 +39,7 @@ class Dashboard extends Component {
                     <div className="row">
                         <DashPanel>
                             <div className="right">
-                                <ViewBtn/>
+                                <ViewBtn />
                             </div>
                             <DashPanelName />
                         </ DashPanel>
@@ -61,7 +60,7 @@ class Dashboard extends Component {
                         </div>
                     </div>
                 </div>
-            </div>        
+            </div>
         );
     }
 }

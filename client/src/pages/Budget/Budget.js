@@ -10,13 +10,6 @@ class Budget extends Component {
     render() {
         return (
             <div className="container-fluid">
-                {/* <div className="section homeheader">
-                    <div className="col s12 m8 l8">
-                        <p className="header-text">Prepare For The Future</p>
-                        <p className="header-text">You Deserve</p>
-                        <p className="sub-header-text">Money Management Made Easy</p>
-                    </div>
-                </div> */}
                 <div className="container">
                     <div className="row">
                         <div className="col s12">
