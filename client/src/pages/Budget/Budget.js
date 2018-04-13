@@ -19,13 +19,6 @@ class Budget extends Component {
                         </div>
                     </div>
                 </div>
-                {/* <div className="container section2">
-                    <div className="row">
-                        <DashPanel>
-                            <DashPanelName />
-                        </ DashPanel>
-                    </div>
-                </div> */}
                 <div className="row">
                     <div className="col s10 offset-s1">
                         <BudgetIncome>
@@ -37,6 +30,16 @@ class Budget extends Component {
                             <BudgetIncomeChildren />
                         </BudgetIncome>
                     </div>
+                    {/* <div className="col s2">
+                        <BudgetIncome>
+                            <div className="right">
+                                <EditBtn />
+                            </div>
+                            <BudgetIncomeChildren />
+                            <BudgetIncomeChildren />
+                            <BudgetIncomeChildren />
+                        </BudgetIncome>
+                    </div> */}
                 </div>
                 <div className="row">
                     <div className="col s10 offset-s1">
