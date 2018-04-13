@@ -4,7 +4,6 @@ import Woman from "./images/woman.png";
 import Man from "./images/man.png";
 import OldMan from "./images/oldman.png";
 import Banks from "./images/banks.png";
-// import SignupNameForm from "./SignupNameForm";
 
 // ADDED BUTTONS FOR TESTING
 import { LoginBtn, AddBtn, BackBtn, EditBtn, SaveBtn, SubmitBtn, ViewBtn, DeleteBtn, AddBtnAlt } from "../../components/Buttons";
@@ -16,26 +15,27 @@ class Home extends Component {
 		const { isAuthenticated } = this.props.auth;
     
     return (
-<div className="container-fluid">
-    <div className="section homeheader valign">
-        <div className="col s12 m8 l8">
-            <p className="header-text">Prepare For The Future</p>
-            <p className="header-text">You Deserve</p>
-            <p className="sub-header-text">Money Management Made Easy</p>
+        <div className="container-fluid">
+        <div className="row">
+            <div className="section homeheader valign-wrapper center-align">
+                <div className=" col s12">
+                    <p className="header-text">Prepare For The Future</p>
+                    <p className="header-text">You Deserve</p>
+                    <p className="sub-header-text">Money Management Made Easy</p>
+                </div>
+            </div>
         </div>
-    </div>
     <div className="container section2">
         <div className="row">
             <div className="col s6" align="center">
                 <i className="material-icons light-blue-text accent-2-text medium">account_balance</i>
                 <h1>What Is MoneyHoney?</h1>
-                <p>MoneyHoney is a cloud-based budgeting app that allows users to track input and expenses in order to save
-                    for the life they deserve.</p>
+                <p>MoneyHoney is a cloud-based budgeting app that allows you to track income and every day expenses and automate bill payments to save for the life you deserve.</p>
             </div>
             <div className="col s6" align="center">
                 <i className="material-icons light-blue-text accent-2-text medium">people_outline</i>
                 <h1>Who Is It For?</h1>
-                <p className="test">MoneyHoney is for those who cringe when thinking about spreadsheets, account balances, and budgets. If you want to stop living paycheck to paycheck, save for a trip or a down payment, then sign up today to save without the stress!</p>
+                <p>MoneyHoney is for those who cringe when thinking about spreedsheets, budgets, and expenses. If you're looking for an easy way to save for the future you want, sign up today! </p>
             </div>
         </div>
     </div>
