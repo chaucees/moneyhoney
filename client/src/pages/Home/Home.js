@@ -10,11 +10,14 @@ import Banks from "./images/banks.png";
 import { LoginBtn, AddBtn, BackBtn, EditBtn, SaveBtn, SubmitBtn, ViewBtn, DeleteBtn, AddBtnAlt } from "../../components/Buttons";
 //ADDED FORMS FOR TESTING ALSO
 import { LoginForm, SignupNameForm, SignupPasswordForm } from "../../components/Forms";
+=======
+import { SignupNameForm  } from "../../components/Forms";
 
 class Home extends Component {
-
-    render() {
-        return (
+  render() {
+		const { isAuthenticated } = this.props.auth;
+    
+    return (
 <div className="container-fluid">
     <div className="section homeheader valign">
         <div className="col s12 m8 l8">
@@ -93,10 +96,10 @@ class Home extends Component {
         </div>
     </div>
 </div>
-            
           
-        );
-    }
+        
+    );
+  }
 }
 
 export default Home;
