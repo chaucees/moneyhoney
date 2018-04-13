@@ -6,8 +6,6 @@ import OldMan from "./images/oldman.png";
 import Banks from "./images/banks.png";
 // import SignupNameForm from "./SignupNameForm";
 
-
-
 // ADDED BUTTONS FOR TESTING
 import { LoginBtn, AddBtn, BackBtn, EditBtn, SaveBtn, SubmitBtn, ViewBtn, DeleteBtn, AddBtnAlt } from "../../components/Buttons";
 //ADDED FORMS FOR TESTING ALSO
@@ -18,7 +16,7 @@ class Home extends Component {
     render() {
         return (
 <div className="container-fluid">
-    <div className="section homeheader">
+    <div className="section homeheader valign">
         <div className="col s12 m8 l8">
             <p className="header-text">Prepare For The Future</p>
             <p className="header-text">You Deserve</p>
@@ -29,14 +27,14 @@ class Home extends Component {
         <div className="row">
             <div className="col s6" align="center">
                 <i className="material-icons light-blue-text accent-2-text medium">account_balance</i>
-                <h1>What Is It?</h1>
+                <h1>What Is MoneyHoney?</h1>
                 <p>MoneyHoney is a cloud-based budgeting app that allows users to track input and expenses in order to save
                     for the life they deserve.</p>
             </div>
             <div className="col s6" align="center">
                 <i className="material-icons light-blue-text accent-2-text medium">people_outline</i>
                 <h1>Who Is It For?</h1>
-                <p>MoneyHoney is for those who cringe when thinking about spreadsheets, account balances, and budgets. If you want to stop living paycheck to paycheck, save for a trip or a down payment, then sign up today to save without the stress!</p>
+                <p className="test">MoneyHoney is for those who cringe when thinking about spreadsheets, account balances, and budgets. If you want to stop living paycheck to paycheck, save for a trip or a down payment, then sign up today to save without the stress!</p>
             </div>
         </div>
     </div>
@@ -47,18 +45,18 @@ class Home extends Component {
         <div className="row">
             <div className="col s12 m4">
                 <img src={Woman}></img>
-                <p>"MoneyHoney helped automate my savings so I could pay down my student loans in half the time!"</p>
+                <p>"MoneyHoney helped me pay off my student loans in half the time!"</p>
                 <p>Mia - <i>Photographer</i></p>
             </div>
             <div className="col s12 m4 hide-on-small-only">
                 <img src={Man}></img>
-                <p>"MoneyHoney helped automate my savings so I could pay down my student loans in half the time!"</p>
-                <p>Mia - <i>Photographer</i></p>
+                <p>"MoneyHoney automated my bill and loan payments which helped raise my credit score."</p>
+                <p>Tim - <i>Author</i></p>
             </div>
             <div className="col s12 m4 hide-on-small-only">
                 <img src={OldMan}></img>
-                <p>"MoneyHoney helped automate my savings so I could pay down my student loans in half the time!"</p>
-                <p>Mia - <i>Photographer</i></p>
+                <p>"Thanks to MoneyHoney I was able to save more for retirement and retire 5 years early!"</p>
+                <p>George - <i>Marketing</i></p>
         
             </div>
 
@@ -84,13 +82,13 @@ class Home extends Component {
             <div className="col s4 hide-on-small-only" align="center">
             <p className="large-num">3.</p>
                 <h1>Start Saving</h1>
-                <p align="left">
+                <span align="left">
                     <ul>
                         <li>1. Set Your Goals.</li>
                         <li>2. Select Your Savings Plan.</li>
                         <li>3. Start Saving!</li>
                     </ul>
-                </p>
+                </span>
             </div>
         </div>
     </div>
