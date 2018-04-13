@@ -5,6 +5,10 @@ import { DashPanel, DashPanelName, DashIncome, DashExpenses } from "../../compon
 import { ProfilePhoto, ProfileName, ProfileEmail } from "../../components/Profile";
 
 class Dashboard extends Component {
+	state = {
+		profile: {}
+	}
+
 	componentWillMount() {
 		this.setState({ profile: {} });
 		const { userProfile, getProfile } = this.props.auth;
@@ -33,8 +37,8 @@ class Dashboard extends Component {
 								<div className="row">
 										<div className="col s7 push-s5">
 												<span className="flow-text">
-														{/* <ProfileName profile={profile}/> */}
-														<h1>{profile.name}</h1>
+														<ProfileName profile={profile}/>
+														{/* <h1>{profile.name}</h1> */}
 														<ProfileEmail profile={profile}/>
 														<EditBtn />
 												</span>
