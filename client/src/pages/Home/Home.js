@@ -10,8 +10,6 @@ import Banks from "./images/banks.png";
 import { LoginBtn, AddBtn, BackBtn, EditBtn, SaveBtn, SubmitBtn, ViewBtn, DeleteBtn, AddBtnAlt } from "../../components/Buttons";
 //ADDED FORMS FOR TESTING ALSO
 import { LoginForm, SignupNameForm, SignupPasswordForm } from "../../components/Forms";
-=======
-import { SignupNameForm  } from "../../components/Forms";
 
 class Home extends Component {
   render() {
