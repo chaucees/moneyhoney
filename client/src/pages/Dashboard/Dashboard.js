@@ -5,64 +5,76 @@ import { DashPanel, DashPanelName, DashIncome, DashExpenses } from "../../compon
 import { ProfilePhoto, ProfileName, ProfileEmail } from "../../components/Profile";
 
 class Dashboard extends Component {
+	state = {
+		profile: {}
+	}
 
-    render() {
-        return (
-            <div className="container-fluid">
-                <div className="container section2">
-                    <div className="row">
-                        <div className="col s7 push-s5">
-                            <span className="flow-text">
-                                <ProfileName />
-                                <ProfileEmail />
+	componentWillMount() {
+		this.setState({ profile: {} });
+		const { userProfile, getProfile } = this.props.auth;
+		if (!userProfile) {
+			getProfile((err, profile) => {
+				this.setState({ profile });
+			});
+		} else {
+			this.setState({ profile: userProfile });
+		}
+	}
 
-                            </span>
+	render() {
+		const { profile } = this.state;
 
-                        </div>
-                        <ProfilePhoto />
-                        <div className="row">
-                            <div className="col sm-4 offset-s5">
-                                <EditBtn />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="container section2">
-                    <div className="row">
-                        <DashPanel>
-                            <div className="right">
-                                <ViewBtn />
-                            </div>
-                            <DashPanelName />
-                        </ DashPanel>
-                    </div>
-                    <div className="row">
-                        <DashPanel>
-                            <div className="right">
-                                <ViewBtn />
-                            </div>
-                            <DashPanelName />
-                        </ DashPanel>
-                    </div>
-                    <div className="row">
-                        <AddBtnAlt />
-                    </div>
-                </div>
-                <div className="container">
-                    <div className="row">
-                        <div className="col s6 section4">
-                            <h1 align="center">Income</h1>
-                            <DashIncome />
-                        </div>
-                        <div className="col s6 section4">
-                            <h1 align="center">Expenses</h1>
-                            <DashExpenses />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        );
-    }
+		return (
+			<div className="container-fluid">
+				<div className="container section2">
+					<div className="row">
+						<div className="col s7 push-s5">
+							<span className="flow-text">
+								<ProfileName profile={profile} />
+								{/* <h1>{profile.name}</h1> */}
+								<ProfileEmail profile={profile} />
+								<EditBtn />
+							</span>
+						</div>
+						<ProfilePhoto profile={profile} />
+					</div>
+				</div>
+				<div className="container section2">
+					<div className="row">
+						<DashPanel>
+							<div className="right">
+								<ViewBtn />
+							</div>
+							<DashPanelName />
+						</ DashPanel>
+					</div>
+					<div className="row">
+						<DashPanel>
+							<div className="right">
+								<ViewBtn />
+							</div>
+							<DashPanelName />
+						</ DashPanel>
+					</div>
+					<div className="row">
+						<AddBtnAlt />
+					</div>
+				</div>
+				<div className="container">
+					<div className="row">
+						<div className="col s6 section4">
+							<h1 align="center">Income</h1>
+							<DashIncome />
+						</div>
+						<div className="col s6 section4">
+							<h1 align="center">Expenses</h1>
+							<DashExpenses />
+						</div>
+					</div>
+				</div>
+			</div>
+		);
+	}
 }
 
 export default Dashboard;

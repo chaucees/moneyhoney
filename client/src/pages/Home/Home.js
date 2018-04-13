@@ -7,20 +7,8 @@ import Banks from "./images/banks.png";
 import { SignupNameForm  } from "../../components/Forms";
 
 class Home extends Component {
-  goTo(route) {
-    this.props.history.replace(`/${route}`)
-  }
-    
-  login() {
-    this.props.auth.login();
-  }
-  
-  logout() {
-    this.props.auth.logout();
-  }
-
   render() {
-    const { isAuthenticated } = this.props.auth;
+		const { isAuthenticated } = this.props.auth;
     
     return (
 <div className="container-fluid">
