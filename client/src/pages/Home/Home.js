@@ -4,10 +4,7 @@ import Woman from "./images/woman.png";
 import Man from "./images/man.png";
 import OldMan from "./images/oldman.png";
 import Banks from "./images/banks.png";
-
-// ADDED BUTTONS FOR TESTING
 import { LoginBtn, AddBtn, BackBtn, EditBtn, SaveBtn, SubmitBtn, ViewBtn, DeleteBtn, AddBtnAlt } from "../../components/Buttons";
-//ADDED FORMS FOR TESTING ALSO
 import { LoginForm, SignupNameForm, SignupPasswordForm } from "../../components/Forms";
 
 class Home extends Component {
