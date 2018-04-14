@@ -3,6 +3,8 @@ import "./Dashboard.css";
 import { LoginBtn, AddBtn, BackBtn, EditBtn, SaveBtn, SubmitBtn, ViewBtn, DeleteBtn, AddBtnAlt } from "../../components/Buttons";
 import { DashPanel, DashPanelName, DashIncome, DashExpenses } from "../../components/DashPanel";
 import { ProfilePhoto, ProfileName, ProfileEmail } from "../../components/Profile";
+import { BudgetDetailName, BudgetIncome, BudgetExpenses, BudgetIncomeChildren, BudgetExpensesChildren } from "../../components/BudgetDetail";
+
 
 class Dashboard extends Component {
 	componentWillMount() {
@@ -41,7 +43,7 @@ class Dashboard extends Component {
 								<ViewBtn />
 							</div>
 							<DashPanelName />
-						</ DashPanel>
+						</DashPanel>
 					</div>
 					<div className="row">
 						<DashPanel>
@@ -54,10 +56,40 @@ class Dashboard extends Component {
 					<div className="row">
 						<AddBtnAlt />
 					</div>
-				</div>
-			</div>
-		);
-	}
+				</div>			
+					<div className="container-fluid">
+						<div className="row">
+							<div className="col s10 offset-s1">
+								<BudgetIncome>
+									<div className="right">
+										<EditBtn />
+									</div>
+									<BudgetIncomeChildren />
+									<BudgetIncomeChildren />
+									<BudgetIncomeChildren />
+								</BudgetIncome>
+							</div>
+						</div>
+						<div className="row">
+							<div className="col s10 offset-s1">
+								<BudgetExpenses>
+									<div className="right">
+										<EditBtn />
+									</div>
+									<BudgetExpensesChildren />
+									<BudgetExpensesChildren />
+									<BudgetExpensesChildren />
+								</BudgetExpenses>
+							</div>
+						</div>
+						<div className="row">
+						<h1 className="center-align">Graphs here?</h1>
+						</div>
+					</div>
+					</div>
+				);
+			}
 }
-
+		
+	
 export default Dashboard;
