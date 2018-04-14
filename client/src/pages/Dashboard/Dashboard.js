@@ -30,8 +30,8 @@ class Dashboard extends Component {
 					<div className="row">
 						<div className="col s7 push-s5">
 							<span className="flow-text">
-								<ProfileName profile={profile} />
-								{/* <h1>{profile.name}</h1> */}
+								<ProfileName profile={profile} /> {/*
+								<h1>{profile.name}</h1> */}
 								<ProfileEmail profile={profile} />
 								<EditBtn />
 							</span>
@@ -46,7 +46,7 @@ class Dashboard extends Component {
 								<ViewBtn />
 							</div>
 							<DashPanelName />
-						</ DashPanel>
+							</ DashPanel>
 					</div>
 					<div className="row">
 						<DashPanel>
@@ -54,7 +54,7 @@ class Dashboard extends Component {
 								<ViewBtn />
 							</div>
 							<DashPanelName />
-						</ DashPanel>
+							</ DashPanel>
 					</div>
 					<div className="row">
 						<AddBtnAlt />

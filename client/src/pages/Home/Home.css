@@ -48,11 +48,15 @@ p {
 }
 
 .section3 {
-    background-color: #084c61;
+    background-color: #F5F5F5;
     text-align:center;
-    color: #fdffff;
     padding: 5%;
     margin-top: 5%;
+    background: url("./images/iphone.png");
+    background-attachment: scroll;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    height: auto !important;
 
 }
 

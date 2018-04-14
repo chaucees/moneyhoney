@@ -60,14 +60,14 @@ class Home extends Component {
                     <i>Author</i>
                 </p>
             </div>
-            <div className="col s12 m4 hide-on-small-only">
+            {/* <div className="col s12 m4 hide-on-small-only">
                 <img src={OldMan}></img>
                 <p>"Thanks to MoneyHoney I was able to save more for retirement and retire 5 years early!"</p>
                 <p>George -
                     <i>Marketing</i>
                 </p>
 
-            </div>
+            </div> */}
 
         </div>
     </div>
