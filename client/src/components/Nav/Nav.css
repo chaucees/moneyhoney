@@ -19,11 +19,17 @@ nav {
     background-color: #084c61;
 }
 
-.nav-item-text {
-    color: #084c61;
+.nav-item  {
+    padding-top: 20px;
+    padding-left: 10px;
 }
 
-.hamburger {
+.nav-item-text {
+    color: #fdffff;
+}
+
+
+/* .hamburger {
     width: 200px !important;
 }
 
@@ -32,8 +38,9 @@ nav {
     padding-left: 1%;
     width: 30px !important;
     height: 100px !important;
-}
+} */
 
 .material-icons {
     font-size: 48px !important;
 }
+
