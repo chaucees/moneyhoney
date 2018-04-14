@@ -49,6 +49,8 @@ p {
 
 .section4 {
     background-color: #f5f5f5;
+    border-top: #d3d3d3 1px solid;
+    border-bottom: #d3d3d3 1px solid;
     text-align:center;
     padding: 5%;
     margin-top: 5%;
