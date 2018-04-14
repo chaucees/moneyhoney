@@ -21,7 +21,7 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: auto !important;
+    min-height: 300px;
 }
 
 .header-text {
@@ -47,12 +47,14 @@ p {
     margin-top: 5%;
 }
 
-.section3 {
-    background-color: #084c61;
+.section4 {
+    background-color: #f5f5f5;
+    border-top: #d3d3d3 1px solid;
+    border-bottom: #d3d3d3 1px solid;
     text-align:center;
-    color: #fdffff;
     padding: 5%;
     margin-top: 5%;
+    height: auto !important;
 
 }
 
@@ -61,14 +63,6 @@ h1 {
     font-family: 'Anton', sans-serif;
     letter-spacing: 2pt;
     font-size: 24pt;
-}
-
-h2 {
-    text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: 2pt;
-    font-size: 36pt;
-    color: #fcca46;
 }
 
 .large-num {

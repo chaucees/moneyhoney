@@ -24,9 +24,9 @@ nav {
     padding-left: 10px;
 }
 
-.nav-item-text {
+/* .nav-item-text {
     color: #fdffff;
-}
+} */
 
 
 /* .hamburger {
@@ -42,5 +42,23 @@ nav {
 
 .material-icons {
     font-size: 48px !important;
+    margin-left: 10px;
+    padding-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-item  {
+        visibility: hidden;
+    }
+    nav {
+        height: 60px;
+        background-color: #084c61;
+    }
+    .logo {
+        margin-top: 3%;
+    }
+    .material-icons {
+        padding-top: 3px;
+    }
 }
 

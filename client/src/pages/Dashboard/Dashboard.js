@@ -3,6 +3,8 @@ import "./Dashboard.css";
 import { LoginBtn, AddBtn, BackBtn, EditBtn, SaveBtn, SubmitBtn, ViewBtn, DeleteBtn, AddBtnAlt } from "../../components/Buttons";
 import { DashPanel, DashPanelName, DashIncome, DashExpenses } from "../../components/DashPanel";
 import { ProfilePhoto, ProfileName, ProfileEmail } from "../../components/Profile";
+import { BudgetDetailName, BudgetIncome, BudgetExpenses, BudgetIncomeChildren, BudgetExpensesChildren } from "../../components/BudgetDetail";
+
 
 class Dashboard extends Component {
 	componentWillMount() {
@@ -26,9 +28,9 @@ class Dashboard extends Component {
 					<div className="row">
 						<div className="col s7 push-s5">
 							<span className="flow-text">
-								<ProfileName profile={profile} />
+                <i>Welcome</i>
+								<ProfileName profile={profile} /> 
 								<ProfileEmail profile={profile} />
-								{/* <EditBtn /> */}
 							</span>
 						</div>
 						<ProfilePhoto profile={profile} />
@@ -41,7 +43,7 @@ class Dashboard extends Component {
 								<ViewBtn />
 							</div>
 							<DashPanelName />
-						</ DashPanel>
+						</DashPanel>
 					</div>
 					<div className="row">
 						<DashPanel>
@@ -49,27 +51,45 @@ class Dashboard extends Component {
 								<ViewBtn />
 							</div>
 							<DashPanelName />
-						</ DashPanel>
+							</ DashPanel>
 					</div>
 					<div className="row">
 						<AddBtnAlt />
 					</div>
-				</div>
-				<div className="container">
-					<div className="row">
-						<div className="col s6 section4">
-							<h1 align="center">Income</h1>
-							<DashIncome />
+				</div>			
+					<div className="container-fluid">
+						<div className="row">
+							<div className="col s10 offset-s1">
+								<BudgetIncome>
+									<div className="right">
+										<EditBtn />
+									</div>
+									<BudgetIncomeChildren />
+									<BudgetIncomeChildren />
+									<BudgetIncomeChildren />
+								</BudgetIncome>
+							</div>
 						</div>
-						<div className="col s6 section4">
-							<h1 align="center">Expenses</h1>
-							<DashExpenses />
+						<div className="row">
+							<div className="col s10 offset-s1">
+								<BudgetExpenses>
+									<div className="right">
+										<EditBtn />
+									</div>
+									<BudgetExpensesChildren />
+									<BudgetExpensesChildren />
+									<BudgetExpensesChildren />
+								</BudgetExpenses>
+							</div>
+						</div>
+						<div className="row">
+						<h1 className="center-align">Graphs here?</h1>
 						</div>
 					</div>
-				</div>
-			</div>
-		);
-	}
+					</div>
+				);
+			}
 }
-
+		
+	
 export default Dashboard;

@@ -14,8 +14,6 @@ class Budget extends Component {
                     <div className="row">
                         <div className="col s12">
                             <BudgetDetailName />
-                            <p align="center"><i>And Start Saving Today!</i></p>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae molestiae similique error sit quo dicta vitae eos, ad doloribus alias. Natus accusamus rerum aut eaque excepturi quibusdam quidem, laborum, nisi neque iste numquam dolorem quae distinctio. Est, quis at, doloribus obcaecati autem adipisci vero a fuga recusandae, sunt laboriosam beatae?</p>
                         </div>
                     </div>
                 </div>
@@ -30,16 +28,6 @@ class Budget extends Component {
                             <BudgetIncomeChildren />
                         </BudgetIncome>
                     </div>
-                    {/* <div className="col s2">
-                        <BudgetIncome>
-                            <div className="right">
-                                <EditBtn />
-                            </div>
-                            <BudgetIncomeChildren />
-                            <BudgetIncomeChildren />
-                            <BudgetIncomeChildren />
-                        </BudgetIncome>
-                    </div> */}
                 </div>
                 <div className="row">
                     <div className="col s10 offset-s1">

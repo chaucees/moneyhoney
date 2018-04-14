@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./Nav.css";
 import Logo from "./images/logo-transp-01.png";
 import { LoginBtn, LogoutBtn } from "../../components/Buttons";
-import { Navbar, NavItem } from "react-materialize";
+import { Navbar, NavItem, SideNav, SideNavItem, Button } from "react-materialize";
 
 class Nav extends Component {
   goTo(route) {
@@ -20,36 +20,47 @@ class Nav extends Component {
   render() {
     const { isAuthenticated, userHasScopes } = this.props.auth;
 
-    return(
-      <nav>
-        <div className="right">
-        {
-          !isAuthenticated() && (
-            <LoginBtn 
-              auth={this.props.auth}
-            />
-          )
-        }
-        {
-          isAuthenticated() && (
-            <LogoutBtn 
-              auth={this.props.auth}
-            />
-          )
-        }
-          
-        </div>
-        <img src={Logo} alt="Money Honey Logo" className="logo brand-logo center"></img>
-        {/* <Navbar
+    return (
+      <div className="nav-container">
+        <nav>
+          <div className="right">
+            {
+              !isAuthenticated() && (
+                <LoginBtn
+                  auth={this.props.auth}
+                />
+              )
+            }
+            {
+              isAuthenticated() && (
+                <LogoutBtn
+                  auth={this.props.auth}
+                />
+              )
+            }
+
+          </div>
+          <img src={Logo} alt="Money Honey Logo" className="logo brand-logo center"></img>
+          {/* <Navbar
           trigger={<i className="material-icons sm-48 menu">menu</i>}
           options={{ closeOnClick: true }}
         > */}
-        <ul>
-            <li className="nav-item" href="#"><span className="nav-item-text">Home</span></li>
-            <li className="nav-item" href="dashboard"><span className="nav-item-text">Dashboard</span></li>
-        </ul>
-        {/* </Navbar> */}
-    </nav>
+          {/* <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a> */}
+          <SideNav
+          trigger={<i className="material-icons sm-48 menu">menu</i>}
+          options={{ closeOnClick: true }}
+        >
+          <SideNavItem href="#"><span className="nav-item-text">Home</span></SideNavItem>
+          <SideNavItem href="dashboard"><span className="nav-item-text">Dashboard</span></SideNavItem>
+        </SideNav>
+
+          {/* <ul>
+            <li className="nav-item nav-item-home" href="#"><span className="nav-item-text">Home</span></li>
+            <li className="nav-item nav-item-dash" href="dashboard"><span className="nav-item-text">Dashboard</span></li>
+          </ul> */}
+          {/* </Navbar> */}
+        </nav>
+      </div>
     )
   }
 }
