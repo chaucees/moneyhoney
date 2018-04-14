@@ -60,18 +60,6 @@ class Dashboard extends Component {
 						<AddBtnAlt />
 					</div>
 				</div>
-				<div className="container">
-					<div className="row">
-						<div className="col s6 section4">
-							<h1 align="center">Income</h1>
-							<DashIncome />
-						</div>
-						<div className="col s6 section4">
-							<h1 align="center">Expenses</h1>
-							<DashExpenses />
-						</div>
-					</div>
-				</div>
 			</div>
 		);
 	}
