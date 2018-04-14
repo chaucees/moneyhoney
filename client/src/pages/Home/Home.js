@@ -4,6 +4,7 @@ import Woman from "./images/woman.png";
 import Man from "./images/man.png";
 import OldMan from "./images/oldman.png";
 import Banks from "./images/banks.png";
+import iphone from "./images/iphone.png";
 import { LoginBtn, AddBtn, BackBtn, EditBtn, SaveBtn, SubmitBtn, ViewBtn, DeleteBtn, AddBtnAlt } from "../../components/Buttons";
 import { LoginForm, SignupNameForm, SignupPasswordForm } from "../../components/Forms";
 
@@ -38,10 +39,10 @@ class Home extends Component {
             </div>
         </div>
     </div>
-    <div className="container-fluid section3">
-        <div className="row">
-            <h2>What Our Clients Are Saying</h2>
-        </div>
+    <div className="container-fluid section4">
+        {/* <div className="row">
+            <h3>What Our Clients Are Saying</h3>
+        </div> */}
         <div className="row">
             <div className="col s12 m4">
                 <img src={Woman}></img>
@@ -58,12 +59,7 @@ class Home extends Component {
                 </p>
             </div>
             <div className="col s12 m4 hide-on-small-only">
-                <img src={OldMan}></img>
-                <p>"Thanks to MoneyHoney I was able to save more for retirement and retire 5 years early!"</p>
-                <p>George -
-                    <i>Marketing</i>
-                </p>
-
+                <img src={iphone}></img>
             </div>
 
         </div>
