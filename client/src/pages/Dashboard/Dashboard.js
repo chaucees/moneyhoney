@@ -26,9 +26,9 @@ class Dashboard extends Component {
 					<div className="row">
 						<div className="col s7 push-s5">
 							<span className="flow-text">
+							<i>Welcome</i>
 								<ProfileName profile={profile} />
 								<ProfileEmail profile={profile} />
-								{/* <EditBtn /> */}
 							</span>
 						</div>
 						<ProfilePhoto profile={profile} />
