@@ -10,7 +10,7 @@ export class LogoutBtn extends Component {
         return (
             <a className="waves-effect waves-light btn buttons login-button"
                 onClick={this.logout.bind(this)}>
-                <span className="buttons-typeface">Logout</span>
+                <span className="buttons-typeface login-button-text">Logout</span>
             </a>
         )
     }
