@@ -40,9 +40,6 @@ class Home extends Component {
         </div>
     </div>
     <div className="container-fluid section4">
-        {/* <div className="row">
-            <h3>What Our Clients Are Saying</h3>
-        </div> */}
         <div className="row">
             <div className="col s12 m4">
                 <img src={Woman}></img>
