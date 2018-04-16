@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import "./EditBudget.css";
 import { AddIncomeForm, AddBudgetName, AddExpensesForm } from "../../components/Forms";
-import { LoginBtn, AddBtn, BackBtn, EditBtn, SaveBtn, SubmitBtn, ViewBtn, DeleteBtn, AddBtnAlt } from "../../components/Buttons";
+import { AddBtn, BackBtn, EditBtn, SaveBtn } from "../../components/Buttons";
+import { BudgetDetailName, BudgetIncome, BudgetExpenses, BudgetIncomeChildren, BudgetExpensesChildren } from "../../components/BudgetDetail";
+
 
 
 class EditBudget extends Component {
@@ -27,7 +29,16 @@ class EditBudget extends Component {
                                 <AddBtn />
                             </div>
                         </div>
-                    </div>
+                        <div className="row">
+                            <div className="col s10 offset-s1">
+                                <BudgetIncome>
+                                    <BudgetIncomeChildren />
+                                    <BudgetIncomeChildren />
+                                    <BudgetIncomeChildren />
+                                </BudgetIncome>
+                            </div>
+                        </div>
+                    </div>>
                 </div>
                 <div className="add-expense-section">
                     <div className="row">
@@ -37,6 +48,15 @@ class EditBudget extends Component {
                             <div className="center">
                                 <AddBtn />
                             </div>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col s10 offset-s1">
+                            <BudgetExpenses>
+                                <BudgetExpensesChildren />
+                                <BudgetExpensesChildren />
+                                <BudgetExpensesChildren />
+                            </BudgetExpenses>
                         </div>
                     </div>
                 </div>
