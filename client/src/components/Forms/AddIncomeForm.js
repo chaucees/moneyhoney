@@ -9,7 +9,7 @@ export const AddIncomeForm = props => (
         <div className="input-field col s12">
             <input
                 type="text"
-                id="budget-name"
+                id="income-name"
                 {...props}
             />
             <label htmlFor="income-name">Income Name</label>
@@ -17,25 +17,25 @@ export const AddIncomeForm = props => (
         <div className="input-field col s6">
             <input
                 type="text"
-                id="amount"
+                id="amount-income"
                 {...props}
             />
-            <label htmlFor="amount">Amount</label>
+            <label htmlFor="amount-income">Amount</label>
         </div>
         <div className="input-field col s6">
             <input
                 type="text"
-                id="date"
+                id="date-income"
                 {...props}
             />
-            <label htmlFor="date">Date</label>
+            <label htmlFor="date-income">Date</label>
         </div>
         <div className="input-field col s6">
             <Input
-                name="recurring"
+                name="recurring-income"
                 type="checkbox"
-                id="recurring"
-                value="recurring"
+                id="recurring-income"
+                value="recurring-income"
                 label="Is it recurring?"
                 {...props}
             />
@@ -43,11 +43,10 @@ export const AddIncomeForm = props => (
         <div className="input-field col s6">
             <input
                 type="text"
-                id="frequency"
+                id="frequency-income"
                 {...props}
             />
-            {/* <Input name='on' type='date' onChange={function(e, value) {}} /> */}
-            <label htmlFor="last-name">How often?</label>
+            <label htmlFor="frequency-income">How often?</label>
         </div>
     </div>
 );

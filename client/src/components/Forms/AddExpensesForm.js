@@ -9,7 +9,7 @@ export const AddExpensesForm = props => (
         <div className="input-field col s12">
             <input
                 type="text"
-                id="budget-name"
+                id="expense-name"
                 {...props}
             />
             <label htmlFor="expense-name">Expense Name</label>
@@ -17,18 +17,18 @@ export const AddExpensesForm = props => (
         <div className="input-field col s6">
             <input
                 type="text"
-                id="amount"
+                id="amount-expense"
                 {...props}
             />
-            <label htmlFor="amount">Amount</label>
+            <label htmlFor="amount-expense">Amount</label>
         </div>
         <div className="input-field col s6">
             <input
                 type="text"
-                id="date"
+                id="date-expense"
                 {...props}
             />
-            <label htmlFor="date">Date</label>
+            <label htmlFor="date-expense">Date</label>
         </div>
         <div className="input-field col s6">
             <Input
@@ -43,10 +43,10 @@ export const AddExpensesForm = props => (
         <div className="input-field col s6">
             <input
                 type="text"
-                id="frequency"
+                id="frequency-expense"
                 {...props}
             />
-            <label htmlFor="frequency">How often?</label>
+            <label htmlFor="frequency-expense">How often?</label>
         </div>
         <div className="input-field col s6">
             <Input name='on' type='date' onChange={function(e, value) {}} />
