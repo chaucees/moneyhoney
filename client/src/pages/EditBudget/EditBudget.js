@@ -33,7 +33,7 @@ class EditBudget extends Component {
                     <div className="row">
                         <div className="col s10 offset-s1">
                             <h1 className="center-align">Add Expense</h1>
-                            <AddIncomeForm />
+                            <AddExpensesForm />
                             <div className="center">
                                 <SaveBtn />
                             </div>

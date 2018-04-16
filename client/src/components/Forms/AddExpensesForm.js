@@ -12,7 +12,7 @@ export const AddExpensesForm = props => (
                 id="budget-name"
                 {...props}
             />
-            <label htmlFor="first-name">Expense Name</label>
+            <label htmlFor="expense-name">Expense Name</label>
         </div>
         <div className="input-field col s6">
             <input
@@ -20,7 +20,7 @@ export const AddExpensesForm = props => (
                 id="amount"
                 {...props}
             />
-            <label htmlFor="first-name">Amount</label>
+            <label htmlFor="amount">Amount</label>
         </div>
         <div className="input-field col s6">
             <input
@@ -28,14 +28,14 @@ export const AddExpensesForm = props => (
                 id="date"
                 {...props}
             />
-            <label htmlFor="last-name">Date</label>
+            <label htmlFor="date">Date</label>
         </div>
         <div className="input-field col s6">
             <Input
-                name="recurring"
+                name="recurring-expense"
                 type="checkbox"
-                id="recurring"
-                value="recurring"
+                id="recurring-expense"
+                value="recurring-expense"
                 label="Is it recurring?"
                 {...props}
             />
@@ -46,7 +46,11 @@ export const AddExpensesForm = props => (
                 id="frequency"
                 {...props}
             />
-            <label htmlFor="last-name">How often?</label>
+            <label htmlFor="frequency">How often?</label>
+        </div>
+        <div className="input-field col s6">
+            <Input name='on' type='date' onChange={function(e, value) {}} />
+            <label htmlFor="due-date">Due Date</label>
         </div>
     </div>
 );
