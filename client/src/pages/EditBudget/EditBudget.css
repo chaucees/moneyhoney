@@ -1,0 +1,19 @@
+/* COLORS: 
+black: #323031
+dark blue: #084c61
+yellow: #fcca46
+light blue: #30c5ff
+white: #fdffff;
+
+TYPEFACES:
+font-family: 'Quicksand', sans-serif; 
+font-family: 'Anton', sans-serif; */
+
+
+.add-income-section {
+    background-color: #084c61;
+}
+
+.budget-text {
+    color: #fdffff;
+}
