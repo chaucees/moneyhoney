@@ -38,7 +38,7 @@ class EditBudget extends Component {
                                 </BudgetIncome>
                             </div>
                         </div>
-                    </div>>
+                    </div>
                 </div>
                 <div className="add-expense-section">
                     <div className="row">
