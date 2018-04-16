@@ -40,6 +40,9 @@ class EditBudget extends Component {
                         </div>
                     </div>
                 </div>
+                <div className="center">
+                    <SaveBtn />
+                </div>
             </div>
         );
     }
