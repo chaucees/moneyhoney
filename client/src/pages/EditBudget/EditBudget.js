@@ -14,7 +14,7 @@ class EditBudget extends Component {
                         <h1 className="center-align">Your Budget</h1>
                         <AddBudgetName />
                         <div className="center">
-                            <SaveBtn />
+                            <AddBtn />
                         </div>
                     </div>
                 </div>
@@ -24,7 +24,7 @@ class EditBudget extends Component {
                             <h1 className="center-align budget-text">Add Income</h1>
                             <AddIncomeForm />
                             <div className="center">
-                                <SaveBtn />
+                                <AddBtn />
                             </div>
                         </div>
                     </div>
@@ -35,7 +35,7 @@ class EditBudget extends Component {
                             <h1 className="center-align">Add Expense</h1>
                             <AddExpensesForm />
                             <div className="center">
-                                <SaveBtn />
+                                <AddBtn />
                             </div>
                         </div>
                     </div>
