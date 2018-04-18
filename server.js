@@ -5,6 +5,7 @@ const app = express();
 const jwt = require('express-jwt');
 const jwtAuthz = require('express-jwt-authz');
 const jwksRsa = require('jwks-rsa');
+const db = require('./models');
 // require('dotenv').config();
 
 // Serve up static assets (usually on heroku)
