@@ -17,3 +17,12 @@ font-family: 'Anton', sans-serif; */
 .budget-text {
     color: #fdffff;
 } */
+
+.editbudget {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #f4f8fa;
+    box-shadow: 5px 10px 50px #888888;
+    padding: 20px;
+
+}
