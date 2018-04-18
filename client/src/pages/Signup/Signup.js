@@ -8,7 +8,7 @@ class Signup extends Component {
     render() {
         return (
             <div className="container-fluid">
-                <div className="container section2">
+                <div className="container section2-signup">
                     <div className="row">
                         <div className="col s12">
                             <h1 align="center">Sign Up</h1>
