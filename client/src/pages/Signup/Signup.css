@@ -50,6 +50,9 @@ body {
 
 .section2 {
     margin-top: 5%;
+    background-color: #efefef;
+    width: 50%;
+    box-shadow: 5px 10px 50px #888888;
 }
 
 .section3 {
