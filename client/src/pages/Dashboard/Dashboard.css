@@ -43,18 +43,12 @@ p {
     height: 800px;    
 }
 
-.section2 {
-    margin-top: 5%;
+.section2-dash {
+    margin-top: 3%;
 }
 
-.section4 {
-    background-color: #e5e5e5;
-    text-align:center;
-    color: #fdffff;
-    padding: 20px;
-    margin-top: 5%;
-    color: black;
-
+.material-icons {
+    padding: 0px !important;
 }
 
 h1 {
