@@ -10,7 +10,7 @@ class EditBudget extends Component {
 
     render() {
         return (
-            <div className="container-fluid">
+            <div className="container editbudget">
                 <div className="row">
                     <div className="col s10 offset-s1">
                         <h1 className="center-align">Your Budget</h1>
