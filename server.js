@@ -5,6 +5,7 @@ const app = express();
 const jwt = require('express-jwt');
 const jwtAuthz = require('express-jwt-authz');
 const jwksRsa = require('jwks-rsa');
+const db = require('./models');
 // require('dotenv').config();
 
 // Serve up static assets (usually on heroku)
@@ -18,6 +19,9 @@ app.get("*", function(req, res) {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
-app.listen(PORT, function() {
-  console.log(`🌎 ==> Server now on port ${PORT}!`);
+// Start API server, syncing our sequelize models -------------------------/
+db.sequelize.sync().then(function() {
+  app.listen(PORT, function() {
+    console.log(`🌎 ==> Server now on port ${PORT}!`);
+  });
 });
