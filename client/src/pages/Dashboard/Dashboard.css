@@ -35,12 +35,12 @@ p {
 }
 
 .homeheader {
-    background: url("./images/header.jpg");
+    background: url("./images/phone.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 800px;    
+    min-height: 300px;
 }
 
 .section2-dash {
