@@ -34,7 +34,7 @@ class Dashboard extends Component {
 				</div>
 				<div className="container-fluid side-padding">
 					<div className="row">
-						<div className="col xl6 l6 m12 s12">
+						<div className="col xl6 l6 m12 s12 add-margin">
 							<div className="row">
 								<DashPanel>
 									<div className="right">
@@ -55,7 +55,8 @@ class Dashboard extends Component {
 								<AddBtnAlt />
 							</div>
 						</div>
-						<div className="col xl6 l6 m12 s12">
+						<div className="col xl6 l6 m12 s12 add-margin">
+						
 							<BudgetIncome>
 								<div className="right">
 									<EditBtn />

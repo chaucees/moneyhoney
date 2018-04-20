@@ -11,9 +11,6 @@ font-family: 'Anton', sans-serif; */
 
 .buttons {
     background-color: #455a64;
-    /* margin: 10px; */
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 .submit-button {
@@ -33,25 +30,25 @@ font-family: 'Anton', sans-serif; */
 .buttons-typeface {
     font-family: 'Quicksand', sans-serif; 
     font-weight: 500;
-    font-size: 20px;
+    font-size: 15px;
     letter-spacing: 2px;
 }
 
 .add-button {
-    background-color: #30c5ff;
+    background-color: #fdffff;
 }
 
 /* Add hover & focus to remove default teal colors from appearing */
 .add-button:hover {
-    background-color: #30c5ff;
+    background-color: #fdffff;
 }
 
 .add-button:focus {
-    background-color: #30c5ff;
+    background-color: #fdffff;
 }
 
 .add-new-button {
-    background-color: #084c61;
+    background-color: #eceff1;
     width: 100%;
     height: 85px;
     padding-top: 25px;

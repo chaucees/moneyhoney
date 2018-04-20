@@ -38,6 +38,7 @@ h2 {
 
 .dash-panel-name {
     font-size: 12pt;
+    padding: 10px !important;
 }
 
 /* MISC */
@@ -53,11 +54,12 @@ input {
 }
 
 .row-item {
-    background-color: #e0e0e0;
+    background-color: #ffffff;
     text-transform: capitalize;
     color: black;
-    height: auto;
-padding: 0px;}
+    height: 75px;
+    padding: 0px;
+}
 
 
 
@@ -80,4 +82,8 @@ padding: 0px;}
     padding-left: 3%;
     padding-right:  3%;
     padding-top: 3%;
+}
+
+.add-margin {
+    margin: 5%;
 }

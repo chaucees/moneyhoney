@@ -17,5 +17,6 @@ h4 {
     font-size: 18pt;
     color: #fdffff;
     font-family: 'Open Sans', sans-serif;
-
+    line-height: 0;
+    padding:5px;
 }
