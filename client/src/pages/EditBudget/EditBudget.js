@@ -108,6 +108,8 @@ class EditBudget extends Component {
 									<BudgetIncome>
 										<BudgetIncomeChildren />
 										<BudgetIncomeChildren />
+										<BudgetIncomeChildren />
+										<BudgetIncomeChildren />
 									</BudgetIncome>
 								</div>
 							</div>
@@ -129,6 +131,7 @@ class EditBudget extends Component {
 								<BudgetExpensesChildren />
 								<BudgetExpensesChildren />
 								<BudgetExpensesChildren />
+								<BudgetIncomeChildren />
 							</BudgetExpenses>
 						</div>
 					</div>
