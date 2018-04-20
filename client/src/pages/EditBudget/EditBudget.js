@@ -142,7 +142,6 @@ class EditBudget extends Component {
 			</div>
 		);
 	}
-										<BudgetIncomeChildren />
 }
 
 export default EditBudget;
