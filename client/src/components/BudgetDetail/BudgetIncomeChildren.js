@@ -3,8 +3,9 @@ import "./BudgetDetail.css";
 import { CollectionItem } from "react-materialize";
 
 export const BudgetIncomeChildren = props => (
-    <CollectionItem className="collection-item">
-        { props.children }
-        Income!
-    </CollectionItem>    
+    <td>{ props.children } Income</td>
+    // <CollectionItem className="collection-item">
+    //     { props.children }
+    //     Income!
+    // </CollectionItem>    
 );

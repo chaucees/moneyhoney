@@ -4,8 +4,8 @@ import { Collection, Table } from "react-materialize";
 
 export const BudgetExpenses = ({ children }) => (
     <div className="expenses-panel">
-        <div className="expense-title-panel">
-            <h1 className="expense-title center">Expenses</h1>
+        <div className="title-panel">
+            <h1 className="title center">Expenses</h1>
         </div>
         <Table striped={true}>
             <thead>

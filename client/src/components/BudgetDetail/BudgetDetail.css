@@ -14,11 +14,12 @@ font-family: 'Anton', sans-serif; */
     color: #fdffff !important; 
 }
 
-.expense-title {
+.title {
     color:  #fdffff;
 }
 
-.expense-title-panel {
+.title-panel {
+    margin-top: 40px;
     background-color: #084c61;
     padding-top: 10px;
     padding-bottom: 10px;
