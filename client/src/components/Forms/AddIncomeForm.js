@@ -23,12 +23,10 @@ export const AddIncomeForm = props => (
             <label htmlFor="amount-income">Amount</label>
         </div>
         <div className="input-field col s6">
-            <input
-                type="text"
-                id="date-income"
-                {...props}
-            />
-            <label htmlFor="date-income">Date</label>
+            <div className="date-picker">
+                <Input name='on' type='date' onChange={function (e, value) { }} />
+                <label htmlFor="due-date">Due Date</label>
+            </div>
         </div>
         <div className="input-field col s6">
             <Input

@@ -35,6 +35,7 @@ class EditBudget extends Component {
                                     <BudgetIncomeChildren />
                                     <BudgetIncomeChildren />
                                     <BudgetIncomeChildren />
+                                    <BudgetIncomeChildren />
                                 </BudgetIncome>
                             </div>
                         </div>
@@ -53,6 +54,7 @@ class EditBudget extends Component {
                     <div className="row">
                         <div className="col s10 offset-s1">
                             <BudgetExpenses>
+                                <BudgetExpensesChildren />
                                 <BudgetExpensesChildren />
                                 <BudgetExpensesChildren />
                                 <BudgetExpensesChildren />
