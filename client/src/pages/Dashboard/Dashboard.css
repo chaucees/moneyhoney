@@ -53,15 +53,6 @@ input {
     width: 25%;
 }
 
-.row-item {
-    background-color: #ffffff;
-    text-transform: capitalize;
-    color: black;
-    height: 75px;
-    padding: 0px;
-}
-
-
 
 /* SECTIONS */
 
@@ -84,6 +75,8 @@ input {
     padding-top: 3%;
 }
 
-.add-margin {
-    margin: 5%;
+
+.material-icons {
+    padding: 0px !important;
+    size: auto !important;
 }

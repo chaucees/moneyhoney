@@ -9,55 +9,7 @@ TYPEFACES:
 font-family: 'Quicksand', sans-serif; 
 font-family: 'Anton', sans-serif; */
 
-
-body {
-    font-family: 'Quicksand', sans-serif;
-    line-height: 20pt;
-    font-size: 14pt;
-    letter-spacing: 2pt;
-}
-
-.header-text {
-    text-transform: uppercase;
-    letter-spacing: 5pt;
-    font-size: 52pt;
-    line-height: 50pt;
-    text-align: center;
-    font-family: 'Anton', sans-serif;
-    color: #fdffff;
-}
-
-.sub-header-text {
-    text-transform: capitalize;
-    letter-spacing: 2pt;
-    text-align: center;
-    font-size: 24pt;
-    font-family: 'Quicksand', sans-serif;
-    color: #fdffff;
-
-}
-
-.homeheader {
-    background: url("./images/phone.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 300px;
-}
-
-.section2 {
-    margin-top: 5%;
-}
-
-.section3 {
-    background-color: #084c61;
-    text-align:center;
-    color: #fdffff;
-    padding: 5%;
-    margin-top: 5%;
-
-}
+/* TYPOGRAPHY */
 
 h1 {
     text-transform: capitalize;

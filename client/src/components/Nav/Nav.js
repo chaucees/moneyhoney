@@ -47,7 +47,7 @@ class Nav extends Component {
         > */}
           {/* <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a> */}
           <SideNav
-          trigger={<i className="material-icons sm-48 menu">menu</i>}
+          trigger={<i className="material-icons sm-48 menu nav-menu">menu</i>}
           options={{ closeOnClick: true }}
         >
           <SideNavItem href="#"><span className="nav-item-text">Home</span></SideNavItem>
