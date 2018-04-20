@@ -24,67 +24,59 @@ class Dashboard extends Component {
 
 		return (
 			<div className="container-fluid">
-				<div className="container section2-dash">
+				<div className="container-fluid header-dash valign-wrapper">
 					<div className="row">
-						<div className="col s7 push-s5">
-							<span className="flow-text">
-								<i>Welcome</i>
-								<ProfileName profile={profile} />
-								<ProfileEmail profile={profile} />
-							</span>
-						</div>
-						<ProfilePhoto profile={profile} />
-					</div>
-				</div>
-				<div className="container section2-dash">
-					<div className="col s10 offset-s1">
-						<div className="row">
-							<DashPanel>
-								<div className="right">
-									<ViewBtn />
-								</div>
-								<DashPanelName />
-							</DashPanel>
-						</div>
-						<div className="row">
-							<DashPanel>
-								<div className="right">
-									<ViewBtn />
-								</div>
-								<DashPanelName />
-								</ DashPanel>
-						</div>
-						<div className="row">
-							<AddBtnAlt />
+						<div className="col s12">
+							<i>Welcome</i>
+							<ProfileName profile={profile} />
 						</div>
 					</div>
 				</div>
-				<div className="row offset-s1">
-					<div className="col s4 offset-s2">
-						<BudgetIncome>
-							<div className="right">
-								<EditBtn />
-							</div>
-							<BudgetIncomeChildren />
-							<BudgetIncomeChildren />
-							<BudgetIncomeChildren />
-						</BudgetIncome>
-					</div>
-					<div className="col s4">
-						<BudgetExpenses>
-							<div className="right">
-								<EditBtn />
-							</div>
-							<BudgetExpensesChildren />
-							<BudgetExpensesChildren />
-							<BudgetExpensesChildren />
-						</BudgetExpenses>
-					</div>
+				<div className="container-fluid side-padding">
 					<div className="row">
-						<div className="col s10 offset-s1">
-							<h1 className="center-align">Graphs here?</h1>
+						<div className="col xl6 l6 m12 s12">
+							<div className="row">
+								<DashPanel>
+									<div className="right">
+										<ViewBtn />
+									</div>
+									<DashPanelName />
+								</DashPanel>
+							</div>
+							<div className="row">
+								<DashPanel>
+									<div className="right">
+										<ViewBtn />
+									</div>
+									<DashPanelName />
+									</ DashPanel>
+							</div>
+							<div className="row">
+								<AddBtnAlt />
+							</div>
+						</div>
+						<div className="col xl6 l6 m12 s12">
+							<BudgetIncome>
+								<div className="right">
+									<EditBtn />
+								</div>
+								<BudgetIncomeChildren />
+								<BudgetIncomeChildren />
+								<BudgetIncomeChildren />
+							</BudgetIncome>
+						</div>
+						<div className="col s4">
+							<BudgetExpenses>
+								<div className="right">
+									<EditBtn />
+								</div>
+								<BudgetExpensesChildren />
+								<BudgetExpensesChildren />
+								<BudgetExpensesChildren />
+							</BudgetExpenses>
 						</div>
 					</div>
+
 				</div>
 			</div>
 				);

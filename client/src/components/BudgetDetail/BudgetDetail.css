@@ -10,6 +10,12 @@ font-family: 'Quicksand', sans-serif;
 font-family: 'Anton', sans-serif; */
 
 .collection-header {
-    background-color: #084c61 !important;
-    color: #fdffff !important; 
+    background-color: #263238 !important;
+}
+
+h4 {
+    font-size: 18pt;
+    color: #fdffff;
+    font-family: 'Open Sans', sans-serif;
+
 }
