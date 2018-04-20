@@ -25,7 +25,7 @@ class Home extends Component {
     <div className="container section2">
         <div className="row">
             <div className="col s6" align="center">
-                <i className="material-icons light-blue-text accent-2-text medium">account_balance</i>
+                <i className="material-icons light-blue-text accent-2-text medium">attach_money</i>
                 <h1>What Is MoneyHoney?</h1>
                 <p>MoneyHoney is a cloud-based budgeting app that allows you to track income and every day expenses and automate
                     bill payments to save for the life you deserve.</p>
