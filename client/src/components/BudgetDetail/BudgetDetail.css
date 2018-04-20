@@ -13,3 +13,13 @@ font-family: 'Anton', sans-serif; */
     background-color: #084c61 !important;
     color: #fdffff !important; 
 }
+
+.expense-title {
+    color:  #fdffff;
+}
+
+.expense-title-panel {
+    background-color: #084c61;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
