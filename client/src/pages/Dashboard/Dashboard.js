@@ -24,32 +24,52 @@ class Dashboard extends Component {
 
 		return (
 			<div className="container-fluid">
-				<div className="container section2-dash">
+				<div className="container-fluid header-dash valign-wrapper">
 					<div className="row">
-						<div className="col s7 push-s5">
-							<span className="flow-text">
-								<i>Welcome</i>
-								<ProfileName profile={profile} />
-								<ProfileEmail profile={profile} />
-							</span>
+						<div className="col s12">
+							<i>Welcome</i>
+							<ProfileName profile={profile} />
 						</div>
-						<ProfilePhoto profile={profile} />
 					</div>
 				</div>
-				<div className="container section2-dash">
-					<div className="col s10 offset-s1">
-						<div className="row">
-							<DashPanel>
-								<div className="right">
-									<ViewBtn />
-								</div>
-								<DashPanelName />
-							</DashPanel>
+				<div className="container-fluid side-padding">
+					<div className="row">
+						<div className="col xl6 l6 m12 s12 add-margin">
+							<div className="row">
+								<DashPanel>
+									<div className="right">
+										<ViewBtn />
+									</div>
+									<DashPanelName />
+								</DashPanel>
+							</div>
+							<div className="row">
+								<DashPanel>
+									<div className="right">
+										<ViewBtn />
+									</div>
+									<DashPanelName />
+									</ DashPanel>
+							</div>
+							<div className="row">
+								<AddBtnAlt />
+							</div>
 						</div>
-						<div className="row">
-							<DashPanel>
+						<div className="col xl6 l6 m12 s12 add-margin">
+						
+							<BudgetIncome>
 								<div className="right">
-									<ViewBtn />
+									<EditBtn />
+								</div>
+								<BudgetIncomeChildren />
+								<BudgetIncomeChildren />
+								<BudgetIncomeChildren />
+							</BudgetIncome>
+						</div>
+						<div className="col s4">
+							<BudgetExpenses>
+								<div className="right">
+									<EditBtn />
 								</div>
 								<DashPanelName />
 								</ DashPanel>
@@ -87,6 +107,7 @@ class Dashboard extends Component {
 							<h1 className="center-align">Graphs here?</h1>
 						</div>
 					</div>
+
 				</div>
 			</div>
 				);

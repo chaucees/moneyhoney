@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import "./Home.css";
-import Woman from "./images/woman.png";
-import Man from "./images/man.png";
 import Banks from "./images/banks.png";
 import iphone from "./images/iphone.png";
 import { LoginBtn, AddBtn, BackBtn, EditBtn, SaveBtn, SubmitBtn, ViewBtn, DeleteBtn, AddBtnAlt } from "../../components/Buttons";

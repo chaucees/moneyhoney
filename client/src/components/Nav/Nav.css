@@ -19,25 +19,12 @@ nav {
     background-color: #fdffff;
 }
 
-.transparent {
-    background:#7f7f7f;
-    background:rgba(255,255,255,0.5);
-  }
+
 
 .nav-item  {
     padding-top: 5%;
     padding-left: 5%;
 }
-
-
-/* .nav-item-text {
-    color: #fdffff;
-} */
-
-
-/* .hamburger {
-    width: 200px !important;
-}*/
 
 .menu {
     padding-top: 1%;
