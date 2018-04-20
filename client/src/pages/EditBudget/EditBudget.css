@@ -26,3 +26,7 @@ font-family: 'Anton', sans-serif; */
     padding: 20px;
 
 }
+
+.date-picker {
+    margin-top: -20px;
+}

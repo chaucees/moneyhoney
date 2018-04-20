@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 import "./Home.css";
-import Woman from "./images/woman.png";
-import Man from "./images/man.png";
-import OldMan from "./images/oldman.png";
 import Banks from "./images/banks.png";
 import iphone from "./images/iphone.png";
 import { LoginBtn, AddBtn, BackBtn, EditBtn, SaveBtn, SubmitBtn, ViewBtn, DeleteBtn, AddBtnAlt } from "../../components/Buttons";
@@ -15,18 +12,18 @@ class Home extends Component {
     return (
 <div className="container-fluid">
     <div className="row">
-        <div className="section homeheader valign-wrapper center-align">
+        <div className="section homeheader-home valign-wrapper center-align">
             <div className=" col s12">
-                <p className="header-text">Prepare For The Future</p>
-                <p className="header-text">You Deserve</p>
-                <p className="sub-header-text">Money Management Made Easy</p>
+                <p className="header-text-home">Save For The Future</p>
+                <p className="header-text-home">You Deserve</p>
+                <p className="sub-header-text-home">Money Management Made Easy</p>
             </div>
         </div>
     </div>
     <div className="container section2">
         <div className="row">
             <div className="col s6" align="center">
-                <i className="material-icons light-blue-text accent-2-text medium">account_balance</i>
+                <i className="material-icons light-blue-text accent-2-text medium">attach_money</i>
                 <h1>What Is MoneyHoney?</h1>
                 <p>MoneyHoney is a cloud-based budgeting app that allows you to track income and every day expenses and automate
                     bill payments to save for the life you deserve.</p>
@@ -39,66 +36,32 @@ class Home extends Component {
             </div>
         </div>
     </div>
-    <div className="container-fluid section4">
+    <div className="container-fluid section3-home">
         <div className="row">
-            <div className="col s12 m4">
-                <img src={Woman}></img>
-                <p>"MoneyHoney helped me pay off my student loans in half the time!"</p>
-                <p>Mia -
-                    <i>Photographer</i>
-                </p>
+            <div className="col s12 m12 l8 xl8">
+                <span className="large-text">No Fees</span>
+                <p>The app is totally free.</p>
+                <span className="large-text">No Worries</span>
+                <p>MoneyHoney accounts are FDIC insured.</p>
+
             </div>
-            <div className="col s12 m4 hide-on-small-only">
-                <img src={Man}></img>
-                <p>"MoneyHoney automated my bill and loan payments which helped raise my credit score."</p>
-                <p>Tim -
-                    <i>Author</i>
-                </p>
-            </div>
-            <div className="col s12 m4 hide-on-small-only">
+
+            <div className="col s12 xl4 l4 hide-on-small-only hide-on-med-only">
                 <img src={iphone}></img>
             </div>
 
         </div>
     </div>
-    <div className="container section2">
+    <div className="container-fluid section4-home">
         <div className="row">
-            <center>
-                <h1>Getting Started</h1>
-            </center>
-            <center>
-                <i>It's As Easy As 1, 2, 3...</i>
-            </center>
+            <span className="large-text-white">Getting Started</span>
+            <p><i>It's As Easy As 1, 2, 3...</i></p>
+            <a class="btn-large pretty-button">Learn More</a>
+        
         </div>
-        <div className="row">
-            <div className="col s12 m4" align="center">
-                <p className="large-num">1.</p>
-                <h1>Sign Up</h1>
-                <SignupNameForm />
-            </div>
-            <div className="col s4 hide-on-small-only" align="center">
-                <p className="large-num">2.</p>
-                <h1>Link Accounts</h1>
-                <p>Over 30 national banks supported!</p>
-                <p>
-                    <img src={Banks} className="img"></img>
-                </p>
-            </div>
-            <div className="col s4 hide-on-small-only" align="center">
-                <p className="large-num">3.</p>
-                <h1>Start Saving</h1>
-                <span align="left">
-                    <ul>
-                        <li>1. Set Your Goals.</li>
-                        <li>2. Select Your Savings Plan.</li>
-                        <li>3. Start Saving!</li>
-                    </ul>
-                </span>
-            </div>
-        </div>
+        
     </div>
 </div>
-          
         
     );
   }

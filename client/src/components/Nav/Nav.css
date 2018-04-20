@@ -15,14 +15,20 @@ font-family: 'Anton', sans-serif; */
 }
 
 nav {
-    height: 100px;
-    background-color: #084c61;
+    height: 125px;
+    background-color: #fdffff;
 }
 
+.transparent {
+    background:#7f7f7f;
+    background:rgba(255,255,255,0.5);
+  }
+
 .nav-item  {
-    padding-top: 20px;
-    padding-left: 10px;
+    padding-top: 5%;
+    padding-left: 5%;
 }
+
 
 /* .nav-item-text {
     color: #fdffff;
@@ -31,19 +37,21 @@ nav {
 
 /* .hamburger {
     width: 200px !important;
-}
+}*/
 
 .menu {
     padding-top: 1%;
     padding-left: 1%;
     width: 30px !important;
-    height: 100px !important;
-} */
+    height: 150px !important;
+} 
 
 .material-icons {
     font-size: 48px !important;
-    margin-left: 10px;
-    padding-top: 20px;
+    color: #084c61;
+    padding-top: 20px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
 }
 
 @media only screen and (max-width: 600px) {
@@ -51,11 +59,8 @@ nav {
         visibility: hidden;
     }
     nav {
-        height: 60px;
-        background-color: #084c61;
-    }
-    .logo {
-        margin-top: 3%;
+        height:75px;
+        background-color: #fdffff;
     }
     .material-icons {
         padding-top: 3px;

@@ -38,14 +38,12 @@ body {
 }
 
 .homeheader {
-    background: url("./images/header.jpg");
+    background: url("./images/phone.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 800px;
-    /* padding-top:12%; */
-    
+    min-height: 300px;
 }
 
 .section2-signup {
@@ -65,10 +63,9 @@ body {
 }
 
 h1 {
-    text-transform: uppercase;
-    font-family: 'Anton', sans-serif;
-    letter-spacing: 5pt;
-    font-size: 24pt;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20pt;
 }
 
 h2 {
