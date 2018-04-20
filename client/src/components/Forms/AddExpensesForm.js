@@ -23,12 +23,10 @@ export const AddExpensesForm = props => (
             <label htmlFor="amount-expense">Amount</label>
         </div>
         <div className="input-field col s6">
-            <input
-                type="text"
-                id="date-expense"
-                {...props}
-            />
-            <label htmlFor="date-expense">Date</label>
+            <div className="date-picker">
+                <Input name='on' type='date' onChange={function (e, value) { }} />
+                <label htmlFor="due-date">Due Date</label>
+            </div>
         </div>
         <div className="input-field col s6">
             <Input
@@ -47,10 +45,6 @@ export const AddExpensesForm = props => (
                 {...props}
             />
             <label htmlFor="frequency-expense">How often?</label>
-        </div>
-        <div className="input-field col s6">
-            <Input name='on' type='date' onChange={function(e, value) {}} />
-            <label htmlFor="due-date">Due Date</label>
         </div>
     </div>
 );
