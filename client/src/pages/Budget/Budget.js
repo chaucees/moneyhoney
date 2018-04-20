@@ -43,9 +43,6 @@ class Budget extends Component {
                         </BudgetExpenses>
                     </div>
                 </div>
-                <div className="row">
-                    <h1 className="center-align">Graphs here?</h1>
-                </div>
             </div>
         );
     }
