@@ -7,7 +7,7 @@ export const BudgetExpenses = ({ children }) => (
         <div className="title-panel">
             <h1 className="title center">Expenses</h1>
         </div>
-        <Table striped={true}>
+        <Table>
             <thead>
                 <tr>
                     <th data-field="name">Name</th>
