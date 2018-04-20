@@ -61,20 +61,22 @@ class Dashboard extends Component {
 				</div>
 				<div className="row offset-s1">
 					<div className="col s4 offset-s2">
-						<BudgetIncome>
-							<div className="right">
+					<div className="right">
 								<EditBtn />
 							</div>
+						<BudgetIncome>
+							<BudgetIncomeChildren />
 							<BudgetIncomeChildren />
 							<BudgetIncomeChildren />
 							<BudgetIncomeChildren />
 						</BudgetIncome>
 					</div>
 					<div className="col s4">
-						<BudgetExpenses>
-							<div className="right">
+					<div className="right">
 								<EditBtn />
 							</div>
+						<BudgetExpenses>
+							<BudgetExpensesChildren />
 							<BudgetExpensesChildren />
 							<BudgetExpensesChildren />
 							<BudgetExpensesChildren />
