@@ -16,13 +16,14 @@ font-family: 'Anton', sans-serif; */
 
 nav {
     height: 100px;
-    background-color: #084c61;
+    background-color: #fdffff;
 }
 
 .nav-item  {
-    padding-top: 20px;
-    padding-left: 10px;
+    padding-top: 5%;
+    padding-left: 5%;
 }
+
 
 /* .nav-item-text {
     color: #fdffff;
@@ -44,6 +45,7 @@ nav {
     font-size: 48px !important;
     margin-left: 10px;
     padding-top: 20px;
+    color: #084c61;
 }
 
 @media only screen and (max-width: 600px) {

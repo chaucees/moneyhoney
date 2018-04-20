@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Nav.css";
-import Logo from "./images/logo-transp-01.png";
+import Logo from "./images/logo-blue.png";
 import { LoginBtn, LogoutBtn } from "../../components/Buttons";
 import { Navbar, NavItem, SideNav, SideNavItem, Button } from "react-materialize";
 

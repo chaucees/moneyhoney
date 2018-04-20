@@ -17,9 +17,9 @@ class Home extends Component {
     <div className="row">
         <div className="section homeheader valign-wrapper center-align">
             <div className=" col s12">
-                <p className="header-text">Prepare For The Future</p>
-                <p className="header-text">You Deserve</p>
-                <p className="sub-header-text">Money Management Made Easy</p>
+                <p className="header-text-home">Prepare For The Future</p>
+                <p className="header-text-home">You Deserve</p>
+                <p className="sub-header-text-home">Money Management Made Easy</p>
             </div>
         </div>
     </div>

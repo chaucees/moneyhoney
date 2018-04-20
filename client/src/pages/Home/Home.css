@@ -16,7 +16,7 @@ p {
   }
 
 .homeheader {
-    background: url("./images/header.jpg");
+    background: url("./images/phone.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -24,20 +24,18 @@ p {
     min-height: 300px;
 }
 
-.header-text {
-    text-transform: uppercase;
-    letter-spacing: 5pt;
-    font-size: 52pt;
+.header-text-home {
+    letter-spacing: 2pt;
+    font-size: 48pt;
     text-align: center;
-    font-family: 'Anton', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: #fdffff;
 }
 
-.sub-header-text {
+.sub-header-text-home {
     text-transform: capitalize;
-    letter-spacing: 2pt;
     text-align: center;
-    font-size: 24pt;
+    font-size: 20pt;
     font-family: 'Quicksand', sans-serif;
     color: #fdffff;
 
@@ -59,10 +57,9 @@ p {
 }
 
 h1 {
-    text-transform: uppercase;
-    font-family: 'Anton', sans-serif;
-    letter-spacing: 2pt;
-    font-size: 24pt;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20pt;
 }
 
 .large-num {

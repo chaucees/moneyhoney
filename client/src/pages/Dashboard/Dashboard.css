@@ -52,10 +52,9 @@ p {
 }
 
 h1 {
-    text-transform: uppercase;
-    font-family: 'Anton', sans-serif;
-    letter-spacing: 5pt;
-    font-size: 24pt;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20pt;
 }
 
 h2 {
@@ -163,10 +162,9 @@ p {
 }
 
 h1 {
-    text-transform: uppercase;
-    font-family: 'Anton', sans-serif;
-    letter-spacing: 5pt;
-    font-size: 24pt;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20pt;
 }
 
 h2 {
