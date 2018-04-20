@@ -20,11 +20,13 @@ class EditBudget extends Component {
 			incomeName      : "",       // user input from form	| string
 			incomeAmount    : 0,        // user input from form	| number
 			incomeDate      : Date(),   // user input from form	| Date
+																	// format: e.g., "4 April, 2018"
 			incomeWillRecur : false,    // user input from form	| boolean
 			incomeFrequency : 0,        // user input from form | number
 			expenseName     : "",       // user input from form | string
 			expenseAmount   : 0,        // user input from form | number
 			expenseDate     : Date(),   // user input from form | Date
+																	// format: e.g., "4 April, 2018"
 			expenseWillRecur: false,    // user input from form | boolean
 			expenseFrequency: 0         // user input from form | number
 		}
@@ -67,7 +69,7 @@ class EditBudget extends Component {
     this.setState({
       [name]: value
 		});
-		// console.log(name, value);
+		console.log("name",name,"value",value);
 	};
 	
 	handleBudgetNameFormSubmit = (event) => {
@@ -98,7 +100,7 @@ class EditBudget extends Component {
 					<div className="row">
 						<div className="col s10 offset-s1">
 							<h1 className="center-align budget-text">Add Income</h1>
-							<AddIncomeForm />
+							<AddIncomeForm handleInputChange={this.handleInputChange}/>
 							<div className="center">
 								<AddBtn />
 							</div>

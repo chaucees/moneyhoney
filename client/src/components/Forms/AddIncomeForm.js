@@ -10,7 +10,8 @@ export const AddIncomeForm = props => (
             <input
                 type="text"
                 id="income-name"
-                {...props}
+                name="incomeName"
+                onChange={props.handleInputChange}
             />
             <label htmlFor="income-name">Income Name</label>
         </div>
@@ -18,13 +19,18 @@ export const AddIncomeForm = props => (
             <input
                 type="text"
                 id="amount-income"
-                {...props}
+                name="incomeAmount"
+                onChange={props.handleInputChange}
             />
             <label htmlFor="amount-income">Amount</label>
         </div>
         <div className="input-field col s6">
             <div className="date-picker">
-                <Input name='on' type='date' onChange={function (e, value) { }} />
+                <Input name='incomeDate' 
+                       type='date' 
+                    //    onChange={function (e, value) { }} 
+                       onChange={props.handleInputChange}
+                />
                 <label htmlFor="due-date">Due Date</label>
             </div>
         </div>
