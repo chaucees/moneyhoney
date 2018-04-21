@@ -73,7 +73,7 @@ class Home extends Component {
         <div className="row">
             <span className="large-text-white">Getting Started</span>
             <p><i>It's As Easy As 1, 2, 3...</i></p>
-            <a class="btn-large pretty-button" href="/signup">Sign Up</a>
+            <a className="btn-large pretty-button" href="/signup">Sign Up</a>
         
         </div>
         

@@ -6,17 +6,17 @@ import { SideNav, SideNavItem } from "react-materialize";
 import { ProfilePhoto } from "../Profile/ProfilePhoto";
 
 class Nav extends Component {
-  componentWillMount() {
-    this.setState({ profile: {} });
-    const { userProfile, getProfile } = this.props.auth;
-    if (!userProfile) {
-      getProfile((err, profile) => {
-        this.setState({ profile: profile });
-      });
-    } else {
-      this.setState({ profile: userProfile });
-    }
-  }
+  // componentWillMount() {
+  //   this.setState({ profile: {} });
+  //   const { userProfile, getProfile } = this.props.auth;
+  //   if (!userProfile) {
+  //     getProfile((err, profile) => {
+  //       this.setState({ profile: profile });
+  //     });
+  //   } else {
+  //     this.setState({ profile: userProfile });
+  //   }
+  // }
   goTo(route) {
     this.props.history.replace(`/${route}`)
   }
@@ -31,13 +31,13 @@ class Nav extends Component {
 
   render() {
     const { isAuthenticated, userHasScopes } = this.props.auth;
-    const {profile}=this.state;
+    // const {profile}=this.state;
     return (
       
       <div className="nav-wrapper">
         <nav>
           <div className="right">
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <ul id="nav-mobile" className="right hide-on-med-and-down">
           <li>
             {
               !isAuthenticated() && (
@@ -47,7 +47,7 @@ class Nav extends Component {
               )
             }
             </li>
-            <li>
+            {/* <li>
             {
               isAuthenticated() && (
               <ProfilePhoto 
@@ -55,7 +55,7 @@ class Nav extends Component {
                 />
               )
             }
-            </li>
+            </li> */}
             <li>
             {
               isAuthenticated() && (
