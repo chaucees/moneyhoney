@@ -115,7 +115,6 @@ class EditBudget extends Component {
 								incomeFrequency={this.state.incomeFrequency}
 								handleInputChange={this.handleInputChange}
 								sendCheckboxValue={this.sendCheckboxValue}
-								handleAddIncomeFormSubmit={this.handleAddIncomeFormSubmit}
 							/>
 						</div>
 							<div className="row">
@@ -134,10 +133,15 @@ class EditBudget extends Component {
 					<div className="row">
 						<div className="col s10 offset-s1">
 							<h1 className="center-align">Add Expense</h1>
-							<AddExpensesForm />
-							<div className="center">
-								<AddBtn />
-							</div>
+							<AddExpensesForm
+								expenseName={this.state.expenseName}
+								expenseAmount={this.state.expenseAmount}
+								expenseDate={this.state.expenseDate}
+								expenseWillRecur={this.state.expenseWillRecur}
+								expenseFrequency={this.state.expenseFrequency}
+								handleInputChange={this.handleInputChange}
+								sendCheckboxValue={this.sendCheckboxValue}
+							/>
 						</div>
 					</div>
 					<div className="row">
