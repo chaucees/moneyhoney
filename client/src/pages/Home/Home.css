@@ -17,6 +17,17 @@ p {
     font-size: 16pt;
 }
 
+h1 {
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20pt;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18pt;
+}
+
 .header-text-home {
     letter-spacing: 2pt;
     font-size: 48pt;
@@ -35,6 +46,7 @@ p {
 
 .large-text {
     text-align: center;
+    font-family: 'Voces';
     color: #084c61;
     font-size: 64pt;
     line-height: 50pt;
@@ -47,17 +59,6 @@ p {
     line-height: 50pt;
 }
 
-h1 {
-    text-transform: capitalize;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 20pt;
-}
-
-h2 {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18pt;
-}
-
 .large-num {
     font-size: 48pt;
     text-align: center;
@@ -68,7 +69,7 @@ h2 {
 /* SECTIONS */
 
 .homeheader-home {
-    background: url("./images/phone2.png");
+    background: url("./images/home-01.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -91,7 +92,7 @@ h2 {
 .section4-home {
     margin-top: 7%;
     padding-top: 100px;
-    padding-bottom: 5%;
+    padding-bottom: 2%;
 }
 
 .section5-home {
