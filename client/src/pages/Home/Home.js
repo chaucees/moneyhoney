@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import "./Home.css";
 import Banks from "./images/banks.png";
 import iphone from "./images/iphone.png";
-import { LoginBtn, AddBtn, BackBtn, EditBtn, SaveBtn, SubmitBtn, ViewBtn, DeleteBtn, AddBtnAlt } from "../../components/Buttons";
-import { LoginForm, SignupNameForm, SignupPasswordForm } from "../../components/Forms";
 
 class Home extends Component {
   render() {
@@ -56,7 +54,7 @@ class Home extends Component {
         <div className="row">
             <span className="large-text-white">Getting Started</span>
             <p><i>It's As Easy As 1, 2, 3...</i></p>
-            <a class="btn-large pretty-button">Learn More</a>
+            <a class="btn-large pretty-button" href="/signup">Sign Up</a>
         
         </div>
         

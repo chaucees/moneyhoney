@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import "./Forms.css";
 import { Input } from "react-materialize";
-// Buttons
-import { LoginBtn, AddBtn, BackBtn, EditBtn, SaveBtn, SubmitBtn, ViewBtn, DeleteBtn, AddBtnAlt } from "../../components/Buttons";
 
 export class AddIncomeForm extends Component {
     constructor(props) {

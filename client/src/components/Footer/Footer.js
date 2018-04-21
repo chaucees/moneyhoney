@@ -22,7 +22,7 @@ const FooterBar = props => (
         <div className="row">
             <div className="col s12 m6">
                 <h5 className="white-text">Follow</h5>
-                <p className="grey-text text-lighten-4"><img src={Icons}></img></p>
+                <p className="grey-text text-lighten-4"><img src={Icons} alt="icons"></img></p>
             </div>
             <div className="col s12 m6">
                 <h5 className="white-text">Account</h5>

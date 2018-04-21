@@ -1,13 +1,13 @@
 import React from "react";
 import "./BudgetDetail.css";
-import { Collection, Table } from "react-materialize";
+import { Table } from "react-materialize";
 
 export const BudgetIncome = ({ children }) => (
     <div className="expenses-panel">
         <div className="title-panel">
             <h1 className="title center">Income</h1>
         </div>
-        <Table striped={true}>
+        <Table>
             <thead>
                 <tr>
                     <th data-field="name">Name</th>
@@ -28,8 +28,5 @@ export const BudgetIncome = ({ children }) => (
                 </tr>
             </tbody>
         </Table>
-    </div>
-    // <Collection header="Income" className="collection-header">
-    //     { children }
-    // </Collection>    
+    </div> 
 );
