@@ -19,6 +19,7 @@ font-family: 'Anton', sans-serif; */
     background-size: cover;
     min-height:500px;
     padding-top: 1.5%;
+    padding-bottom: 0px !important;
 }
 
 .section2-signup {
@@ -37,14 +38,8 @@ h1 {
     color: black;
 }
 
-h2 {
-    text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: 3pt;
-    font-size: 36pt;
-    color: #fcca46;
-}
 
-.row {
-    margin-bottom: 0px !important;
+/* Adjustments */
+.no-padding {
+    padding-bottom: 0px !important;
 }

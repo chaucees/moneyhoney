@@ -19,14 +19,13 @@ h1 {
     text-transform: capitalize;
     font-family: 'Open Sans', sans-serif;
     font-size: 20pt;
+    color: white;
 }
 
 h2 {
-    text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: 3pt;
-    font-size: 36pt;
-    color: #fcca46;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20pt;
+    color: #1f2c30;
 }
 
 .large-num {
@@ -41,6 +40,11 @@ h2 {
     padding: 10px !important;
 }
 
+.welcome-text {
+    font-size: 26pt;
+    font-style: italic;
+    text-align: center;
+}
 /* MISC */
 
 input {
@@ -69,14 +73,18 @@ input {
 
 /* ADJUSTMENTS */
 
-.side-padding {
+.all-padding {
     padding-left: 3%;
     padding-right:  3%;
     padding-top: 3%;
+    padding-bottom: 3%;
 }
-
 
 .material-icons {
     padding: 0px !important;
     size: auto !important;
+}
+
+.white-text {
+    color: white !important;
 }
