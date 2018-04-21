@@ -33,3 +33,23 @@ footer {
     text-align: left;
     text-transform: uppercase;
   }
+
+.designed-by {
+  padding-left: 20px;
+  font-size: 15px;
+}
+
+.copyright {
+  padding-right: 20px;
+  font-size: 15px;
+}
+
+.white-text {
+  margin-bottom: -10px;
+}
+
+.icons {
+  margin-bottom: -30px;
+  /* margin-right: 10px; */
+  padding-left: 18px;
+}
