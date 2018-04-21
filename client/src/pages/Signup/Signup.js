@@ -20,7 +20,7 @@ class Signup extends Component {
                     <div className="container section2-signup">
                         <div className="row">
                             <div className="col s12">
-                            <center><h1>Step One</h1></center>
+                            <center><h1>Step One.</h1></center>
                                 <SignupNameForm />
                             </div>
                         </div>
