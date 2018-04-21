@@ -17,25 +17,24 @@ font-family: 'Anton', sans-serif; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height:300px;
-    color: white;
+    min-height:500px;
+    padding-top: 1.5%;
 }
 
 .section2-signup {
     margin-top: 5%;
     margin-bottom: 5%;
     background-color: #efefef;
-    width: 50%;
-    box-shadow: 5px 10px 50px #888888;
+    box-shadow: 5px 10px 50px #1f1f1f;
     padding: 5%;
+    text-align: center;
 }
-
-
 
 h1 {
     text-transform: capitalize;
     font-family: 'Open Sans', sans-serif;
     font-size: 20pt;
+    color: black;
 }
 
 h2 {
@@ -46,3 +45,6 @@ h2 {
     color: #fcca46;
 }
 
+.row {
+    margin-bottom: 0px !important;
+}
