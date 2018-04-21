@@ -23,16 +23,15 @@ class Dashboard extends Component {
 	<div className="container-fluid header-dash valign-wrapper">
 		<div className="row">
 			<div className="col s12">
-				<i>Welcome</i>
-				<ProfileName profile={profile} />
+				<p className="welcome-text">Welcome</p>
 			</div>
 		</div>
 	</div>
 
-	<div className="container">
+	<div className="container all-padding">
 		<div className="row">
 			<div className="col s12">
-				<center><h1>Your Budgets</h1></center>
+				<center><h2><ProfileName profile={profile} /></h2></center>
 			</div>
 		</div>
 		<div className="row">
