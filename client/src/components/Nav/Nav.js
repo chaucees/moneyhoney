@@ -17,7 +17,6 @@ class Nav extends Component {
       this.setState({ profile: userProfile });
     }
   }
-
   goTo(route) {
     this.props.history.replace(`/${route}`)
   }
@@ -34,6 +33,7 @@ class Nav extends Component {
     const { isAuthenticated, userHasScopes } = this.props.auth;
     const {profile}=this.state;
     return (
+      
       <div className="nav-wrapper">
         <nav>
           <div className="right">
