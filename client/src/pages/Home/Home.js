@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import "./Home.css";
 import Banks from "./images/banks.png";
 import iphone from "./images/iphone.png";
-import { LoginBtn, AddBtn, BackBtn, EditBtn, SaveBtn, SubmitBtn, ViewBtn, DeleteBtn, AddBtnAlt } from "../../components/Buttons";
-import { LoginForm, SignupNameForm, SignupPasswordForm } from "../../components/Forms";
 
 class Home extends Component {
   render() {

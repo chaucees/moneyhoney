@@ -1,8 +1,6 @@
 import React from "react";
 import "./Forms.css";
 import { Input } from "react-materialize";
-// Buttons
-import { LoginBtn, AddBtn, BackBtn, EditBtn, SaveBtn, SubmitBtn, ViewBtn, DeleteBtn, AddBtnAlt } from "../../components/Buttons";
 
 export const AddIncomeForm = props => (
     <div className="row">

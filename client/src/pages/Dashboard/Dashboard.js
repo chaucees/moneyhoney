@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import "./Dashboard.css";
-import { LoginBtn, AddBtn, BackBtn, EditBtn, SaveBtn, SubmitBtn, ViewBtn, DeleteBtn, AddBtnAlt } from "../../components/Buttons";
-import { DashPanel, DashPanelName, DashIncome, DashExpenses } from "../../components/DashPanel";
-import { ProfilePhoto, ProfileName, ProfileEmail } from "../../components/Profile";
-import { BudgetDetailName, BudgetIncome, BudgetExpenses, BudgetIncomeChildren, BudgetExpensesChildren } from "../../components/BudgetDetail";
+import { ViewBtn, AddBtnAlt } from "../../components/Buttons";
+import { DashPanel, DashPanelName } from "../../components/DashPanel";
+import { ProfileName } from "../../components/Profile";
+
 class Dashboard extends Component {
     componentWillMount() {
         this.setState({ profile: {} });
