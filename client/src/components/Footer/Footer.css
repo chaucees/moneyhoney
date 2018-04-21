@@ -20,7 +20,6 @@ body {
   }
 
 footer {
-    /* height: 150px; */
     background-color: #052e38 !important;
   }
 
@@ -28,7 +27,7 @@ footer {
     font-family: 'Quicksand', sans-serif; 
     color: white;
     font-weight: 400;
-    font-size: 18pt;
+    font-size: 16pt;
     letter-spacing: 5pt;
     text-align: left;
     text-transform: uppercase;
@@ -50,6 +49,5 @@ footer {
 
 .icons {
   margin-bottom: -30px;
-  /* margin-right: 10px; */
   padding-left: 18px;
 }

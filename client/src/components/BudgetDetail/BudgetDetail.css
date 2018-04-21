@@ -9,18 +9,20 @@ TYPEFACES:
 font-family: 'Quicksand', sans-serif; 
 font-family: 'Anton', sans-serif; */
 
-.collection-header {
-ound-color: #084c61 !important;
-    color: #fdffff !important; 
-}
-
 .title {
-    color:  #fdffff;
+    color:  black;
 }
 
 .title-panel {
     margin-top: 40px;
-    background-color: #084c61;
+    background-color: #eceff1;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.budget-name {
+    color: white;
+    text-align:center;
+    font-size: 30pt;
+    text-shadow: 2px 2px 25px #666666;
 }

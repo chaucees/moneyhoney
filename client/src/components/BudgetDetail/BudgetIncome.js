@@ -3,11 +3,11 @@ import "./BudgetDetail.css";
 import { Table } from "react-materialize";
 
 export const BudgetIncome = ({ children }) => (
-    <div className="expenses-panel">
+    <div className="expenses-panel z-depth-4">
         <div className="title-panel">
             <h1 className="title center">Income</h1>
         </div>
-        <Table>
+        <Table className="highlight responsive-table">
             <thead>
                 <tr>
                     <th data-field="name">Name</th>
