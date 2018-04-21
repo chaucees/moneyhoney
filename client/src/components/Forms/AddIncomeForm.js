@@ -78,7 +78,7 @@ export class AddIncomeForm extends Component {
                             type='date' 
                             onChange={this.props.handleInputChange}
                         />
-                        <label htmlFor="due-date">Due Date</label>
+                        <label htmlFor="incomeDate">Due Date</label>
                     </div>
                 </div>
                 <div className="input-field col s6">
