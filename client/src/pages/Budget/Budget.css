@@ -17,14 +17,6 @@ h1 {
     font-size: 20pt;
 }
 
-h2 {
-    text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: 3pt;
-    font-size: 36pt;
-    color: #fcca46;
-}
-
 .large-num {
     font-size: 48pt;
     text-align: center;
