@@ -3,8 +3,21 @@ import "./Nav.css";
 import Logo from "./images/logo-blue.png";
 import { LoginBtn, LogoutBtn } from "../../components/Buttons";
 import { SideNav, SideNavItem } from "react-materialize";
+import { ProfilePhoto } from "../Profile/ProfilePhoto";
 
 class Nav extends Component {
+  componentWillMount() {
+    this.setState({ profile: {} });
+    const { userProfile, getProfile } = this.props.auth;
+    if (!userProfile) {
+      getProfile((err, profile) => {
+        this.setState({ profile: profile });
+      });
+    } else {
+      this.setState({ profile: userProfile });
+    }
+  }
+
   goTo(route) {
     this.props.history.replace(`/${route}`)
   }
@@ -19,11 +32,13 @@ class Nav extends Component {
 
   render() {
     const { isAuthenticated, userHasScopes } = this.props.auth;
-
+    const {profile}=this.state;
     return (
-      <div className="nav-container">
+      <div className="nav-wrapper">
         <nav>
           <div className="right">
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li>
             {
               !isAuthenticated() && (
                 <LoginBtn
@@ -31,6 +46,17 @@ class Nav extends Component {
                 />
               )
             }
+            </li>
+            <li>
+            {
+              isAuthenticated() && (
+              <ProfilePhoto 
+                  profile={profile}
+                />
+              )
+            }
+            </li>
+            <li>
             {
               isAuthenticated() && (
                 <LogoutBtn
@@ -38,6 +64,8 @@ class Nav extends Component {
                 />
               )
             }
+            </li>
+            </ul>
 
           </div>
           <img src={Logo} alt="Money Honey Logo" className="logo brand-logo center"></img>
