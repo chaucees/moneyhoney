@@ -7,7 +7,7 @@ export const BudgetIncome = ({ children }) => (
         <div className="title-panel">
             <h1 className="title center">Income</h1>
         </div>
-        <Table>
+        <Table className="highlight responsive-table">
             <thead>
                 <tr>
                     <th data-field="name">Name</th>
