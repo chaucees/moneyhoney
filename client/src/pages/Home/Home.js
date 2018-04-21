@@ -20,13 +20,13 @@ class Home extends Component {
     </div>
     <div className="container section2">
         <div className="row">
-            <div className="col s6" align="center">
+            <div className="col l6 m6 s12" align="center">
                 <i className="material-icons light-blue-text accent-2-text medium">attach_money</i>
                 <h1>What Is MoneyHoney?</h1>
                 <p>MoneyHoney is a cloud-based budgeting app that allows you to track income and every day expenses and automate
                     bill payments to save for the life you deserve.</p>
             </div>
-            <div className="col s6" align="center">
+            <div className="col l6 m6 s12" align="center">
                 <i className="material-icons light-blue-text accent-2-text medium">people_outline</i>
                 <h1>Who Is It For?</h1>
                 <p>MoneyHoney is for those who cringe when thinking about spreedsheets, budgets, and expenses. If you're looking
@@ -41,16 +41,36 @@ class Home extends Component {
                 <p>The app is totally free.</p>
                 <span className="large-text">No Worries</span>
                 <p>MoneyHoney accounts are FDIC insured.</p>
-
             </div>
-
             <div className="col s12 xl4 l4 hide-on-small-only hide-on-med-only">
                 <img src={iphone}></img>
             </div>
 
         </div>
     </div>
-    <div className="container-fluid section4-home">
+    <div className="container section4-home">
+        <div className="row">
+            <div className="col l4 m4 s12" align="center">
+                <i className="material-icons light-blue-text accent-2-text medium">attach_money</i>
+                <h1>What Is MoneyHoney?</h1>
+                <p>MoneyHoney is a cloud-based budgeting app that allows you to track income and every day expenses and automate
+                    bill payments to save for the life you deserve.</p>
+            </div>
+            <div className="col l4 m4 s12" align="center">
+                <i className="material-icons light-blue-text accent-2-text medium">people_outline</i>
+                <h1>Who Is It For?</h1>
+                <p>MoneyHoney is for those who cringe when thinking about spreedsheets, budgets, and expenses. If you're looking
+                    for an easy way to save for the future you want, sign up today! </p>
+            </div>
+            <div className="col l4 m4 s12" align="center">
+                <i className="material-icons light-blue-text accent-2-text medium">people_outline</i>
+                <h1>Who Is It For?</h1>
+                <p>MoneyHoney is for those who cringe when thinking about spreedsheets, budgets, and expenses. If you're looking
+                    for an easy way to save for the future you want, sign up today! </p>
+            </div>
+        </div>
+    </div>
+    <div className="container-fluid section5-home">
         <div className="row">
             <span className="large-text-white">Getting Started</span>
             <p><i>It's As Easy As 1, 2, 3...</i></p>
