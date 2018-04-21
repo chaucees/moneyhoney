@@ -10,16 +10,14 @@ font-family: 'Quicksand', sans-serif;
 font-family: 'Anton', sans-serif; */
 
 .logo {
-    width: 10%;
+    width: 150px;
     margin-top: 1%;
 }
 
 nav {
-    height: 125px;
+    height: 100px;
     background-color: #fdffff;
 }
-
-
 
 .nav-item  {
     padding-top: 5%;
