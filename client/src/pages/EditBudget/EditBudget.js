@@ -19,7 +19,7 @@ class EditBudget extends Component {
 			budgetName      : "",       // API call from Budgets table
 			incomeName      : "",       // user input from form	| string
 			incomeAmount    : 0,        // user input from form	| number
-			incomeDate      : Date(),   // user input from form	| Date
+			incomeDate      : null,   	// user input from form	| Date
 																	// format: e.g., "4 April, 2018"
 			incomeWillRecur : false,    // user input from form	| boolean
 			incomeFrequency : 0,        // user input from form | number
@@ -32,7 +32,7 @@ class EditBudget extends Component {
 		}
 
 		this.handleInputChange = this.handleInputChange.bind(this);
-		this.handleBudgetNameFormSubmit = this.handleBudgetNameFormSubmit.bind(this);
+		this.sendCheckboxValue = this.sendCheckboxValue.bind(this);
 	}
 
 	componentWillMount() {
@@ -71,12 +71,19 @@ class EditBudget extends Component {
 		});
 		console.log("name",name,"value",value);
 	};
+
+	sendCheckboxValue = (name, checked) => {
+		console.log(name,checked);
+		this.setState({
+			[name]: checked
+		});
+	};
 	
 	handleBudgetNameFormSubmit = (event) => {
 		event.preventDefault();
 		console.log("Budget Name submitted");
 		// route to PUT budget name on the budget w/ _id matching budgetId
-  }
+	};
 
 	render() {
 		return (
@@ -100,10 +107,16 @@ class EditBudget extends Component {
 					<div className="row">
 						<div className="col s10 offset-s1">
 							<h1 className="center-align budget-text">Add Income</h1>
-							<AddIncomeForm handleInputChange={this.handleInputChange}/>
-							<div className="center">
-								<AddBtn />
-							</div>
+							<AddIncomeForm 
+								incomeName={this.state.incomeName}
+								incomeAmount={this.state.incomeAmount}
+								incomeDate={this.state.incomeDate}
+								incomeWillRecur={this.state.incomeWillRecur}
+								incomeFrequency={this.state.incomeFrequency}
+								handleInputChange={this.handleInputChange}
+								sendCheckboxValue={this.sendCheckboxValue}
+								handleAddIncomeFormSubmit={this.handleAddIncomeFormSubmit}
+							/>
 						</div>
 							<div className="row">
 								<div className="col s10 offset-s1">
