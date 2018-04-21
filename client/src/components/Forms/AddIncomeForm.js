@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Forms.css";
 import { Input } from "react-materialize";
+import { AddBtn } from "../Buttons";
 
 export class AddIncomeForm extends Component {
     constructor(props) {
@@ -38,12 +39,12 @@ export class AddIncomeForm extends Component {
 
 	resetInputForm = () => {
 		// How do I get the form to visually reset?
-        this.refs.incomeName.value      = "";
-        this.refs.incomeAmount.value    = null;
+        this.refs.incomeName.value   = "";
+        this.refs.incomeAmount.value = null;
         // Can't figure out how to reset date in form
         // this.refs.incomeDate.value      = Date();
-        this.refs.incomeWillRecur.value = false;
-        this.refs.incomeFrequency.value = null;
+        this.refs.incomeWillRecur.checked = false;
+        this.refs.incomeFrequency.value   = null;
 	}
 
     render() {
