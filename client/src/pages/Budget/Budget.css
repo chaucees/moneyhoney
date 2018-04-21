@@ -23,3 +23,34 @@ h1 {
     color: #30c5ff;
     font-family: 'Anton', sans-serif;
 }
+
+/* SECTIONS */
+
+.body-bg-budget {
+    background: url("./images/budget.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height:300px;
+    padding-top: 1.5%;
+    padding-bottom: 5%;
+}
+
+td, th {
+    padding: 20px 15px 10px;
+}
+
+/* Adjustments */
+.no-padding {
+    padding-bottom: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.white-text {
+    color: white !important;
+}
+
+.padding-added {
+    padding-bottom: 3%;
+}
