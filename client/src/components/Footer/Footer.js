@@ -7,17 +7,7 @@ const FooterBar = props => (
     <Footer copyrights="Designed by The Final Four"
         moreLinks={
             <a className="grey-text text-lighten-4 right" href="#!">&copy; 2018</a>
-        }
-        // links={
-        //     <ul>
-        //         <li><a className="grey-text text-lighten-3" href="#">Login</a></li>
-        //         <li><a className="grey-text text-lighten-3" href="dashboard">Profile</a></li>
-        //         <li><a className="grey-text text-lighten-3" href="#">FAQ</a></li>
-        //         <li><a className="grey-text text-lighten-3" href="#">Help</a></li>
-        //     </ul>
-        // }
-        className='example'
-    >
+        }>
     <div className="container-fluid">
         <div className="row">
             <div className="col s12 m6">
