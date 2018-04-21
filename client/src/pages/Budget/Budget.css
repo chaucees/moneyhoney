@@ -1,14 +1,3 @@
-/* COLORS: 
-black: #323031
-dark blue: #084c61
-yellow: #fcca46
-light blue: #30c5ff
-white: #fdffff;
-
-TYPEFACES:
-font-family: 'Quicksand', sans-serif; 
-font-family: 'Anton', sans-serif; */
-
 /* TYPOGRAPHY */
 
 h1 {
@@ -33,15 +22,10 @@ h1 {
     background-repeat: no-repeat;
     background-size: cover;
     min-height:300px;
-    padding-top: 1.5%;
-    padding-bottom: 5%;
-}
-
-td, th {
-    padding: 20px 15px 10px;
 }
 
 /* Adjustments */
+
 .no-padding {
     padding-bottom: 0px !important;
     margin-bottom: 0px !important;
@@ -53,4 +37,8 @@ td, th {
 
 .padding-added {
     padding-bottom: 3%;
+}
+
+td, th {
+    padding: 20px 15px 10px;
 }
