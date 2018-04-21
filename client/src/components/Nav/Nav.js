@@ -75,6 +75,7 @@ class Nav extends Component {
         >
           <SideNavItem href="home"><span className="nav-item-text">Home</span></SideNavItem>
           <SideNavItem href="dashboard"><span className="nav-item-text">Dashboard</span></SideNavItem>
+          <SideNavItem href="home"><span className="nav-item-text">Login/Logout</span></SideNavItem>
         </SideNav>
         </nav>
       </div>
