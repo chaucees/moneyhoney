@@ -8,9 +8,7 @@ class Signup extends Component {
     render() {
         return (
             <div className="container-fluid body-bg-sign-up">
-                <div class="row">
-                    <div className="container">
-                        <div className="row">
+                <div class="row no-padding">
                             <div className="col l6 m8 s12 offset-l3 offset-m2 section2-signup">
                                 <center>
                                     <h1>Sign Up</h1>
@@ -23,8 +21,6 @@ class Signup extends Component {
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
         );
     }
 }
