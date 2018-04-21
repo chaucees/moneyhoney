@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import "./Budget.css";
-import { DashPanel, DashPanelName } from "../../components/DashPanel";
 import { BudgetDetailName, BudgetIncome, BudgetExpenses, BudgetIncomeChildren, BudgetExpensesChildren } from "../../components/BudgetDetail";
 import { EditBtn } from "../../components/Buttons";
 

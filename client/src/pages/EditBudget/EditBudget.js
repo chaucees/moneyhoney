@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import "./EditBudget.css";
 import { AddIncomeForm, AddBudgetName, AddExpensesForm } from "../../components/Forms";
-import { AddBtn, BackBtn, EditBtn, SaveBtn } from "../../components/Buttons";
-import { BudgetDetailName, BudgetIncome, BudgetExpenses, BudgetIncomeChildren, BudgetExpensesChildren } from "../../components/BudgetDetail";
+import { AddBtn, BackBtn, SaveBtn } from "../../components/Buttons";
+import { BudgetIncome, BudgetExpenses, BudgetIncomeChildren, BudgetExpensesChildren } from "../../components/BudgetDetail";
 
 
 
