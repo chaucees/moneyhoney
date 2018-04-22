@@ -1,25 +1,26 @@
 'use strict';
+
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable('IncomeExp', {
+    return queryInterface.createTable('Budgets', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      title: {
-        type: Sequelize.STRING(20)
+      User_id: {
+        foreignKey: true,
+        type: Sequelize.INTEGER
       },
-      type: {
-        type: Sequelize.STRING(20)
+      name: {
+        type: Sequelize.STRING
       },
-      value: {
-        type: Sequelize.STRING(20)
-      }
+      createdAt: Sequelize.DATE,
+      updatedAt: Sequelize.DATE
     });
   },
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('IncomeExp');
+    return queryInterface.dropTable('Budgets');
   }
 };

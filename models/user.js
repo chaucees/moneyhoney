@@ -6,9 +6,17 @@ module.exports = (sequelize, DataTypes) => {
     },
     id_google: {
       type: DataTypes.STRING,
+    },
+    email: {
+      type: DataTypes.STRING,
+    },
+    firstName: {
+      type: DataTypes.STRING,
+    },
+    lastName: {
+      type: DataTypes.STRING,
     }
   });
 
   return User;
 };
- 
