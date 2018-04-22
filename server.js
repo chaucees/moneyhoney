@@ -2,9 +2,9 @@ const express = require("express");
 const path = require("path");
 const PORT = process.env.PORT || 3001;
 const app = express();
-const jwt = require('express-jwt');
-const jwtAuthz = require('express-jwt-authz');
-const jwksRsa = require('jwks-rsa');
+// const jwt = require('express-jwt');
+// const jwtAuthz = require('express-jwt-authz');
+// const jwksRsa = require('jwks-rsa');
 const db = require('./models');
 // require('dotenv').config();
 
