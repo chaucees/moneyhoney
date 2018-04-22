@@ -6,6 +6,7 @@
 const UsersController       = ('../controllers/UsersController');
 const BudgetsController     = ('../controllers/BudgetsController');
 const BudgetItemsController = ('../controllers/BudgetItemsController');
+const router = require('express').Router();
 
 /*
  * ROUTES
