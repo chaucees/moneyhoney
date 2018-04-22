@@ -1,6 +1,6 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
-  const Budgets = sequelize.define('Budget', {
+  const Budget = sequelize.define('Budget', {
     // Unique id
     id: {
       type         : Sequelize.INTEGER,
@@ -24,8 +24,8 @@ module.exports = (sequelize, DataTypes) => {
     }
   });
 
-  Budgets.associate = function(models) {
-    models.Budgets.belongsTo(models.Users, {
+  Budget.associate = function(models) {
+    models.Budget.belongsTo(models.Users, {
       onDelete: "CASCADE",
       foreignKey: {
         allowNull: false
@@ -33,9 +33,9 @@ module.exports = (sequelize, DataTypes) => {
     });
   };
   
-  Budgets.associate = function(models) {
-    models.Budgets.hasMany(models.BudgetItems);
+  Budget.associate = function(models) {
+    models.Budget.hasMany(models.BudgetItems);
   };
 
-  return Budgets;
+  return Budget;
 };

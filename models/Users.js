@@ -13,10 +13,10 @@ module.exports = (sequelize, DataTypes) => {
     }
   });
 
-  Users.associate = function(models) {
-    models.Users.hasMany(models.Budgets);
+  User.associate = function(models) {
+    models.User.hasMany(models.Budgets);
   };
 
-  return Users;
+  return User;
 };
  
