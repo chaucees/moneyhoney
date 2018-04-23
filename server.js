@@ -2,20 +2,16 @@ const express = require("express");
 const path = require("path");
 const PORT = process.env.PORT || 3001;
 const app = express();
-// const jwt = require('express-jwt');
-// const jwtAuthz = require('express-jwt-authz');
-// const jwksRsa = require('jwks-rsa');
+const jwt = require('express-jwt');
+const jwtAuthz = require('express-jwt-authz');
+const jwksRsa = require('jwks-rsa');
 const db = require('./models');
 // require('dotenv').config();
-const routes = require('./routes');
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
-
-// API routes
-app.use(routes);
 
 // Send every request to the React app
 // Define any API routes before this runs
