@@ -55,10 +55,13 @@ font-family: 'Anton', sans-serif; */
     padding-top: 25px;
 } */
 
-.view-button {
-    margin-top: 30px;
+.view-button,
+.delete-button {
+    margin-top: 25px;
     margin-right: 10px;
+    margin-bottom: 20px;
 }
+
 
 .add-new-typeface {
     font-family: 'Quicksand', sans-serif;

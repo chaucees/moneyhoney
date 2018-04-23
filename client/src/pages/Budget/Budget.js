@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import "./Budget.css";
 import { BudgetDetailName, BudgetIncome, BudgetExpenses, BudgetIncomeChildren, BudgetExpensesChildren } from "../../components/BudgetDetail";
-import { EditBtn } from "../../components/Buttons";
+import { EditBtn, DeleteBtn } from "../../components/Buttons";
 
 
 class Budget extends Component {
@@ -26,6 +26,9 @@ class Budget extends Component {
                             <BudgetIncomeChildren />
                             <BudgetIncomeChildren />
                             <BudgetIncomeChildren />
+                            <div className="right">
+                                <DeleteBtn />
+                            </div>
                         </BudgetIncome>
                     </div>
                 </div>
@@ -39,6 +42,9 @@ class Budget extends Component {
                             <BudgetExpensesChildren />
                             <BudgetExpensesChildren />
                             <BudgetExpensesChildren />
+                            <div className="right">
+                                <DeleteBtn />
+                            </div>
                         </BudgetExpenses>
                     </div>
                 </div>

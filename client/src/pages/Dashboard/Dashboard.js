@@ -41,6 +41,9 @@ class Dashboard extends Component {
 									<div className="right">
 										<ViewBtn />
 									</div>
+									<div className="right">
+										<DeleteBtn />
+									</div>
 									<DashPanelName />
 								</DashPanel>
 							</div>
@@ -48,6 +51,9 @@ class Dashboard extends Component {
 								<DashPanel>
 									<div className="right">
 										<ViewBtn />
+									</div>
+									<div className="right">
+										<DeleteBtn />
 									</div>
 									<DashPanelName />
 								</ DashPanel>
