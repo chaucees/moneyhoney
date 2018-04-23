@@ -5,6 +5,7 @@ const app = express();
 const jwt = require('express-jwt');
 const jwtAuthz = require('express-jwt-authz');
 const jwksRsa = require('jwks-rsa');
+const bodyParser = require('body-parser');
 const db = require('./models');
 // require('dotenv').config();
 
@@ -12,6 +13,12 @@ const db = require('./models');
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
+
+// parse application/json
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
+require('./routes/api-routes.js')(app);
 
 // Send every request to the React app
 // Define any API routes before this runs

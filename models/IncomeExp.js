@@ -1,6 +1,6 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
-  var IncomeExp = sequelize.define('IncomeExp', {
+  var IncomeExp = sequelize.define('IncomeExps', {
     // Title: e.g., payroll, water bill, etc.
     title: {
       type: DataTypes.STRING,
@@ -39,6 +39,10 @@ module.exports = (sequelize, DataTypes) => {
         ],
         msg: "dollar amount"
       }
+    },
+    Budget_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false
     }
   });
 
