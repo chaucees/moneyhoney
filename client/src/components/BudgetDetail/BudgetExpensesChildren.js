@@ -3,6 +3,6 @@ import "./BudgetDetail.css";
 
 export const BudgetExpensesChildren = props => (
 
-    <td>{ props.children } Expenses</td>
+    <td className="table-children">{ props.children } Expenses</td>
 
 );
