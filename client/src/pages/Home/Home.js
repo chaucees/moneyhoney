@@ -10,7 +10,7 @@ class Home extends Component {
     
     return (
 <div className="container-fluid">
-    <div className="row">
+    <div className="row fade-in one">
         <div className="section homeheader-home valign-wrapper center-align">
             <div className=" col s12">
                 <p className="header-text-home">Save For The Future</p>
@@ -20,7 +20,7 @@ class Home extends Component {
         </div>
     </div>
     <div className="container section2">
-        <div className="row">
+        <div className="row fade-in two">
             <div className="col l6 m6 s12" align="center">
                 <i className="material-icons light-blue-text accent-2-text medium">attach_money</i>
                 <h1>What Is MoneyHoney?</h1>
@@ -36,7 +36,7 @@ class Home extends Component {
         </div>
     </div>
     <div className="container-fluid section3-home">
-        <div className="row">
+        <div className="row fade-in three">
             <div className="col s12 m12 l8 xl8">
                 <span className="large-text">No Fees</span>
                 <p>The app is totally free.</p>
@@ -50,7 +50,7 @@ class Home extends Component {
         </div>
     </div>
     <div className="container section4-home">
-        <div className="row">
+        <div className="row fade-in three">
             <div className="col l4 m4 s12" align="center">
                 <i className="material-icons light-blue-text accent-2-text medium">cloud_queue</i>
                 <h2>Effortlessly Stay on Top of Bills</h2>
@@ -70,7 +70,7 @@ class Home extends Component {
             </div>
         </div>
     </div>
-    <div className="container-fluid section5-home">
+    <div className="container-fluid section5-home fade-in three">
         <div className="row">
             <span className="large-text-white">Getting Started</span>
             <p><i>It's As Easy As 1, 2, 3...</i></p>
