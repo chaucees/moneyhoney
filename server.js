@@ -7,6 +7,7 @@ const jwtAuthz = require('express-jwt-authz');
 const jwksRsa = require('jwks-rsa');
 const bodyParser = require('body-parser');
 const db = require('./models');
+
 // require('dotenv').config();
 
 // Serve up static assets (usually on heroku)
@@ -32,3 +33,4 @@ db.sequelize.sync().then(function() {
     console.log(`🌎 ==> Server now on port ${PORT}!`);
   });
 });
+
