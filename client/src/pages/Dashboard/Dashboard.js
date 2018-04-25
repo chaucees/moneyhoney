@@ -71,7 +71,7 @@ class Dashboard extends Component {
 		return (
 
 			<div className="container-fluid">
-				<div className="container-fluid header-dash valign-wrapper" data-aos="fade-up" data-aos-duration="1000">
+				<div className="container-fluid header-dash valign-wrapper" data-aos="fade" data-aos-duration="1000" data-aos-once="true">
 					<div className="row">
 						<div className="col s12">
 							<p className="welcome-text">Welcome</p>
@@ -79,7 +79,7 @@ class Dashboard extends Component {
 						</div>
 					</div>
 				</div>
-				<div className="container all-padding" data-aos="fade-up" data-aos-duration="1000">
+				<div className="container all-padding" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
 					<div className="row">
 						<div className="col s12">
 							{
@@ -113,7 +113,7 @@ class Dashboard extends Component {
 						</div>
 					</div>
 				</div>
-			<div className="container" data-aos="flip-left" data-aos-duration="500">
+			<div className="container" data-aos="flip-left" data-aos-duration="500" data-aos-once="true">
 				<div className="row">
 					<div className="col s12">
 						<center><img src={Graphs}></img></center>
