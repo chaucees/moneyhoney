@@ -75,7 +75,13 @@ class Nav extends Component {
         >
           <SideNavItem href="home"><span className="nav-item-text">Home</span></SideNavItem>
           <SideNavItem href="dashboard"><span className="nav-item-text">Dashboard</span></SideNavItem>
-          <SideNavItem href="home"><span className="nav-item-text">Login/Logout</span></SideNavItem>
+          { !isAuthenticated() && (
+            <SideNavItem onClick={this.login.bind(this)}><span className="nav-item-text">Login</span></SideNavItem>
+          )}
+          { isAuthenticated() && (
+            <SideNavItem onClick={this.logout.bind(this)}><span className="nav-item-text">Logout</span></SideNavItem>
+          )}
+          
         </SideNav>
         </nav>
       </div>
