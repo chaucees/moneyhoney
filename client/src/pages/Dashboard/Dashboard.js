@@ -19,6 +19,7 @@ class Dashboard extends Component {
 	render() {
 		const { profile, email } = this.state;
 		return (
+
 			<div className="container-fluid">
 				<div className="container-fluid header-dash valign-wrapper">
 					<div className="row">
@@ -27,7 +28,6 @@ class Dashboard extends Component {
 						</div>
 					</div>
 				</div>
-
 				<div className="container all-padding">
 					<div className="row">
 						<div className="col s12">
@@ -64,7 +64,29 @@ class Dashboard extends Component {
 						</div>
 					</div>
 				</div>
+			<div className="container">
+				<div className="row">
+					<div className="col l4 s12 hide-on-med-only">
+						<div className="pie-wrap pie-wrap2">
+							<div className="slice1 slice-wrap"> </div>
+							<div className="slice2 slice-wrap"> </div>
+						</div>
+					</div>
+					<div className="col l4 s12 hide-on-med-only">
+						<div className="pie-wrap pie-wrap2">
+							<div className="slice1 slice-wrap"> </div>
+							<div className="slice2 slice-wrap"> </div>
+						</div>
+					</div>
+					<div className="col l4 s12 hide-on-small-only">
+						<div className="pie-wrap pie-wrap2">
+							<div className="slice1 slice-wrap"> </div>
+							<div className="slice2 slice-wrap"> </div>
+						</div>
+					</div>
+				</div>
 			</div>
+		</div>
 		);
 	}
 }
