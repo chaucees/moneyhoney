@@ -25,3 +25,7 @@ font-family: 'Anton', sans-serif; */
     text-align:center;
     font-size: 3vw;
 }
+
+.expenses-panel {
+    box-shadow: 5px 10px 50px 5px #d6d6d6;
+}

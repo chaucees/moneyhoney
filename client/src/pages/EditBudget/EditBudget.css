@@ -22,11 +22,15 @@ font-family: 'Anton', sans-serif; */
     margin-top: 5%;
     margin-bottom: 5%;
     background-color: #f4f8fa;
-    box-shadow: 5px 10px 50px #888888;
-    padding: 20px;
+    box-shadow: 5px 10px 50px 5px #d6d6d6;
+    padding: 3%;
 
 }
 
 .date-picker {
     margin-top: -20px;
+}
+
+.add-expense-section {
+    padding-bottom: 3%;
 }
