@@ -35,7 +35,7 @@ class Nav extends Component {
     return (
       
       <div className="nav-wrapper">
-        <nav>
+        <nav className="z-depth-3">
           <div className="right">
           <ul id="nav-mobile" className="right hide-on-med-and-down">
           <li>
