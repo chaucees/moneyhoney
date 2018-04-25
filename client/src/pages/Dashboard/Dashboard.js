@@ -3,8 +3,35 @@ import "./Dashboard.css";
 import { ViewBtn, AddBtnAlt, DeleteBtn } from "../../components/Buttons";
 import { DashPanel, DashPanelName } from "../../components/DashPanel";
 import { ProfileName } from "../../components/Profile";
+import API from "../../utils/API";
 
 class Dashboard extends Component {
+	constructor(props) {
+		super(props);
+
+		this.state = {
+			budgets: [
+				{
+					name: "Budget 1",
+					user_email: "boggsjp@gmail.com",
+					id: 1
+				},
+				{
+					name: "Budget 2",
+					user_email: "boggsjp@gmail.com",
+					id: 2
+				},
+				{
+					name: "Budget 3",
+					user_email: "boggsjp@gmail.com",
+					id: 3
+				},
+			]
+		}
+		
+		this.getUsersBudgets = this.getUsersBudgets.bind(this);
+	}
+
 	componentWillMount() {
 		this.setState({ profile: {} });
 		const { userProfile, getProfile } = this.props.auth;
@@ -16,6 +43,26 @@ class Dashboard extends Component {
 			this.setState({ profile: userProfile });
 		}
 	}
+
+	getUsersBudgets = () => {
+		let userEmail = this.state.profile.email;
+		
+		// use userEmail to find Budgets belonging to that user
+		API.findBudgets(userEmail)
+			.then((res) => {
+				this.setState({ budgets: res.body })
+			})
+			.catch((err) => console.error(err));
+	}
+
+	deleteBudget = (budgetId) => {
+		const self = this;
+		
+		API.deleteBudget(budgetId)
+			.then((res) => self.getUsersBudgets())
+			.catch((err) => console.error(err));
+	}
+
 	render() {
 		const { profile, email } = this.state;
 		return (
@@ -31,33 +78,29 @@ class Dashboard extends Component {
 				<div className="container all-padding">
 					<div className="row">
 						<div className="col s12">
-							<center><h2><ProfileName profile={profile} /></h2></center>
+							<center>
+								<h2><ProfileName profile={profile} /></h2>
+								<button onClick={this.getUsersBudgets}>Test a function!</button>
+							</center>
 						</div>
 					</div>
 					<div className="row">
 						<div className="col s12">
-							<div className="row">
-								<DashPanel>
-									<div className="right">
-										<ViewBtn />
+							{
+								this.state.budgets.map((budget, index) => (
+									<div className="row">
+										<DashPanel>
+											<div className="right">
+												<ViewBtn id={budget.id}/>
+											</div>
+											<div className="right">
+												<DeleteBtn />
+											</div>
+											<DashPanelName>{budget.name}</DashPanelName>
+										</DashPanel>
 									</div>
-									<div className="right">
-										<DeleteBtn />
-									</div>
-									<DashPanelName />
-								</DashPanel>
-							</div>
-							<div className="row">
-								<DashPanel>
-									<div className="right">
-										<ViewBtn />
-									</div>
-									<div className="right">
-										<DeleteBtn />
-									</div>
-									<DashPanelName />
-								</ DashPanel>
-							</div>
+								))
+							}
 							<div className="row">
 								<AddBtnAlt />
 							</div>
