@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import "./Dashboard.css";
-import { ViewBtn, AddBtnAlt, DeleteBtn } from "../../components/Buttons";
+import { ViewBtn, AddBtnAlt, DeleteBtn, SaveBtn } from "../../components/Buttons";
 import { DashPanel, DashPanelName } from "../../components/DashPanel";
 import { ProfileName } from "../../components/Profile";
+import { AddBudgetName } from "../../components/Forms";
+import { Modal, Button } from "react-materialize";
 import API from "../../utils/API";
 
 class Dashboard extends Component {
@@ -28,7 +30,7 @@ class Dashboard extends Component {
 				},
 			]
 		}
-		
+
 		this.getUsersBudgets = this.getUsersBudgets.bind(this);
 	}
 
@@ -46,7 +48,7 @@ class Dashboard extends Component {
 
 	getUsersBudgets = () => {
 		let userEmail = this.state.profile.email;
-		
+
 		// use userEmail to find Budgets belonging to that user
 		API.findBudgets(userEmail)
 			.then((res) => {
@@ -90,7 +92,7 @@ class Dashboard extends Component {
 									<div className="row">
 										<DashPanel>
 											<div className="right">
-												<ViewBtn budgetId={budget.id}/>
+												<ViewBtn budgetId={budget.id} />
 											</div>
 											<div className="right">
 												<DeleteBtn budgetId={budget.id} deleteBudget={this.deleteBudget} />
@@ -101,7 +103,17 @@ class Dashboard extends Component {
 								))
 							}
 							<div className="row">
-								<AddBtnAlt />
+							<div className="col s1">
+								<Modal
+									header='Budget Name'
+									actions={<SaveBtn modal="close" />}
+									trigger={<Button floating large className='btn-floating btn-large waves-effect waves-light blue-grey darken-4' waves='light' icon='add' />}>
+									<AddBudgetName/>
+								</Modal>
+								</div>
+								<div className="col s8">
+									<AddBtnAlt />
+								</div>
 							</div>
 						</div>
 					</div>

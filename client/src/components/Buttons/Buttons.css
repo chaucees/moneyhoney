@@ -48,12 +48,10 @@ font-family: 'Anton', sans-serif; */
     background-color: #fdffff;
 }
 
-/* .add-new-button {
-    background-color: #eceff1;
-    width: 100%;
-    height: 85px;
-    padding-top: 25px;
-} */
+.add-budget-text {
+    margin-top: 14px;
+    margin-left: 20px;
+}
 
 .view-button,
 .delete-button {
@@ -98,4 +96,8 @@ font-family: 'Anton', sans-serif; */
         font-size: 12px;
         padding-right: 55px;
     }
+    .add-budget-text {
+        margin-left: 50px;
+    }
+    
 }
