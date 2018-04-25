@@ -16,11 +16,11 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": "root",
-    "database": "moneyhoney_prod",
-    "host": "127.0.0.1",
-    "port": 8080,
+    "username": "k9x5xwjxxrnsxr2w",
+    "password": "glwxhdpmd7cy67j7",
+    "database": "io77dar6we4iy3dl",
+    "host": "umabrisfx8afs3ja.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "port": 3306,
     "dialect": "mysql"
   }
 }
