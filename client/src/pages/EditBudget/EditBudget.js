@@ -87,8 +87,8 @@ class EditBudget extends Component {
 
 	render() {
 		return (
-			<div className="container editbudget" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
-            data-aos-duration="1000">
+			<div className="container editbudget" data-aos="fade" data-aos-easing="ease-in-back"
+            data-aos-duration="1000" data-aos-once="true">
 				<div className="row">
 					<div className="col s10 offset-s1">
 						<h1 className="center-align">Your Budget</h1>

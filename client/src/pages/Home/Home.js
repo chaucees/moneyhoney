@@ -11,8 +11,8 @@ class Home extends Component {
     return (
 <div className="container-fluid">
     <div className="row">
-        <div className="section homeheader-home valign-wrapper center-align" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
-            data-aos-duration="1000">
+        <div className="section homeheader-home valign-wrapper center-align" data-aos="fade" data-aos-easing="ease-in-back"
+            data-aos-duration="1000" data-aos-once="true">
             <div className="col s12">
                 <p className="header-text-home">Save For The Future</p>
                 <p className="header-text-home">You Deserve</p>
@@ -22,7 +22,7 @@ class Home extends Component {
     </div>
     <div className="container section2">
         <div className="row">
-            <div className="col l6 m6 s12" align="center" data-aos="fade-right" data-aos-duration="2000">
+            <div className="col l6 m6 s12" align="center" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
                 <i className="material-icons light-blue-text accent-2-text medium">attach_money</i>
                 <h1>What Is MoneyHoney?</h1>
                 <p>MoneyHoney is a cloud-based budgeting app that allows you to track income and every day expenses and automate
@@ -44,13 +44,13 @@ class Home extends Component {
                 <span className="large-text">No Worries</span>
                 <p>MoneyHoney accounts are FDIC insured.</p>
             </div>
-            <div className="col s12 xl4 l4 hide-on-small-only hide-on-med-only" data-aos="fade-left" data-aos-duration="2000">
+            <div className="col s12 xl4 l4 hide-on-small-only hide-on-med-only" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
                 <img src={iphone}></img>
             </div>
 
         </div>
     </div>
-    <div className="container section4-home" data-aos="zoom-in" data-aos-duration="2000">
+    <div className="container section4-home" data-aos="zoom-in" data-aos-duration="2000" data-aos-once="true">
         <div className="row">
             <div className="col l4 m4 s12" align="center">
                 <i className="material-icons light-blue-text accent-2-text medium">cloud_queue</i>
@@ -72,9 +72,9 @@ class Home extends Component {
             </div>
         </div>
     </div>
-    <div className="container-fluid section5-home" data-aos="fade-up" data-aos-duration="2000">
+    <div className="container-fluid section5-home" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
         <div className="row">
-            <span className="large-text-white">Getting Started</span>
+            <span className="large-text-white">Start Saving Today!</span>
             <p>
                 <i>It's As Easy As 1, 2, 3...</i>
             </p>
