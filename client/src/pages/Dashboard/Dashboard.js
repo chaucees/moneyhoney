@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import "./Dashboard.css";
-import { ViewBtn, AddBtnAlt, DeleteBtn } from "../../components/Buttons";
+import { ViewBtn, AddBtnAlt, DeleteBtn, SaveBtn } from "../../components/Buttons";
 import { DashPanel, DashPanelName } from "../../components/DashPanel";
 import { ProfileName } from "../../components/Profile";
+import { AddBudgetName } from "../../components/Forms";
 import { Modal, Button } from "react-materialize";
 import API from "../../utils/API";
 
@@ -104,9 +105,10 @@ class Dashboard extends Component {
 							<div className="row">
 							<div className="col s1">
 								<Modal
-									header='Modal Header'
+									header='Budget Name'
+									actions={<SaveBtn modal="close" />}
 									trigger={<Button floating large className='btn-floating btn-large waves-effect waves-light blue-grey darken-4' waves='light' icon='add' />}>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+									<AddBudgetName/>
 								</Modal>
 								</div>
 								<div className="col s4">
