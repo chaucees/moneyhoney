@@ -10,7 +10,6 @@ import EditBudget from "./pages/EditBudget";
 import Home from "./pages/Home";
 import Nav from "./components/Nav";
 import FooterBar from "./components/Footer";
-import Signup from "./pages/Signup";
 import { Footer } from 'react-materialize';
 
 const auth = new Auth();
