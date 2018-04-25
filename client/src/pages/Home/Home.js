@@ -4,6 +4,7 @@ import Banks from "./images/banks.png";
 import iphone from "./images/iphone.png";
 
 class Home extends Component {
+
   render() {
 		const { isAuthenticated } = this.props.auth;
     
@@ -30,7 +31,7 @@ class Home extends Component {
                 <i className="material-icons light-blue-text accent-2-text medium">people_outline</i>
                 <h1>Who Is It For?</h1>
                 <p>MoneyHoney is for those who cringe when thinking about spreedsheets, budgets, and expenses. If you're looking
-                    for an easy way to save for the future you want, sign up today! </p>
+                    for an easy way to save for your future, sign up today! </p>
             </div>
         </div>
     </div>
@@ -62,7 +63,7 @@ class Home extends Component {
             </div>
             <div className="col l4 m4 s12" align="center">
                 <i className="material-icons light-blue-text accent-2-text medium">wb_sunny</i>
-                <h2>Credit Score</h2>
+                <h2>Free Credit Score</h2>
                 <p>Find out yours for free and get tips to help improve it. Get your free credit score and learn how you can improve it now to get the things you want later.
 
 </p>
@@ -73,7 +74,7 @@ class Home extends Component {
         <div className="row">
             <span className="large-text-white">Getting Started</span>
             <p><i>It's As Easy As 1, 2, 3...</i></p>
-            <a className="btn-large pretty-button" href="/signup">Sign Up</a>
+            <span className="btn-large pretty-button" onClick={this.props.auth.login}>Sign Up</span>
         
         </div>
         
