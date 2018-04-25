@@ -3,6 +3,7 @@ import "./Dashboard.css";
 import { ViewBtn, AddBtnAlt, DeleteBtn } from "../../components/Buttons";
 import { DashPanel, DashPanelName } from "../../components/DashPanel";
 import { ProfileName } from "../../components/Profile";
+import { Modal } from "react-materialize";
 
 class Dashboard extends Component {
 	componentWillMount() {
