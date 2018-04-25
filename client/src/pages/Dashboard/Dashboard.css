@@ -16,10 +16,8 @@ p {
 }
 
 h1 {
-    text-transform: capitalize;
     font-family: 'Open Sans', sans-serif;
     font-size: 20pt;
-    color: white;
 }
 
 h2 {
@@ -40,10 +38,19 @@ h2 {
 }
 
 .welcome-text {
-    font-size: 26pt;
+    font-size: 1vw;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2pt;
+}
+
+.profile-name {
+    font-size: 10vw;
     font-style: italic;
     text-align: center;
+    letter-spacing: 1pt;
 }
+
 /* MISC */
 
 input {
@@ -61,7 +68,10 @@ input {
 /* SECTIONS */
 
 .header-dash {
-    background: url("./images/dash.jpg");
+    background: linear-gradient(
+        rgba(8,76,97, 0.45), 
+        rgba(8,76,97, 0.45)
+      ), url("./images/dash.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

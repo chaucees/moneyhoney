@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import "./Dashboard.css";
 import { ViewBtn, AddBtnAlt, DeleteBtn, SaveBtn } from "../../components/Buttons";
 import { DashPanel, DashPanelName } from "../../components/DashPanel";
-import { ProfileName } from "../../components/Profile";
+import { ProfileName} from "../../components/Profile";
 import { AddBudgetName } from "../../components/Forms";
 import { Modal, Button } from "react-materialize";
 import API from "../../utils/API";
@@ -70,21 +70,15 @@ class Dashboard extends Component {
 		return (
 
 			<div className="container-fluid">
-				<div className="container-fluid header-dash valign-wrapper" data-aos="fade-up" data-aos-duration="500">
+				<div className="container-fluid header-dash valign-wrapper" data-aos="fade-up" data-aos-duration="1000">
 					<div className="row">
 						<div className="col s12">
 							<p className="welcome-text">Welcome</p>
+							<h1 className="profile-name white-text"><ProfileName profile={profile} /></h1>
 						</div>
 					</div>
 				</div>
-				<div className="container all-padding" data-aos="fade-up" data-aos-duration="500">
-					<div className="row">
-						<div className="col s12">
-							<center>
-								<h2><ProfileName profile={profile} /></h2>
-							</center>
-						</div>
-					</div>
+				<div className="container all-padding" data-aos="fade-up" data-aos-duration="1000">
 					<div className="row">
 						<div className="col s12">
 							{
