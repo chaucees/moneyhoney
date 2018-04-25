@@ -50,7 +50,7 @@ class Home extends Component {
         </div>
     </div>
     <div className="container section4-home">
-        <div className="row fade">
+        <div className="row fade-in three">
             <div className="col l4 m4 s12" align="center">
                 <i className="material-icons light-blue-text accent-2-text medium">cloud_queue</i>
                 <h2>Effortlessly Stay on Top of Bills</h2>
@@ -70,8 +70,8 @@ class Home extends Component {
             </div>
         </div>
     </div>
-    <div className="container-fluid section5-home">
-        <div className="row fade">
+    <div className="container-fluid section5-home fade-in three">
+        <div className="row">
             <span className="large-text-white">Getting Started</span>
             <p><i>It's As Easy As 1, 2, 3...</i></p>
             <span className="btn-large pretty-button" onClick={this.props.auth.login}>Sign Up</span>
