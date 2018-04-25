@@ -57,7 +57,7 @@ class Dashboard extends Component {
 
 	deleteBudget = (budgetId) => {
 		const self = this;
-		
+
 		API.deleteBudget(budgetId)
 			.then((res) => self.getUsersBudgets())
 			.catch((err) => console.error(err));
@@ -80,7 +80,6 @@ class Dashboard extends Component {
 						<div className="col s12">
 							<center>
 								<h2><ProfileName profile={profile} /></h2>
-								<button onClick={this.getUsersBudgets}>Test a function!</button>
 							</center>
 						</div>
 					</div>
@@ -91,10 +90,10 @@ class Dashboard extends Component {
 									<div className="row">
 										<DashPanel>
 											<div className="right">
-												<ViewBtn id={budget.id}/>
+												<ViewBtn budgetId={budget.id}/>
 											</div>
 											<div className="right">
-												<DeleteBtn />
+												<DeleteBtn budgetId={budget.id} deleteBudget={this.deleteBudget} />
 											</div>
 											<DashPanelName>{budget.name}</DashPanelName>
 										</DashPanel>
