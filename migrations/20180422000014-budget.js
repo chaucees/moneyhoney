@@ -16,6 +16,9 @@ module.exports = {
       name: {
         type: Sequelize.STRING
       },
+      user_email: {
+        type: Sequelize.STRING
+      },
       createdAt: Sequelize.DATE,
       updatedAt: Sequelize.DATE
     });
