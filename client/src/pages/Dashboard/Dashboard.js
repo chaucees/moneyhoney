@@ -111,7 +111,7 @@ class Dashboard extends Component {
 									<AddBudgetName/>
 								</Modal>
 								</div>
-								<div className="col s4">
+								<div className="col s8">
 									<AddBtnAlt />
 								</div>
 							</div>
