@@ -6,6 +6,7 @@ import { ProfileName} from "../../components/Profile";
 import { AddBudgetName } from "../../components/Forms";
 import { Modal, Button } from "react-materialize";
 import API from "../../utils/API";
+import Graphs from "./images/graphs.png";
 
 class Dashboard extends Component {
 	constructor(props) {
@@ -114,7 +115,13 @@ class Dashboard extends Component {
 				</div>
 			<div className="container" data-aos="flip-left" data-aos-duration="500">
 				<div className="row">
-					<div className="col l4 s12 hide-on-med-only">
+					<div className="col s12">
+						<center><img src={Graphs}></img></center>
+					</div>
+					
+					
+					
+					{/* <div className="col l4 s12 hide-on-med-only">
 						<div className="pie-wrap pie-wrap2">
 							<div className="slice1 slice-wrap"> </div>
 							<div className="slice2 slice-wrap"> </div>
@@ -131,7 +138,7 @@ class Dashboard extends Component {
 							<div className="slice1 slice-wrap"> </div>
 							<div className="slice2 slice-wrap"> </div>
 						</div>
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</div>
