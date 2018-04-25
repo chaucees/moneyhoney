@@ -47,7 +47,7 @@ export const makeMainRoutes = () => {
                   <Dashboard auth={auth} {...props} />
                 )
               )} />
-              <Route exact path="/editbudget" 
+              <Route exact path="/editbudget/:id?" 
                     render={(props) => (
                 !auth.isAuthenticated() ? (
                   <Redirect to="/" />
@@ -58,7 +58,7 @@ export const makeMainRoutes = () => {
               {/* <Route exact path="/signup" 
                     render={(props) => <Signup auth={auth} {...props} />} 
               /> */}
-              <Route exact path="/budget" 
+              <Route exact path="/budget/:id" 
                     render={(props) => (
                 !auth.isAuthenticated() ? (
                   <Redirect to="/" />
