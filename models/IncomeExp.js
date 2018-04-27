@@ -45,13 +45,13 @@ module.exports = (sequelize, DataTypes) => {
       }
     },
     date: {
-      type: Sequelize.DATE
+      type: DataTypes.DATE
     },
     frequency: {
-      type: Sequelize.STRING(20)
+      type: DataTypes.STRING(20)
     },
     willRecur: {
-      type: Sequelize.STRING(20)
+      type: DataTypes.STRING(20)
     }
   });
 

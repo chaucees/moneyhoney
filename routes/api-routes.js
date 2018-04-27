@@ -23,7 +23,7 @@ module.exports = function(app) {
   // creates a new budget
       app.post('/api/budget', function(req, res) {
         db.Budgets.create({
-          name: req.body.name
+          name: req.body.name,
           user_email: req.body.user_email
         }).then(function(dbBudget) {
           res.json(dbBudget);
