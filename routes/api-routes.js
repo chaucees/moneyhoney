@@ -55,7 +55,13 @@ module.exports = function(app) {
       });
   // delete budget with budget id
       app.delete('/api/budget/:id', function(req, res) {
-
+        db.Budgets.destroy({
+          where: {
+            id: req.params.id
+          }
+        }).then(function(dbUser) {
+          res.json(dbUser);
+        })
       });
   // -----------------------
   // BudgetItems (IncomeExp)

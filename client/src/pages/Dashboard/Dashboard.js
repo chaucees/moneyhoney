@@ -13,23 +13,8 @@ class Dashboard extends Component {
 		super(props);
 
 		this.state = {
-			budgets: [
-			// 	{
-			// 		name: "Budget 1",
-			// 		user_email: "boggsjp@gmail.com",
-			// 		id: 1
-			// 	},
-			// 	{
-			// 		name: "Budget 2",
-			// 		user_email: "boggsjp@gmail.com",
-			// 		id: 2
-			// 	},
-			// 	{
-			// 		name: "Budget 3",
-			// 		user_email: "boggsjp@gmail.com",
-			// 		id: 3
-			// 	},
-			]
+			budgets: [],
+			newBudgetName: ""
 		}
 
 		this.getUsersBudgets = this.getUsersBudgets.bind(this);
@@ -59,7 +44,6 @@ class Dashboard extends Component {
 		API.findBudgets(userEmail)
 			.then((res) => {
 				this.setState({ budgets: res.data })
-				// console.log("RES",res.data);
 			})
 			.catch((err) => console.error(err));
 	}
@@ -70,6 +54,19 @@ class Dashboard extends Component {
 		API.deleteBudget(budgetId)
 			.then((res) => self.getUsersBudgets())
 			.catch((err) => console.error(err));
+	}
+
+	createBudget = () => {
+		console.log("newBudgetName",this.state.newBudgetName);
+	}
+
+	handleInputChange = (event) => {
+		const {name, value } = event.target;
+		this.setState({
+			[name]: value
+		});
+
+		console.log(this.state.newBudgetName);
 	}
 
 	render() {
@@ -90,7 +87,7 @@ class Dashboard extends Component {
 						<div className="col s12">
 							{
 								this.state.budgets.map((budget, index) => (
-									<div className="row">
+									<div key={index} className="row">
 										<DashPanel>
 											<div className="right">
 												<ViewBtn budgetId={budget.id} />
@@ -107,14 +104,20 @@ class Dashboard extends Component {
 							<div className="col s1">
 								<Modal
 									header='Budget Name'
-									actions={<SaveBtn modal="close" />}
+									actions={<SaveBtn modal="close"/>}
 									trigger={<Button floating large className='btn-floating btn-large waves-effect waves-light blue-grey darken-4' waves='light' icon='add' />}>
-									<AddBudgetName/>
+									<AddBudgetName 
+										value={this.state.newBudgetName}
+										name="newBudgetName"
+										onChange={this.handleInputChange}
+									/>
+									{/* <Button onClick={console.log("Hey!")} /> */}
 								</Modal>
 								</div>
 								<div className="col s8">
 									<AddBtnAlt />
 								</div>
+								{/* <button onClick={this.createBudget}>Create Budget</button> */}
 							</div>
 						</div>
 					</div>
