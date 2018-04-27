@@ -73,8 +73,8 @@ class Nav extends Component {
           trigger={<i className="material-icons sm-48 menu nav-menu">menu</i>}
           options={{ closeOnClick: true }}
         >
-          <SideNavItem href="home"><span className="nav-item-text">Home</span></SideNavItem>
-          <SideNavItem href="dashboard"><span className="nav-item-text">Dashboard</span></SideNavItem>
+          <SideNavItem href="/home"><span className="nav-item-text">Home</span></SideNavItem>
+          <SideNavItem href="/dashboard"><span className="nav-item-text">Dashboard</span></SideNavItem>
           { !isAuthenticated() && (
             <SideNavItem onClick={this.login.bind(this)}><span className="nav-item-text">Login</span></SideNavItem>
           )}

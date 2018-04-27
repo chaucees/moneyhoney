@@ -51,5 +51,9 @@ export default {
   // Dashboard: Search for budgets belonging to userEmails
   findBudgets: function(userEmail) {
     return axios.get(`/api/user/${userEmail}`)
+  },
+  // Dashboard: Delete budget
+  deleteBudget: function(budgetId) {
+    return axios.delete(`/api/budget/${budgetId}`)
   }
 }
