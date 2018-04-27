@@ -5,21 +5,6 @@ import { EditBtn, DeleteBtn } from "../../components/Buttons";
 
 
 class Budget extends Component {
-    componentWillMount() {
-		this.setState({ profile: {} });
-		const { userProfile, getProfile } = this.props.auth;
-		if (!userProfile) {
-			getProfile((err, profile) => {
-				this.setState({ profile: profile });
-			});
-		} else {
-			this.setState({ profile: userProfile });
-		}
-    }
-    
-    getUserEmail = () => {
-        return this.state.profile.email;
-    }
 
     render() {
         return (
