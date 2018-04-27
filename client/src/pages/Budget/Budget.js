@@ -2,15 +2,25 @@ import React, { Component } from 'react';
 import "./Budget.css";
 import { BudgetDetailName, BudgetIncome, BudgetExpenses, BudgetIncomeChildren, BudgetExpensesChildren } from "../../components/BudgetDetail";
 import { EditBtn, DeleteBtn } from "../../components/Buttons";
+import API from "../../utils/API";
 
 
 class Budget extends Component {
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            budgetId: () => parseInt(this.props.location.pathname.slice(8)),
+            budgetName: "",
+        }
+    }
     componentWillMount() {
 		this.setState({ profile: {} });
 		const { userProfile, getProfile } = this.props.auth;
 		if (!userProfile) {
 			getProfile((err, profile) => {
-				this.setState({ profile: profile });
+                this.setState({ profile: profile });
+                this.getBudgetDetail();
 			});
 		} else {
 			this.setState({ profile: userProfile });
@@ -21,13 +31,14 @@ class Budget extends Component {
         return this.state.profile.email;
     }
 
-    // getBudgetDetail = () => {
-    //     API.getBudgetItems(req.params.id)
-    //         .then((res) => {
-    //             this.setState({ income_exp: res.data })
-    //         })
-    //         .catch((err) => console.error(err));
-    // }
+    getBudgetDetail = () => {
+        API.getBudgetItems(this.state.budgetId)
+            .then((res) => {
+                this.setState({ income_exp: res.data });
+                console.log("income_exp",this.state.income_exp);
+            })
+            .catch((err) => console.error(err));
+    }
 
     render() {
         return (
@@ -46,13 +57,13 @@ class Budget extends Component {
                             <EditBtn />
                         </div>
                         <BudgetIncome>
-                            <BudgetIncomeChildren />
+                            {/* <BudgetIncomeChildren />
                             <BudgetIncomeChildren />
                             <BudgetIncomeChildren />
                             <BudgetIncomeChildren />
                             <div className="right">
                                 <DeleteBtn />
-                            </div>
+                            </div> */}
                         </BudgetIncome>
                     </div>
                     <div className="col l6 m12 s12" data-aos="fade-left" data-aos-duration="2000">
@@ -60,13 +71,13 @@ class Budget extends Component {
                             <EditBtn />
                         </div>
                         <BudgetExpenses>
-                            <BudgetExpensesChildren />
+                            {/* <BudgetExpensesChildren />
                             <BudgetExpensesChildren />
                             <BudgetExpensesChildren />
                             <BudgetExpensesChildren />
                             <div className="right">
                                 <DeleteBtn />
-                            </div>
+                            </div> */}
                         </BudgetExpenses>
                     </div>
                 </div>
