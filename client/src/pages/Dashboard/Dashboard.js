@@ -14,21 +14,21 @@ class Dashboard extends Component {
 
 		this.state = {
 			budgets: [
-				{
-					name: "Budget 1",
-					user_email: "boggsjp@gmail.com",
-					id: 1
-				},
-				{
-					name: "Budget 2",
-					user_email: "boggsjp@gmail.com",
-					id: 2
-				},
-				{
-					name: "Budget 3",
-					user_email: "boggsjp@gmail.com",
-					id: 3
-				},
+			// 	{
+			// 		name: "Budget 1",
+			// 		user_email: "boggsjp@gmail.com",
+			// 		id: 1
+			// 	},
+			// 	{
+			// 		name: "Budget 2",
+			// 		user_email: "boggsjp@gmail.com",
+			// 		id: 2
+			// 	},
+			// 	{
+			// 		name: "Budget 3",
+			// 		user_email: "boggsjp@gmail.com",
+			// 		id: 3
+			// 	},
 			]
 		}
 
@@ -41,6 +41,7 @@ class Dashboard extends Component {
 		if (!userProfile) {
 			getProfile((err, profile) => {
 				this.setState({ profile: profile });
+				this.getUsersBudgets();
 			});
 		} else {
 			this.setState({ profile: userProfile });
@@ -48,12 +49,17 @@ class Dashboard extends Component {
 	}
 
 	getUsersBudgets = () => {
-		let userEmail = this.state.profile.email;
+		let userEmail;
+
+		// if (this.state.profile.email) {
+			userEmail = this.state.profile.email;
+		// }
 
 		// use userEmail to find Budgets belonging to that user
 		API.findBudgets(userEmail)
 			.then((res) => {
-				this.setState({ budgets: res.body })
+				this.setState({ budgets: res.data })
+				// console.log("RES",res.data);
 			})
 			.catch((err) => console.error(err));
 	}
