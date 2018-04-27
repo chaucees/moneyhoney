@@ -1,27 +1,23 @@
 /* TYPOGRAPHY */
 
-h1 {
+/* h1 {
     text-transform: capitalize;
     font-family: 'Open Sans', sans-serif;
     font-size: 20pt;
-}
-
-.large-num {
-    font-size: 48pt;
-    text-align: center;
-    color: #30c5ff;
-    font-family: 'Anton', sans-serif;
-}
+} */
 
 /* SECTIONS */
 
 .body-bg-budget {
-    background: url("./images/budget.png");
+    background: linear-gradient(
+        rgba(8,76,97, 0.45), 
+        rgba(8,76,97, 0.45)
+      ), url("./images/budget.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height:300px;
+    min-height:500px;
 }
 
 /* Adjustments */
@@ -29,6 +25,13 @@ h1 {
 .no-padding {
     padding-bottom: 0px !important;
     margin-bottom: 0px !important;
+}
+
+.all-padding-budget {
+    padding-top: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 3%;
 }
 
 .white-text {

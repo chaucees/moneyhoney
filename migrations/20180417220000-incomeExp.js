@@ -21,6 +21,15 @@ module.exports = {
       value: {
         type: Sequelize.STRING(20)
       },
+      date: {
+        type: Sequelize.DATE
+      },
+      frequency: {
+        type: Sequelize.STRING(20)
+      },
+      willRecur: {
+        type: Sequelize.STRING(20)
+      },
       createdAt: Sequelize.DATE,
       updatedAt: Sequelize.DATE
     });

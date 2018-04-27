@@ -23,8 +23,8 @@ module.exports = function(app) {
   // creates a new budget
       app.post('/api/budget', function(req, res) {
         db.Budgets.create({
-          name: req.body.name
-          // user_email: req.body.user_email
+          name: req.body.name,
+          user_email: req.body.user_email
         }).then(function(dbBudget) {
           res.json(dbBudget);
         });
@@ -88,9 +88,9 @@ module.exports = function(app) {
           title: req.body.title,
           type: req.body.type,
           value: req.body.value,
-          // date: req.body.date,
-          // frequency: req.body.frequency,
-          // willRecur: req.body.willRecur
+          date: req.body.date,
+          frequency: req.body.frequency,
+          willRecur: req.body.willRecur
         }).then(function(dbUser) {
           res.json(dbUser);
         });

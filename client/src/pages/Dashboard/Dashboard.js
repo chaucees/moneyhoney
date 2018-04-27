@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import "./Dashboard.css";
-import { ViewBtn, AddBtnAlt, DeleteBtn } from "../../components/Buttons";
+import { ViewBtn, AddBtnAlt, DeleteBtn, SaveBtn } from "../../components/Buttons";
 import { DashPanel, DashPanelName } from "../../components/DashPanel";
-import { ProfileName } from "../../components/Profile";
+import { ProfileName} from "../../components/Profile";
+import { AddBudgetName } from "../../components/Forms";
+import { Modal, Button } from "react-materialize";
 import API from "../../utils/API";
+import Graphs from "./images/graphs.png";
 
 class Dashboard extends Component {
 	constructor(props) {
@@ -28,7 +31,7 @@ class Dashboard extends Component {
 				},
 			]
 		}
-		
+
 		this.getUsersBudgets = this.getUsersBudgets.bind(this);
 	}
 
@@ -46,7 +49,7 @@ class Dashboard extends Component {
 
 	getUsersBudgets = () => {
 		let userEmail = this.state.profile.email;
-		
+
 		// use userEmail to find Budgets belonging to that user
 		API.findBudgets(userEmail)
 			.then((res) => {
@@ -66,23 +69,17 @@ class Dashboard extends Component {
 	render() {
 		const { profile, email } = this.state;
 		return (
+
 			<div className="container-fluid">
-				<div className="container-fluid header-dash valign-wrapper">
+				<div className="container-fluid header-dash valign-wrapper" data-aos="fade" data-aos-duration="1000" data-aos-once="true">
 					<div className="row">
 						<div className="col s12">
 							<p className="welcome-text">Welcome</p>
+							<h1 className="profile-name white-text"><ProfileName profile={profile} /></h1>
 						</div>
 					</div>
 				</div>
-
-				<div className="container all-padding">
-					<div className="row">
-						<div className="col s12">
-							<center>
-								<h2><ProfileName profile={profile} /></h2>
-							</center>
-						</div>
-					</div>
+				<div className="container all-padding" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
 					<div className="row">
 						<div className="col s12">
 							{
@@ -90,7 +87,7 @@ class Dashboard extends Component {
 									<div className="row">
 										<DashPanel>
 											<div className="right">
-												<ViewBtn budgetId={budget.id}/>
+												<ViewBtn budgetId={budget.id} />
 											</div>
 											<div className="right">
 												<DeleteBtn budgetId={budget.id} deleteBudget={this.deleteBudget} />
@@ -101,12 +98,50 @@ class Dashboard extends Component {
 								))
 							}
 							<div className="row">
-								<AddBtnAlt />
+							<div className="col s1">
+								<Modal
+									header='Budget Name'
+									actions={<SaveBtn modal="close" />}
+									trigger={<Button floating large className='btn-floating btn-large waves-effect waves-light blue-grey darken-4' waves='light' icon='add' />}>
+									<AddBudgetName/>
+								</Modal>
+								</div>
+								<div className="col s8">
+									<AddBtnAlt />
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+			<div className="container" data-aos="flip-left" data-aos-duration="500" data-aos-once="true">
+				<div className="row">
+					<div className="col s12">
+						<center><img src={Graphs}></img></center>
+					</div>
+					
+					
+					
+					{/* <div className="col l4 s12 hide-on-med-only">
+						<div className="pie-wrap pie-wrap2">
+							<div className="slice1 slice-wrap"> </div>
+							<div className="slice2 slice-wrap"> </div>
+						</div>
+					</div>
+					<div className="col l4 s12 hide-on-med-only">
+						<div className="pie-wrap pie-wrap2">
+							<div className="slice1 slice-wrap"> </div>
+							<div className="slice2 slice-wrap"> </div>
+						</div>
+					</div>
+					<div className="col l4 s12 hide-on-small-only">
+						<div className="pie-wrap pie-wrap2">
+							<div className="slice1 slice-wrap"> </div>
+							<div className="slice2 slice-wrap"> </div>
+						</div>
+					</div> */}
+				</div>
 			</div>
+		</div>
 		);
 	}
 }

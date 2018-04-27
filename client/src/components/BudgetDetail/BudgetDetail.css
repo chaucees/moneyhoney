@@ -23,6 +23,9 @@ font-family: 'Anton', sans-serif; */
 .budget-name {
     color: white;
     text-align:center;
-    font-size: 30pt;
-    text-shadow: 2px 2px 25px #666666;
+    font-size: 3vw;
+}
+
+.expenses-panel {
+    box-shadow: 5px 10px 50px 5px #d6d6d6;
 }
