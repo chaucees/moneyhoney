@@ -102,7 +102,7 @@ class Dashboard extends Component {
 							}
 							<div className="row">
 							<div className="col s1">
-								<Modal
+								{/* <Modal
 									header='Budget Name'
 									actions={<SaveBtn modal="close"/>}
 									trigger={<Button floating large className='btn-floating btn-large waves-effect waves-light blue-grey darken-4' waves='light' icon='add' />}>
@@ -110,12 +110,18 @@ class Dashboard extends Component {
 										value={this.state.newBudgetName}
 										name="newBudgetName"
 										onChange={this.handleInputChange}
-									/>
+									/> */}
 									{/* <Button onClick={console.log("Hey!")} /> */}
-								</Modal>
+								{/* </Modal> */}
+								<Button floating large className='btn-floating btn-large waves-effect waves-light blue-grey darken-4' waves='light' icon='add' onClick={this.createBudget}/>
 								</div>
-								<div className="col s8">
-									<AddBtnAlt />
+								<div className="col s6">
+									{/* <AddBtnAlt /> */}
+									<AddBudgetName 
+										value={this.state.newBudgetName}
+										name="newBudgetName"
+										onChange={this.handleInputChange}
+									/>
 								</div>
 								{/* <button onClick={this.createBudget}>Create Budget</button> */}
 							</div>

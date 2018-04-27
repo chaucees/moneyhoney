@@ -21,6 +21,14 @@ class Budget extends Component {
         return this.state.profile.email;
     }
 
+    // getBudgetDetail = () => {
+    //     API.getBudgetItems(req.params.id)
+    //         .then((res) => {
+    //             this.setState({ income_exp: res.data })
+    //         })
+    //         .catch((err) => console.error(err));
+    // }
+
     render() {
         return (
             <div className="container-fluid padding-added">
