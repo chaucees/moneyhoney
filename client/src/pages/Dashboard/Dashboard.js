@@ -34,11 +34,7 @@ class Dashboard extends Component {
 	}
 
 	getUsersBudgets = () => {
-		let userEmail;
-
-		// if (this.state.profile.email) {
-			userEmail = this.state.profile.email;
-		// }
+		let userEmail = this.state.profile.email;
 
 		// use userEmail to find Budgets belonging to that user
 		API.findBudgets(userEmail)
@@ -56,8 +52,16 @@ class Dashboard extends Component {
 			.catch((err) => console.error(err));
 	}
 
-	createBudget = () => {
-		console.log("newBudgetName",this.state.newBudgetName);
+	createBudget = (event) => {
+		event.preventDefault();
+
+		let userEmail = this.state.profile.email;
+		let data = {
+			name: this.state.newBudgetName,
+			user_email: userEmail
+		}
+
+		API.createBudget(data);
 	}
 
 	handleInputChange = (event) => {
@@ -65,8 +69,6 @@ class Dashboard extends Component {
 		this.setState({
 			[name]: value
 		});
-
-		console.log(this.state.newBudgetName);
 	}
 
 	render() {
@@ -102,28 +104,15 @@ class Dashboard extends Component {
 							}
 							<div className="row">
 							<div className="col s1">
-								{/* <Modal
-									header='Budget Name'
-									actions={<SaveBtn modal="close"/>}
-									trigger={<Button floating large className='btn-floating btn-large waves-effect waves-light blue-grey darken-4' waves='light' icon='add' />}>
-									<AddBudgetName 
-										value={this.state.newBudgetName}
-										name="newBudgetName"
-										onChange={this.handleInputChange}
-									/> */}
-									{/* <Button onClick={console.log("Hey!")} /> */}
-								{/* </Modal> */}
 								<Button floating large className='btn-floating btn-large waves-effect waves-light blue-grey darken-4' waves='light' icon='add' onClick={this.createBudget}/>
 								</div>
 								<div className="col s6">
-									{/* <AddBtnAlt /> */}
 									<AddBudgetName 
 										value={this.state.newBudgetName}
 										name="newBudgetName"
 										onChange={this.handleInputChange}
 									/>
 								</div>
-								{/* <button onClick={this.createBudget}>Create Budget</button> */}
 							</div>
 						</div>
 					</div>
