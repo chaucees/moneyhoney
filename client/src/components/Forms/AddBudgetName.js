@@ -9,7 +9,7 @@ export const AddBudgetName = props => (
                 id="budget-name"
                 {...props}
             />
-            <label htmlFor="first-name">Budget Name</label>
+            <label htmlFor="first-name">New Budget Name</label>
         </div>
     </div>
 );
