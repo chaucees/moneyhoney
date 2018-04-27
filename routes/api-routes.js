@@ -41,9 +41,9 @@ module.exports = function(app) {
       })
   // return budgets belonging to user_email
     app.get('/api/user/:email', function(req, res) {
-      db.User.findOne({
+      db.Budgets.findAll({
         where: {
-          email: req.params.email
+          user_email: req.params.email
         }
       }).then(function(dbUser) {
         res.json(dbUser);
