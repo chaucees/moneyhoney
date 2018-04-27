@@ -61,7 +61,11 @@ class Dashboard extends Component {
 			user_email: userEmail
 		}
 
-		API.createBudget(data);
+		API.createBudget(data)
+			.then(() => {
+				this.getUsersBudgets();
+				this.setState({ newBudgetName: "" });
+			});
 	}
 
 	handleInputChange = (event) => {
@@ -80,7 +84,7 @@ class Dashboard extends Component {
 					<div className="row">
 						<div className="col s12">
 							<p className="welcome-text">Welcome</p>
-							<h1 className="profile-name white-text"><ProfileName profile={profile} /></h1>
+							<span className="profile-name white-text"><ProfileName profile={profile} /></span>
 						</div>
 					</div>
 				</div>
